@@ -73,7 +73,10 @@ function FooterLinks() {
                   </p>
                   <ul className="mt-6 space-y-4 text-sm lg:text-sm sm:text-sm">
                     <li className="flex items-center">
-                      <IoLocationSharp className="text-gray-200 mr-2" style={{ fontSize: '1.8rem' }} />
+                      <IoLocationSharp
+                        className="text-gray-200 mr-2"
+                        style={{ fontSize: "1.8rem" }}
+                      />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
@@ -82,7 +85,10 @@ function FooterLinks() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <MdEmail className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }}/>
+                      <MdEmail
+                        className="text-gray-200 mr-2"
+                        style={{ fontSize: "1.5rem" }}
+                      />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
@@ -91,7 +97,10 @@ function FooterLinks() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <FaPhone className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }} />
+                      <FaPhone
+                        className="text-gray-200 mr-2"
+                        style={{ fontSize: "1.5rem" }}
+                      />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
@@ -314,7 +323,8 @@ function FooterLinks() {
             <div className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-800">
               <div className="sm:flex sm:justify-between">
                 <p className="text-xs  text-gray-400 lg:text-sm sm:text-lg">
-                  © 2023. Oraro & Company Advocates. All rights reserved.
+                  © 2023. Muenda RoyFord & Company Advocates. All rights
+                  reserved.
                 </p>
                 <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                   <li>

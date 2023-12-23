@@ -4,7 +4,7 @@ import Image from "next/image";
 import masaaiImage from "../../../public/images/law1.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/geet.jpg";
-import secondImage from "../../../public/images/8r.jpg";
+import secondImage from "../../../public/images/assets.jpg";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 
@@ -45,32 +45,21 @@ const Hero = () => {
       linkTo: "/services",
     },
   ];
+
 useEffect(() => {
     const interval = setInterval(() => {
-      setOpacity(0); // Fade out
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-        setOpacity(1); // Fade in
-      }, 500); // Change time based on transition duration
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   const handleNext = () => {
-    setOpacity(0); // Fade out
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-      setOpacity(1); // Fade in
-    }, 500); // Change time based on transition duration
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
   };
 
   const handlePrev = () => {
-    setOpacity(0); // Fade out
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + imagesData.length) % imagesData.length);
-      setOpacity(1); // Fade in
-    }, 500); // Change time based on transition duration
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + imagesData.length) % imagesData.length);
   };
 
   return (
@@ -106,7 +95,7 @@ const overlayStyle = {
   left: 0,
   width: "100%",
   height: "100%",
-  // backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust opacity as needed
+  backgroundColor: "rgba(26, 25, 25, 0.8)",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
