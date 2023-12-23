@@ -71,8 +71,8 @@ useEffect(() => {
         objectFit="cover"
       />
       <div style={overlayStyle}>
-        <h1 style={titleStyle}>{imagesData[currentIndex].title}</h1>
-        <p style={descriptionStyle}>{imagesData[currentIndex].description}</p>
+       <h1 className="text-4xl lg:text-5xl text-white font-extrabold">{imagesData[currentIndex].title}</h1>
+<p style={descriptionStyle}className="text-lg lg:text-xl text-white font-bold">{imagesData[currentIndex].description}</p>
         <button className="btn btn-primary mt-6 bg-[#F6ED6F]" style={buttonStyle}>
           {imagesData[currentIndex].buttonLabel}
         </button>
@@ -114,8 +114,8 @@ const titleStyle = {
 };
 
 const descriptionStyle = {
-  fontSize: "1.5rem",
-  color: "white",
+  // fontSize: "1.5rem",
+  // color: "white",
   lineHeight: "1.5",
   width: "50%",
 };

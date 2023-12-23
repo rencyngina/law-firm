@@ -63,7 +63,6 @@ const Section2 = () => {
 
   const leftSideStyle = {
     flex: 1,
-    // textAlign: "center",
   };
 
   const rightSideStyle = {
@@ -124,57 +123,49 @@ const Section2 = () => {
     <div className="w-full" id="about" style={sectionStyle}>
       <div className="lg:flex sm:block">
         <div style={leftSideStyle}>
-          <h6 className="text-white mb-4 lg:text-sm sm:text-xs">
-            WE HAVE A SOLID BACKGROUND
-          </h6>
-          <h1 className="text-white md:text-4xl">
-            Our solutions for your
-            <span className="text-[#A65A2A]"> Growth</span>
-          </h1>
-          <br />
-          <p className="text-white lg:text-xl sm:text-lg mt-4">
-            {/* Your left side content */}
-            Established in <span className="font-bold text-[#A65A2A]">1977</span>, Oraro & Company Advocates is a leading African
-            law firm renowned for its comprehensive range of legal services,
-            including dispute resolution and corporate & commercial law. We have
-            consistently earned top-tier recognition in Kenya from prestigious
-            international legal directories like Chambers Global, IFLR1000, and
-            Legal 500
-          </p>
-          <br />
-          <p className="text-white lg:text-xl sm:text-lg mt-4">
-            Our specialized legal expertise spans various areas, locally and
-            regionally, encompassing Arbitration; Asset Tracing & Recoveries;
-            Banking & Finance; Capital Markets; Conveyancing & Real Estate;
-            Corporate & Commercial; Dispute Resolution; Employment & Labour;
-            FinTech; Infrastructure, Projects & PPP; Private Client;
-            Restructuring & Insolvency; and Tax. Our diverse clientele comprises
-            local and international entities, governments, regulators, and
-            non-profit organizations across industries such as retail,
-            insurance, maritime & logistics, technology, construction, private
-            equity, education, energy, real estate, financial services,
-            manufacturing & industries, and the public sector.
-          </p>
-          <br />
-          {/*<p className="text-white lg:text-xl sm:text-lg mt-4">
-            Through our direct provision of services and strategic partnerships
-            with leading law firms worldwide, we offer both local and
-            cross-jurisdictional legal support. As a full Affiliate Member of AB
-            & David Africa, a Pan-African business law network, we are committed
-            to safeguarding successful business endeavors in Africa by
-            minimizing associated risks.
-  </p>*/}
-          <button
-            style={buttonStyles}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="bg-gradient-to-b from-gray-800 to-gray-900"
-          >
-            <a style={{ textDecoration: "none", color: "white" }} href="/about">
-              Read More
-            </a>
-          </button>
-        </div>
+      <h6 className="text-white mb-4 lg:text-sm sm:text-xs">
+        WE HAVE A SOLID BACKGROUND
+      </h6>
+      <h1 className="text-white md:text-4xl">
+        Our solutions for your
+        <span className="text-[#A65A2A]"> Growth</span>
+      </h1>
+      <br />
+      <p className="text-white lg:text-xl sm:text-lg mt-4">
+        {/* Your left side content */}
+        Established in <span className="font-bold text-[#A65A2A]">1977</span>, Oraro & Company Advocates is a leading African
+        law firm renowned for its comprehensive range of legal services,
+        including dispute resolution and corporate & commercial law. We have
+        consistently earned top-tier recognition in Kenya from prestigious
+        international legal directories like Chambers Global, IFLR1000, and
+        Legal 500
+      </p>
+      <br />
+      <p className="text-white lg:text-xl sm:text-lg mt-4">
+        Our specialized legal expertise spans various areas, locally and
+        regionally, encompassing Arbitration; Asset Tracing & Recoveries;
+        Banking & Finance; Capital Markets; Conveyancing & Real Estate;
+        Corporate & Commercial; Dispute Resolution; Employment & Labour;
+        FinTech; Infrastructure, Projects & PPP; Private Client;
+        Restructuring & Insolvency; and Tax. Our diverse clientele comprises
+        local and international entities, governments, regulators, and
+        non-profit organizations across industries such as retail,
+        insurance, maritime & logistics, technology, construction, private
+        equity, education, energy, real estate, financial services,
+        manufacturing & industries, and the public sector.
+      </p>
+      <br />
+      <button
+        style={buttonStyles}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="bg-gradient-to-b from-gray-800 to-gray-900"
+      >
+        <a style={{ textDecoration: 'none', color: 'white' }} href="/about">
+          Read More
+        </a>
+      </button>
+    </div>
         <div style={rightSideStyle}>
         <div className="flex">
         <div className={`counter-item ${countersVisible ? "animate" : ""}`}
