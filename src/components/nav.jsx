@@ -5,41 +5,57 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import { BsArrowRightShort } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
+import { GoArrowUpRight } from "react-icons/go";
 
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [expertiseDropdownOpen, setExpertiseDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleAboutDropdown = () => {
+    setAboutDropdownOpen(!aboutDropdownOpen);
+    if (expertiseDropdownOpen) {
+      setExpertiseDropdownOpen(false);
+    }
+  };
+
+  const toggleExpertiseDropdown = () => {
+    setExpertiseDropdownOpen(!expertiseDropdownOpen);
+    if (aboutDropdownOpen) {
+      setAboutDropdownOpen(false);
+    }
   };
 
   return (
     <nav className="bg-gray-100 w-full md:h-20 flex items-center justify-between px-6 md:px-12 sticky top-0 shadow-emerald-950 z-10">
       <div className="flex items-center gap-2">
-        <Link href="/">
-          <Image
-            src="/images/logo1.png"
-            alt="Logo"
-            className=""
-            height={90}
-            width={90}
-          />
-        </Link>
-        <p className="font-bolder text-gray-500 font-extrabold">
-          Oraro & Company Advocates
-        </p>
-      </div>
-
+  <Link href="/">
+    <Image
+      src="/images/logo1.png"
+      alt="Logo"
+      className="bg-gradient-to-b from-gray-800 to-gray-900"
+      height={90}
+      width={90}
+    />
+  </Link>
+  {/*<div>
+    <p className="text-gray-500 font-extrabold">
+      ORARO & COMPANY ADVOCATES
+    </p>
+    <p className="text-gray-500 text-xs">
+      WHERE EXCELLENCE MEETS JUSTICE
+    </p>
+  </div>*/}
+</div>
       {/* Desktop Navigation (Centered) */}
       <ul className="hidden md:flex justify-items-center items-center space-x-4">
         <li>
           <Link
-            href="/features"
+            href="/"
             className="text-base text-gray-700 hover:underline"
           >
             Home
@@ -47,7 +63,7 @@ const LandingNavBar = () => {
         </li>
         <li className="relative">
           <div
-            onClick={toggleDropdown}
+            onClick={toggleAboutDropdown}
             className="text-base text-gray-700 hover:underline cursor-pointer"
           >
             About Us{" "}
@@ -58,12 +74,13 @@ const LandingNavBar = () => {
               }}
             />
           </div>
-          {dropdownOpen && (
+         {aboutDropdownOpen && (
             <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
               {/* Dropdown content */}
               <li>
                 <Link
-                  href="/about-us"
+                id="about"
+                  href="/about"
                   className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
                   Who We Are
@@ -98,7 +115,7 @@ const LandingNavBar = () => {
         </li>
         <li className="relative">
           <div
-            onClick={toggleDropdown}
+            onClick={toggleExpertiseDropdown}
             className="text-base text-gray-700 hover:underline cursor-pointer"
           >
             Expertise{" "}
@@ -109,11 +126,12 @@ const LandingNavBar = () => {
               }}
             />
           </div>
-          {dropdownOpen && (
+          {expertiseDropdownOpen && (
             <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
               <li>
                 <Link
-                  href="/about-us"
+                  href="/practice-areas"
+                  id="practice-areas"
                   className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
                   Practise Area
@@ -155,9 +173,9 @@ const LandingNavBar = () => {
           </Link>
         </li>
         <Link href="/signin">
-          <button className="px-4 py-2 text-base font-semibold text-white bg-[#A65A2A] hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
+          <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
             Contact Us
-            <BsArrowRightShort size={20} className="ml-2" />
+            <GoArrowUpRight size={20} className="ml-2" />
           </button>
         </Link>
       </ul>

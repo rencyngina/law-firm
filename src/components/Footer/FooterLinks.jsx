@@ -24,10 +24,10 @@ function FooterLinks() {
             <div className="lg:flex lg:items-start lg:gap-8">
               <div className="text-teal-300">
                 <Image
-                  src="/images/logo1.png"
+                  src="/images/logo2.png"
                   alt="Logo"
-                  height={300}
-                  width={150}
+                  height={400}
+                  width={400}
                 />
               </div>
               <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
@@ -73,7 +73,7 @@ function FooterLinks() {
                   </p>
                   <ul className="mt-6 space-y-4 text-sm lg:text-sm sm:text-sm">
                     <li className="flex items-center">
-                      <IoLocationSharp className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }} />
+                      <IoLocationSharp className="text-gray-200 mr-2" style={{ fontSize: '1.8rem' }} />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
