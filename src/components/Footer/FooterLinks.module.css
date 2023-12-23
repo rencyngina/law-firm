@@ -1,0 +1,126 @@
+/* Default styles for larger screens */
+.footer {
+  margin-top: rem(120px);
+  height: 35vh;
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  background-color: #232323;
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  gap: rem(10rem);
+}
+
+.logo {
+  max-width: rem(200px);
+}
+
+.description {
+  margin-top: rem(5px);
+  text-align: center;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.groups {
+  display: flex;
+}
+
+.wrapper {
+  width: rem(160px);
+  margin-right: rem(10px); /* Add margin between groups */
+}
+
+/* Media query for screens smaller than 768px (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .wrapper {
+    width: rem(120px); /* Adjust wrapper width for smaller screens */
+  }
+}
+
+
+.link {
+  display: block;
+  color: whitesmoke;
+  font-size: 1rem; /* Use rem for text size */
+  padding-top: rem(0.5rem);
+  padding-bottom: rem(0.5rem);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: Greycliff CF, var(--mantine-font-family);
+  margin-bottom: calc(var(--mantine-spacing-xs) / 2);
+  color: gray;
+}
+
+.afterFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
+  flex-direction: column;
+}
+
+.social {
+  margin-top: var(--mantine-spacing-xs);
+  gap: rem(1rem);
+  display: flex;
+}
+
+/* Media query for screens smaller than 768px (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: calc(var(--mantine-spacing-md) * 2);
+    padding-bottom: calc(var(--mantine-spacing-md) * 2);
+  }
+
+  .logo {
+    max-width: rem(150px);
+  }
+
+  .inner {
+    margin-top: 2rem;
+  }
+
+  .groups {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+    /* Additional media query for screens smaller than 768px */
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+      gap: rem(5rem);
+    }
+  }
+
+  .wrapper {
+    width: rem(120px);
+  }
+
+  .link {
+    font-size: 0.9rem; /* Adjust text size for smaller screens using rem */
+    padding-top: rem(0.3rem);
+    padding-bottom: rem(0.3rem);
+  }
+
+  .title {
+    font-size: 1.1rem; /* Adjust title size for smaller screens using rem */
+  }
+}
+
+
