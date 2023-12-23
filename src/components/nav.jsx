@@ -4,6 +4,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { BsArrowRightShort } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Image from "next/image";
 
 
 const LandingNavBar = () => {
@@ -23,10 +24,10 @@ const LandingNavBar = () => {
     <nav className="bg-gray-100 w-full md:h-20 flex items-center justify-between px-6 md:px-12 sticky top-0 shadow-emerald-950 z-10">
       <div className="flex items-center gap-2">
         <Link href="/">
-          <img
+          <Image
             src="/images/logo1.png"
             alt="Logo"
-            className="h-15 w-15"
+            className="h-14"
           />
           </Link>
           <p>
@@ -57,22 +58,22 @@ const LandingNavBar = () => {
       <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-md w-96 gap-8 h-62">
         {/* Dropdown content */}
          <li>
-    <Link href="/about-us" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
-      Overview
+    <Link href="/about-us" className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+      Who We Are  
     </Link>
   </li>
   <li>
-    <Link href="/team" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+    <Link href="/team" className="block py-2  border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300">
       Our Team
     </Link>
   </li>
   <li>
-    <Link href="/careers" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+    <Link href="/careers" className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300">
       Careers
     </Link>
   </li>
   <li>
-    <Link href="/news" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+    <Link href="/news" className="block  border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
       News
     </Link>
   </li>

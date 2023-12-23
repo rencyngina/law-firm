@@ -105,7 +105,7 @@ const Section2 = () => {
     // padding: "20px",
     backgroundColor: "rgba(35, 35, 35, 0.9)",
     height: "150px",
-    width: "160px",
+    width: "200px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -116,6 +116,7 @@ const Section2 = () => {
     cursor: "pointer",
     margin: "10px",
     fontFamily: 'Encode Sans Expanded, sans-serif',
+    fontSize: '3.5rem',
     };
 
   return (
