@@ -42,14 +42,6 @@ const LandingNavBar = () => {
       width={90}
     />
   </Link>
-  {/*<div>
-    <p className="text-gray-500 font-extrabold">
-      ORARO & COMPANY ADVOCATES
-    </p>
-    <p className="text-gray-500 text-xs">
-      WHERE EXCELLENCE MEETS JUSTICE
-    </p>
-  </div>*/}
 </div>
       {/* Desktop Navigation (Centered) */}
       <ul className="hidden md:flex justify-items-center items-center space-x-4">
@@ -105,7 +97,7 @@ const LandingNavBar = () => {
               <li>
                 <Link
                   href="/news"
-                  className="block  border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                  className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
                   News
                 </Link>
@@ -148,7 +140,7 @@ const LandingNavBar = () => {
               <li>
               <Link
                   href="/about-us"
-                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                  className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
                   Brochures
                 </Link>
