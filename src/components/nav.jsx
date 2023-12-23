@@ -6,7 +6,6 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 
-
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -15,10 +14,9 @@ const LandingNavBar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-   const toggleDropdown = () => {
+  const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-
 
   return (
     <nav className="bg-gray-100 w-full md:h-20 flex items-center justify-between px-6 md:px-12 sticky top-0 shadow-emerald-950 z-10">
@@ -31,10 +29,10 @@ const LandingNavBar = () => {
             height={90}
             width={90}
           />
-          </Link>
-          <p className="font-bolder text-gray-500 font-extrabold">
+        </Link>
+        <p className="font-bolder text-gray-500 font-extrabold">
           Oraro & Company Advocates
-          </p>
+        </p>
       </div>
 
       {/* Desktop Navigation (Centered) */}
@@ -48,47 +46,97 @@ const LandingNavBar = () => {
           </Link>
         </li>
         <li className="relative">
-    <div
-      onClick={toggleDropdown}
-      className="text-base text-gray-700 hover:underline cursor-pointer"
-    >
-      About Us <RiArrowDropDownLine className="inline" style={{
-        fontSize: "1.8rem",
-      }} />
-    </div>
-    {dropdownOpen && (
-      <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-md w-96 gap-8 h-62">
-        {/* Dropdown content */}
-         <li>
-    <Link href="/about-us" className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
-      Who We Are  
-    </Link>
-  </li>
-  <li>
-    <Link href="/team" className="block py-2  border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300">
-      Our Team
-    </Link>
-  </li>
-  <li>
-    <Link href="/careers" className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300">
-      Careers
-    </Link>
-  </li>
-  <li>
-    <Link href="/news" className="block  border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
-      News
-    </Link>
-  </li>
-      </ul>
-    )}
-  </li>
-        <li>
-          <Link
-            href="/recipes"
-            className="text-base text-gray-700 hover:underline"
+          <div
+            onClick={toggleDropdown}
+            className="text-base text-gray-700 hover:underline cursor-pointer"
           >
-            Expertise
-          </Link>
+            About Us{" "}
+            <RiArrowDropDownLine
+              className="inline"
+              style={{
+                fontSize: "1.8rem",
+              }}
+            />
+          </div>
+          {dropdownOpen && (
+            <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
+              {/* Dropdown content */}
+              <li>
+                <Link
+                  href="/about-us"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Who We Are
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/team"
+                  className="block py-2  border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/careers"
+                  className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="block  border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  News
+                </Link>
+              </li>
+            </ul>
+          )}
+        </li>
+        <li className="relative">
+          <div
+            onClick={toggleDropdown}
+            className="text-base text-gray-700 hover:underline cursor-pointer"
+          >
+            Expertise{" "}
+            <RiArrowDropDownLine
+              className="inline"
+              style={{
+                fontSize: "1.8rem",
+              }}
+            />
+          </div>
+          {dropdownOpen && (
+            <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
+              <li>
+                <Link
+                  href="/about-us"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Practise Area
+                </Link>
+              </li>
+              <li>
+              <Link
+                  href="/about-us"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Sectors
+                </Link>
+              </li>
+              <li>
+              <Link
+                  href="/about-us"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Brochures
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
           <Link
@@ -107,9 +155,7 @@ const LandingNavBar = () => {
           </Link>
         </li>
         <Link href="/signin">
-          <button
-            className="px-4 py-2 text-base font-semibold text-white bg-[#A65A2A] hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
-          >
+          <button className="px-4 py-2 text-base font-semibold text-white bg-[#A65A2A] hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
             Contact Us
             <BsArrowRightShort size={20} className="ml-2" />
           </button>

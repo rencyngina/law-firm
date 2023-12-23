@@ -120,7 +120,7 @@ const titleStyle = {
   fontSize: "4rem",
   color: "white",
   fontWeight: "bold",
-  lineHeight: "2",
+  lineHeight: "1.5",
   width: "50%",
 };
 
