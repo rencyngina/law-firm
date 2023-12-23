@@ -27,7 +27,9 @@ const LandingNavBar = () => {
           <Image
             src="/images/logo1.png"
             alt="Logo"
-            className="h-14"
+            className="h-14 w-14"
+            height={14}
+            width={14}
           />
           </Link>
           <p>
