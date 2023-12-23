@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import masaaiImage from '../../../public/images/law1.jpg';
 import fourthImage from '../../../public/images/brief.jpeg';
-import fifthImage from '../../../public/images/law1.jpg';
+import fifthImage from '../../../public/images/7r.jpg';
 import secondImage from '../../../public/images/law1.jpg';
 
 const Hero = () => {
@@ -48,6 +48,14 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [imagesData.length]);
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
+  }
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % imagesData.length);
+  }
+
   const overlayStyle = {
     position: 'absolute',
     top: 0,
@@ -68,7 +76,14 @@ const Hero = () => {
     fontSize: '4rem',
     color: 'white',
     fontWeight: 'bold',
-    lineHeight: '1',
+    lineHeight: '2',
+  };
+
+  const descriptionStyle = {
+    fontSize: '1.5rem',
+    color: 'white',
+    lineHeight: '1.5',
+    width: '50%',
   };
 
   return (
@@ -76,7 +91,17 @@ const Hero = () => {
       <Image src={imagesData[currentIndex].image} alt="Hero Image" layout="fill" objectFit="cover" />
       <div style={overlayStyle}>
         <h1 style={titleStyle}>{imagesData[currentIndex].title}</h1>
-        <p>{imagesData[currentIndex].description}</p>
+        <p style={descriptionStyle}
+        >{imagesData[currentIndex].description}</p>
+        {/*<Button>
+          <Link href={imagesData[currentIndex].linkTo}>
+            <a style={{ color: 'white' }}>{imagesData[currentIndex].buttonLabel}</a>
+          </Link>
+  </Button>*/}
+        <div className="d-flex justify-content-center mt-3">
+          <button className="btn btn-primary me-2 " onClick={handlePrev}>Prev</button>
+          <button className="btn btn-primary" onClick={handleNext}>Next</button>
+          </div>
       </div>
     </div>
   );

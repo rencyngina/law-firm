@@ -3,25 +3,35 @@ import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { BsArrowRightShort } from "react-icons/bs";
-// import { signIn } from "next-auth/react";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+   const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+
   return (
-    <nav className="bg-gray-100 w-full md:h-20 flex items-center justify-between px-6 md:px-12 sticky top-0 shadow-emerald-950">
-      <div className="flex items-center">
+    <nav className="bg-gray-100 w-full md:h-20 flex items-center justify-between px-6 md:px-12 sticky top-0 shadow-emerald-950 z-10">
+      <div className="flex items-center gap-2">
         <Link href="/">
           <img
-            src="/images/favicon.ico"
+            src="/images/logo1.png"
             alt="Logo"
-            className="h-15"
+            className="h-15 w-15"
           />
-        </Link>
+          </Link>
+          <p>
+          Oraro & Company Advocates
+          </p>
       </div>
 
       {/* Desktop Navigation (Centered) */}
@@ -34,11 +44,33 @@ const LandingNavBar = () => {
             Home
           </Link>
         </li>
+        <li className="relative">
+    <div
+      onClick={toggleDropdown}
+      className="text-base text-gray-700 hover:underline cursor-pointer"
+    >
+      About Us <RiArrowDropDownLine className="inline" style={{
+        fontSize: "1.8rem",
+      }} />
+    </div>
+    {dropdownOpen && (
+      <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-md w-62">
+        {/* Dropdown content */}
         <li>
-          <Link href="/faq" className="text-base text-gray-700 hover:underline">
-            About Us
-          </Link>
+          <Link href="/about-us">Overview</Link>
         </li>
+        <li>
+          <Link href="/team">Our Team</Link>
+        </li>
+        <li>
+          <Link href="/careers">Careers</Link>
+        </li>
+        <li>
+          <Link href="/news">News</Link>
+        </li>
+      </ul>
+    )}
+  </li>
         <li>
           <Link
             href="/recipes"
@@ -65,12 +97,9 @@ const LandingNavBar = () => {
         </li>
         <Link href="/signin">
           <button
-            // onClick={() => {
-            //   signIn();
-            // }}
-            className="px-4 py-2 text-base font-semibold text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+            className="px-4 py-2 text-base font-semibold text-white bg-[#A65A2A] hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
           >
-            Get Started
+            Contact Us
             <BsArrowRightShort size={20} className="ml-2" />
           </button>
         </Link>
@@ -128,7 +157,5 @@ const LandingNavBar = () => {
     </nav>
   );
 };
-
-// export default Navigation;
 
 export default LandingNavBar;
