@@ -1,47 +1,45 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
-import { BsTwitterX } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const Head = () => {
   return (
-    <div className="bg-gray-500 w-full h-12">
-      <div className="flex justify-between w-3/4 mx-auto">
-        <div className="flex mt-3">
-          <div className="flex items-center text-white text-sm">
-            <FaPhone />
-            <p className="ml-2 text-sm">+234 803 000 0000</p>
+    <div className="bg-gradient-to-b from-gray-800 to-gray-900 w-full">
+      <div className="container mx-auto py-3 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-wrap justify-between items-center text-white text-sm">
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <FaPhone className="mr-2" />
+            <p className="mr-4 hidden sm:block">+234 803 000 0000</p>
           </div>
-          <div className="flex items-center text-white ml-4">
-            <MdEmail />
-            <p className="ml-2 text-sm">
-            legal@oraro.co.ke
-              <a
-                href="mailto:
-                legal@araro.co.ke"
-              ></a>
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <MdEmail className="mr-2" />
+            <p className="mr-4 hidden sm:block">
+              legal@oraro.co.ke
+              <a href="mailto:legal@araro.co.ke"></a>
             </p>
           </div>
-          <div className="flex items-center text-white ml-4">
-            <IoLocationSharp />
-            <p className="ml-2 text-sm">ACK Garden Annex, 6th Floor, 1st Ngong Avenue</p>
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <IoLocationSharp className="mr-2" />
+            <p className="hidden sm:block">
+              ACK Garden Annex, 6th Floor, 1st Ngong Avenue
+            </p>
           </div>
-        </div>
-        <div className="flex mt-3">
-          <div className="flex items-center text-white">
-            <BsTwitterX />
-            <p className="ml-2 text-sm">Twitter</p>
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <BsTwitterX className="mr-2" />
+            <p className="mr-4 hidden sm:block">Twitter</p>
           </div>
-          <div className="flex items-center text-white ml-4">
-            <FaLinkedin />
-            <p className="ml-2 text-sm">LinkedIn</p>
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <FaLinkedin className="mr-2" />
+            <p className="mr-4 hidden sm:block">LinkedIn</p>
           </div>
-          <div className="flex items-center text-white ml-4">
-            <FaYoutube />
-            <p className="ml-2 text-sm">YouTube</p>
+          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+            <FaYoutube className="mr-2" />
+            <p className="hidden sm:block">YouTube</p>
           </div>
         </div>
       </div>
@@ -50,3 +48,4 @@ const Head = () => {
 };
 
 export default Head;
+

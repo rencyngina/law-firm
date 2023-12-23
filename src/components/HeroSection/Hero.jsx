@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import masaaiImage from "../../../public/images/law1.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
-import fifthImage from "../../../public/images/7r.jpg";
+import fifthImage from "../../../public/images/geet.jpg";
 import secondImage from "../../../public/images/8r.jpg";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
@@ -33,7 +33,7 @@ const Hero = () => {
       title: "Banking & Finance",
       description:
         "Our Banking & Finance practise area is well regarded for its expertise in advising in both contentious and non-contentious matters",
-      buttonLabel: "Our Services",
+      buttonLabel: "Our Expertise",
       linkTo: "/services",
     },
     {
@@ -84,7 +84,7 @@ useEffect(() => {
       <div style={overlayStyle}>
         <h1 style={titleStyle}>{imagesData[currentIndex].title}</h1>
         <p style={descriptionStyle}>{imagesData[currentIndex].description}</p>
-        <button className="btn btn-primary mt-6" style={buttonStyle}>
+        <button className="btn btn-primary mt-6 bg-[#F6ED6F]" style={buttonStyle}>
           {imagesData[currentIndex].buttonLabel}
         </button>
         <div className="flex justify-center mt-6 gap-96">
@@ -106,7 +106,7 @@ const overlayStyle = {
   left: 0,
   width: "100%",
   height: "100%",
-  backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust opacity as needed
+  // backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust opacity as needed
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",

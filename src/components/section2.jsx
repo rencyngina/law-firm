@@ -105,7 +105,7 @@ const Section2 = () => {
     // padding: "20px",
     backgroundColor: "rgba(35, 35, 35, 0.9)",
     height: "150px",
-    width: "200px",
+    width: "220px",
     display: "flex",
     flexWrap: 'wrap',
     flexDirection: "column",
@@ -168,7 +168,7 @@ const Section2 = () => {
             style={buttonStyles}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="bg-[##A65A2A]"
+            className="bg-gradient-to-b from-gray-800 to-gray-900"
           >
             <a style={{ textDecoration: "none", color: "white" }} href="/about">
               Read More
@@ -228,7 +228,6 @@ const Section2 = () => {
                 }}
               >
                 Years Of Partner
-                <br />
                 Experience
               </p>
             </div>

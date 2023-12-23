@@ -19,7 +19,7 @@ const floatingButtonStyle = {
 function FloatingChatButton(props) {
   return (
     <div style={floatingButtonStyle} onClick={props.handleChatButtonClick}>
-      <IconContext.Provider value={{ size: '2.5em' }}>
+      <IconContext.Provider value={{ size: '2.5rem' }}>
         <FaComments />
       </IconContext.Provider>
     </div>
