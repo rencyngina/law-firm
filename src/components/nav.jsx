@@ -54,20 +54,28 @@ const LandingNavBar = () => {
       }} />
     </div>
     {dropdownOpen && (
-      <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-md w-62">
+      <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-md w-96 gap-8 h-62">
         {/* Dropdown content */}
-        <li>
-          <Link href="/about-us">Overview</Link>
-        </li>
-        <li>
-          <Link href="/team">Our Team</Link>
-        </li>
-        <li>
-          <Link href="/careers">Careers</Link>
-        </li>
-        <li>
-          <Link href="/news">News</Link>
-        </li>
+         <li>
+    <Link href="/about-us" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+      Overview
+    </Link>
+  </li>
+  <li>
+    <Link href="/team" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+      Our Team
+    </Link>
+  </li>
+  <li>
+    <Link href="/careers" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+      Careers
+    </Link>
+  </li>
+  <li>
+    <Link href="/news" className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300">
+      News
+    </Link>
+  </li>
       </ul>
     )}
   </li>
