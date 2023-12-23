@@ -27,12 +27,12 @@ const LandingNavBar = () => {
           <Image
             src="/images/logo1.png"
             alt="Logo"
-            className="h-14 w-14"
-            height={14}
-            width={14}
+            className=""
+            height={90}
+            width={90}
           />
           </Link>
-          <p>
+          <p className="font-bolder text-gray-500">
           Oraro & Company Advocates
           </p>
       </div>
