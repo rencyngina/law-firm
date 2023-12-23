@@ -32,7 +32,7 @@ const LandingNavBar = () => {
             width={90}
           />
           </Link>
-          <p className="font-bolder text-gray-500">
+          <p className="font-bolder text-gray-500 font-extrabold">
           Oraro & Company Advocates
           </p>
       </div>
