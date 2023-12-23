@@ -2,18 +2,17 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className="bg-gray-500 w-full">
-      <div className="h-80 md:h-96 lg:h-120 xl:h-140 md:flex-row justify-center items-center text-white p-20">
-        <h1 className="text-2xl md:text-2xl lg:text-2xl xl:text-4xl font-bold mb-4 text-center">
-          Why Us
+    <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-16 md:py-24 lg:py-28 xl:py-40">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
+        <h1 className="text-3xl md:text-5xl lg:text-3xl xl:text-4xl font-bold text-center mb-6">
+          Why Choose Us ?
         </h1>
-        <div className="border-t border-[#A65A2A] border-solid border-2 mx-2 my-2 md:my-0"></div>
-        <p className="text-base md:text-lg lg:text-xl xl:text-xl text-center md:text-left mt-10">
+        <div className="w-24 h-1 bg-[#A65A2A] mx-auto mb-10"></div>
+        <p className="text-lg md:text-xl lg:text-xl xl:text-2xl leading-relaxed text-center">
           Oraro & Company Advocates takes great pride in its strong client
-          relationships, which are deeply rooted in the provision of exceptional
-          legal services. Our approach is characterized by a partnership-led
-          model that combines local expertise with global perspectives, ensuring
-          the highest quality representation for our clients.
+          relationships, deeply rooted in the provision of exceptional legal
+          services. Our approach combines local expertise with global perspectives,
+          ensuring the highest quality representation for our clients.
         </p>
       </div>
     </div>
@@ -21,5 +20,6 @@ const Section1 = () => {
 };
 
 export default Section1;
+
 
 

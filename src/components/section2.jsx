@@ -47,7 +47,7 @@ const Section2 = () => {
   }, []);
 
   const sectionStyle = {
-    height: "80vh",
+    height: "90vh",
     backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/brief.jpeg)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
@@ -107,6 +107,7 @@ const Section2 = () => {
     height: "150px",
     width: "200px",
     display: "flex",
+    flexWrap: 'wrap',
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -131,7 +132,7 @@ const Section2 = () => {
             <span className="text-[#A65A2A]"> Growth</span>
           </h1>
           <br />
-          <p className="text-white">
+          <p className="text-white lg:text-xl sm:text-lg mt-4">
             {/* Your left side content */}
             Established in <span className="font-bold text-[#A65A2A]">1977</span>, Oraro & Company Advocates is a leading African
             law firm renowned for its comprehensive range of legal services,
@@ -141,7 +142,7 @@ const Section2 = () => {
             Legal 500
           </p>
           <br />
-          <p className="text-white">
+          <p className="text-white lg:text-xl sm:text-lg mt-4">
             Our specialized legal expertise spans various areas, locally and
             regionally, encompassing Arbitration; Asset Tracing & Recoveries;
             Banking & Finance; Capital Markets; Conveyancing & Real Estate;
@@ -155,18 +156,13 @@ const Section2 = () => {
             manufacturing & industries, and the public sector.
           </p>
           <br />
-          <p className="text-white">
+          <p className="text-white lg:text-xl sm:text-lg mt-4">
             Through our direct provision of services and strategic partnerships
             with leading law firms worldwide, we offer both local and
             cross-jurisdictional legal support. As a full Affiliate Member of AB
             & David Africa, a Pan-African business law network, we are committed
             to safeguarding successful business endeavors in Africa by
-            minimizing associated risks. This allows us to seamlessly deliver
-            cross-border legal counsel while upholding the highest professional
-            standards. At Oraro & Company Advocates, we take pride in nurturing
-            strong client relationships and delivering quality legal services.
-            Our partner-led approach leverages both local insights and global
-            perspectives to meet the unique needs of our clients.
+            minimizing associated risks.
           </p>
           <button
             style={buttonStyles}
@@ -178,8 +174,12 @@ const Section2 = () => {
             </a>
           </button>
         </div>
-
         <div style={rightSideStyle}>
+        <div className={`counter-item ${countersVisible ? "animate" : ""}`}
+          style={counterItemsstyles}
+          >
+          <h3>{awardsWon}</h3>
+          </div>
           <div
             className={`counter-item ${countersVisible ? "animate" : ""}`}
             style={counterItemsstyles}
