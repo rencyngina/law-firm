@@ -2,6 +2,9 @@
 
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 
 // import Logo from "../../public/images/logo.png";
 
@@ -16,14 +19,16 @@ function FooterLinks() {
   return (
     <>
       <div>
-        <footer className="bg-gray-900">
+        <footer className="bg-gradient-to-b from-gray-800 to-gray-900">
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="lg:flex lg:items-start lg:gap-8">
               <div className="text-teal-300">
-                <Image src="/images/logo1.png" alt="Logo"
-                height={300}
-                width={150}
-                 />
+                <Image
+                  src="/images/logo1.png"
+                  alt="Logo"
+                  height={300}
+                  width={150}
+                />
               </div>
               <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                 <div className="col-span-2">
@@ -31,7 +36,7 @@ function FooterLinks() {
                     <h2 className="lg:text-xl sm:text-xl font-bold text-white">
                       About
                     </h2>
-                    <p className="lg:text-sm sm:text-lg mt-4 text-gray-400">
+                    <p className="lg:text-sm sm:text-lg mt-4 text-white">
                       Oraro & Company Advocates is a full-service market-leading
                       African law firm established in 1977 with a strong focus
                       on dispute resolution and corporate & commercial law. With
@@ -56,61 +61,57 @@ function FooterLinks() {
                         placeholder="john@rhcp.com"
                         className="w-full border-none focus:border-transparent focus:ring-transparent bg-gray-900 text-white sm:text-sm  py-4 px-2"
                       />
-                      <button className="mt-1 w-full bg-orange-600 rounded px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
+                      <button className="mt-1 w-full bg-[#A65A2A] rounded px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
                         Sign Up
                       </button>
                     </div>
                   </form>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="font-bold text-[rgb(234,88,12)] lg:text-xl sm:text-lg">
-                    Customer Service
+                  <p className="font-bold text-[rgb(234,88,12)] text-xl lg:text-xl sm:text-lg">
+                    Contacts
                   </p>
-                  <ul className="lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
-                    <li>
+                  <ul className="mt-6 space-y-4 text-sm lg:text-sm sm:text-sm">
+                    <li className="flex items-center">
+                      <IoLocationSharp className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }} />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        Delivery & Shipping
+                        ACK Garden Annex, 6th Floor, 1st Ngong Avenue
                       </a>
                     </li>
-                    <li>
+                    <li className="flex items-center">
+                      <MdEmail className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }}/>
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        Secure Payments
+                        P.O. Box 51236 - 00200, Nairobi, Kenya.
                       </a>
                     </li>
-                    <li>
+                    <li className="flex items-center">
+                      <FaPhone className="text-gray-200 mr-2" style={{ fontSize: '1.5rem' }} />
                       <a
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        Order placement
+                        +254-709-250-000
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="transition hover:opacity-75 text-gray-200"
-                      >
-                        HR Consulting
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="transition hover:opacity-75 text-gray-200"
-                      >
-                        SEO Optimisation
-                      </a>
+                    <li className="flex items-center">
+                      <MdEmail
+                        className="text-gray-200 mr-2"
+                        style={{ fontSize: "1.5rem" }}
+                      />
+                      <p className="transition hover:opacity-75 text-gray-200">
+                        legal@oraro.co.ke
+                      </p>
                     </li>
                   </ul>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="font-bold  text-[rgb(234,88,12)] lg:text-xl sm:text-lg">
+                  <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
                     Company
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
@@ -141,7 +142,7 @@ function FooterLinks() {
                   </ul>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="font-bold  text-[rgb(234,88,12)] lg:text-xl sm:text-lg">
+                  <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
                     Helpful Links
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
@@ -172,7 +173,7 @@ function FooterLinks() {
                   </ul>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="font-bold  text-[rgb(234,88,12)] lg:text-xl sm:text-lg">
+                  <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
                     Legal
                   </p>
                   <ul className="lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
@@ -211,7 +212,7 @@ function FooterLinks() {
                   </ul>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="font-bold  text-[rgb(234,88,12)] lg:text-xl sm:text-lg">
+                  <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
                     Downloads
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">

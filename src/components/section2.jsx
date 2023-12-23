@@ -47,8 +47,8 @@ const Section2 = () => {
   }, []);
 
   const sectionStyle = {
-    height: "90vh",
-    backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/brief.jpeg)`,
+    height: "80vh",
+    backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/14r.jpg)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -92,13 +92,13 @@ const Section2 = () => {
   };
 
   const handleMouseEnter = (event) => {
-    event.target.style.background = "";
-    event.target.style.color = "";
+    event.target.style.background = "#A65A2A";
+    event.target.style.color = "#A65A2A";
   };
 
   const handleMouseLeave = (event) => {
-    event.target.style.background = "#145038";
-    event.target.style.color = "white";
+    event.target.style.background = "#A65A2A";
+    event.target.style.color = "#A65A2A";
   };
 
   const counterItemsstyles = {
@@ -156,18 +156,19 @@ const Section2 = () => {
             manufacturing & industries, and the public sector.
           </p>
           <br />
-          <p className="text-white lg:text-xl sm:text-lg mt-4">
+          {/*<p className="text-white lg:text-xl sm:text-lg mt-4">
             Through our direct provision of services and strategic partnerships
             with leading law firms worldwide, we offer both local and
             cross-jurisdictional legal support. As a full Affiliate Member of AB
             & David Africa, a Pan-African business law network, we are committed
             to safeguarding successful business endeavors in Africa by
             minimizing associated risks.
-          </p>
+  </p>*/}
           <button
             style={buttonStyles}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            className="bg-[##A65A2A]"
           >
             <a style={{ textDecoration: "none", color: "white" }} href="/about">
               Read More
@@ -175,10 +176,15 @@ const Section2 = () => {
           </button>
         </div>
         <div style={rightSideStyle}>
+        <div className="flex">
         <div className={`counter-item ${countersVisible ? "animate" : ""}`}
           style={counterItemsstyles}
           >
           <h3>{awardsWon}</h3>
+          <p
+          style={{ fontSize: "14px", whiteSpace: "nowrap", color: "white" }}>
+          Awards Won
+          </p>
           </div>
           <div
             className={`counter-item ${countersVisible ? "animate" : ""}`}
@@ -191,6 +197,7 @@ const Section2 = () => {
               Year Of Establishment
             </p>
           </div>
+        </div>
           <div className="flex flex-wrap gap-2">
             <div
               className={`counter-item ${countersVisible ? "animate" : ""}`}
