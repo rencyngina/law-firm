@@ -349,8 +349,11 @@ function FooterLinks() {
         style={{
           padding: "10px",
           cursor: "pointer",
+          zIndex: '10'
         }}
-      ></div>
+      >
+      back top
+      </div>
     </>
   );
 }

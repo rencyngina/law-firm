@@ -52,7 +52,7 @@ useEffect(() => {
     }, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [imagesData.length]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);

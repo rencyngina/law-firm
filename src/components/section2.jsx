@@ -1,6 +1,7 @@
 "use_client";
 import { Padding } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
+import Link from 'next/link'
 
 const Section2 = () => {
   const [countersVisible, setCountersVisible] = useState(false);
@@ -161,9 +162,9 @@ const Section2 = () => {
         onMouseLeave={handleMouseLeave}
         className="bg-gradient-to-b from-gray-800 to-gray-900"
       >
-        <a style={{ textDecoration: 'none', color: 'white' }} href="/about">
+        <Link style={{ textDecoration: 'none', color: 'white' }} href="/about">
           Read More
-        </a>
+        </Link>
       </button>
     </div>
         <div style={rightSideStyle}>
