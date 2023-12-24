@@ -308,7 +308,7 @@ function FooterLinks() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-100 pt-8 dark:border-gray-800">
+          <div className="border-t border-gray-100 pt-8 dark:border-gray-800 mt-4">
             <div className="sm:flex sm:justify-between">
               <p className="text-xs text-gray-400">
                 © 2023. Muenda RoyFord & Company Advocates. All rights reserved.

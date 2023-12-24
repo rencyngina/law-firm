@@ -6,6 +6,7 @@ import Section1 from '../components/section1'
 import Section2 from '../components/section2'
 import Patners from '../components/patners'
 import FloatingChatButton from '../components/floatingChatIcon'
+import Newsletter from '../components/newsletter'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Section2 />
         <Patners />
         <FloatingChatButton />
+        <Newsletter />
         <FooterLinks />
       </main>
   );
