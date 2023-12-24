@@ -9,7 +9,7 @@ const Newsletter = () => {
         </h1>
         <p className="text-gray-300 mt-4">
           Stay updated with our 
-          latest news and offers.
+          latest news.
         </p>
         <div className="mt-6 flex justify-center items-center">
           <input

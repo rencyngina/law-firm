@@ -12,7 +12,7 @@ const About = () => {
         className="bg-white"
         id="about"
         style={{
-          height: "90vh",
+          height: "120vh",
         }}
       >
         <div
@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="container mx-auto py-10">
           <div className="w-3/4 mx-auto">
-            <p className="text-justify text-black text-sm pt-10">
+            <p className="text-justify text-black text-lg pt-10">
               Established in <span className="text-green-500">1977</span>, Oraro & Company Advocates is a leading
               African law firm renowned for its comprehensive range of legal
               services, including dispute resolution and corporate & commercial
@@ -37,7 +37,7 @@ const About = () => {
               from prestigious international legal directories like Chambers
               Global, IFLR1000, and Legal 500.
             </p>
-            <p className="text-justify text-sm pt-10">
+            <p className="text-justify pt-10 text-lg">
               Our specialized legal expertise spans various areas, locally and
               regionally, encompassing Arbitration; Asset Tracing & Recoveries;
               Banking & Finance; Capital Markets; Conveyancing & Real Estate;
@@ -50,7 +50,7 @@ const About = () => {
               private equity, education, energy, real estate, financial
               services, manufacturing & industries, and the public sector.
             </p>
-            <p className="text-justify text-sm pt-10">
+            <p className="text-justify text-lg pt-10">
               Our firm is founded on the principles of integrity,
               professionalism and excellence in service. We are committed to
               providing our clients with practical and innovative legal
@@ -58,7 +58,7 @@ const About = () => {
               of advocates is highly regarded for their expertise and experience
               in a wide range of practice areas.
             </p>
-            <p className="text-justify text-sm pt-10">
+            <p className="text-justify text-lg pt-10">
               Through our direct provision of services and strategic
               partnerships with leading law firms worldwide, we offer both local
               and cross-jurisdictional legal support. As a full Affiliate Member
@@ -68,7 +68,7 @@ const About = () => {
               deliver cross-border legal counsel while upholding the highest
               professional standards.
             </p>
-            <p className="text-justify text-sm pt-10">
+            <p className="text-justify pt-10 text-lg">
               At Oraro & Company Advocates, we take pride in nurturing strong
               client relationships and delivering quality legal services. Our
               partner-led approach leverages both local insights and global
