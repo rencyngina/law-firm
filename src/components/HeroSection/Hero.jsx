@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import masaaiImage from "../../../public/images/law1.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
-import fifthImage from "../../../public/images/geet.jpg";
+import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
@@ -49,7 +49,7 @@ const Hero = () => {
 useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -71,8 +71,8 @@ useEffect(() => {
         objectFit="cover"
       />
       <div style={overlayStyle}>
-       <h1 className="text-4xl lg:text-5xl text-white font-extrabold">{imagesData[currentIndex].title}</h1>
-<p style={descriptionStyle}className="text-lg lg:text-xl text-white font-bold">{imagesData[currentIndex].description}</p>
+       <h1 style={titleStyle} className="text-4xl lg:text-5xl text-white font-extrabold">{imagesData[currentIndex].title}</h1>
+<p style={descriptionStyle}className="text-lg lg:text-xl text-white">{imagesData[currentIndex].description}</p>
         <button className="btn btn-primary mt-6 bg-[#F6ED6F]" style={buttonStyle}>
           {imagesData[currentIndex].buttonLabel}
         </button>
@@ -106,9 +106,9 @@ const overlayStyle = {
 };
 
 const titleStyle = {
-  fontSize: "4rem",
-  color: "white",
-  fontWeight: "bold",
+  // fontSize: "4rem",
+  // color: "white",
+  // fontWeight: "bold",
   lineHeight: "1.5",
   width: "50%",
 };
