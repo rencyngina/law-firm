@@ -34,7 +34,7 @@ const Hero = () => {
       description:
         "Our Banking & Finance practise area is well regarded for its expertise in advising in both contentious and non-contentious matters",
       buttonLabel: "Our Expertise",
-      linkTo: "/services",
+      linkTo: "/practice-areas",
     },
     {
       image: secondImage,
