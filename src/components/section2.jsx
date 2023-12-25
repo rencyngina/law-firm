@@ -12,7 +12,7 @@ const Section2 = () => {
 
   useEffect(() => {
     const targetNumbers = {
-      workHours: 1977,
+      workHours: 2016,
       greatReviews: 9,
       projectsDone: 185,
       awardsWon: 5,
@@ -48,7 +48,7 @@ const Section2 = () => {
   }, []);
 
   const sectionStyle = {
-    height: "80vh",
+    height: "75vh",
     backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
@@ -123,13 +123,13 @@ const Section2 = () => {
     };
 
   return (
-    <div className="w-full min-h-screen" id="about" style={sectionStyle}>
+    <div className="w-full" id="about" style={sectionStyle}>
       <div className="lg:flex sm:block mt-8 px-32">
         <div style={leftSideStyle}>
       <h6 className="text-white mb-4 lg:text-sm sm:text-xs font-bold">
         WE HAVE A SOLID BACKGROUND
       </h6>
-      <h1 className="text-white md:text-4xl">
+      <h1 className="text-white md:text-4xl font-bold">
         Our solutions for your
         <br />
         <span className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">Growth</span>
@@ -137,7 +137,7 @@ const Section2 = () => {
       <br />
       <p className="text-white lg:text-xl sm:text-xs mt-4">
         {/* Your left side content */}
-        Established in <span className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">1977</span>, Muenda RoyFord & Company Advocates is a leading African
+        Established in <span className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">2016</span>, MWENDA ROYFORD & CO ADVOCATE is a leading African
         law firm renowned for its comprehensive range of legal services,
         including dispute resolution and corporate & commercial law. We have
         consistently earned top-tier recognition in Kenya from prestigious
@@ -151,12 +151,7 @@ const Section2 = () => {
         Banking & Finance; Capital Markets; Conveyancing & Real Estate;
         Corporate & Commercial; Dispute Resolution; Employment & Labour;
         FinTech; Infrastructure, Projects & PPP; Private Client;
-        Restructuring & Insolvency; and Tax. Our diverse clientele comprises
-        local and international entities, governments, regulators, and
-        non-profit organizations across industries such as retail,
-        insurance, maritime & logistics, technology, construction, private
-        equity, education, energy, real estate, financial services,
-        manufacturing & industries, and the public sector.
+        Restructuring & Insolvency; and Tax.
       </p>
       <br />
       <button

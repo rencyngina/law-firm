@@ -15,7 +15,7 @@ const Hero = () => {
   const imagesData = [
     {
       image: masaaiImage,
-      title: "Muenda RoyFord & Company Advocates",
+      title: "MWENDA ROYFORD & COMPANY ADVOCATE",
       description: "Where Exelence Meets Justice",
       buttonLabel: "About Us",
       linkTo: "/about",
@@ -88,7 +88,7 @@ const Hero = () => {
         >
           {imagesData[currentIndex].buttonLabel}
         </button>
-        <div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
+        {/*<div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
           <button
             className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"
             onClick={handlePrev}
@@ -101,7 +101,7 @@ const Hero = () => {
           >
             <GrNext className="text-black" />
           </button>
-        </div>
+        </div>*/}
       </div>
     </div>
   );
