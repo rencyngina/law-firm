@@ -30,7 +30,7 @@ const About = () => {
         <div className="container mx-auto py-10">
           <div className="w-3/4 mx-auto">
             <p className="text-justify text-black text-lg pt-10">
-              Established in <span className="text-green-500">1977</span>, Oraro & Company Advocates is a leading
+              Established in <span className="text-green-500">2016</span>, MWENDA ROYFORD & CO ADVOCATE is one of the leading
               African law firm renowned for its comprehensive range of legal
               services, including dispute resolution and corporate & commercial
               law. We have consistently earned top-tier recognition in Kenya
