@@ -1,7 +1,7 @@
 "use_client";
 import { Padding } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Section2 = () => {
   const [countersVisible, setCountersVisible] = useState(false);
@@ -87,7 +87,7 @@ const Section2 = () => {
     fontWeight: "bolder",
     color: "white",
     transition: "background 0.3s, color 0.3s",
-    marginTop: '4px'
+    marginTop: "4px",
   };
 
   const handleMouseEnter = (event) => {
@@ -100,41 +100,23 @@ const Section2 = () => {
     event.target.style.color = "#A65A2A";
   };
 
-  const counterItemsstyles = {
-    // padding: "20px",
-    backgroundColor: "rgba(35, 35, 35, 0.9)",
-    height: "150px",
-    width: "220px",
-    display: "flex",
-    flexWrap: 'wrap',
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    // color: "#A65A2A",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    transition: "transform 0.3s ease-in-out",
-    cursor: "pointer",
-    margin: "10px",
-    fontFamily: 'Encode Sans Expanded, sans-serif',
-    fontSize: '3.5rem',
-    };
-
   return (
-     <div className="w-full h-screen sm:h-screen lg:h-[85vh] xl:h-[70vh] flex flex-col justify-center items-center relative overflow-hidden"
-     style={{
-      backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      overflowY: 'hidden',
-      backgroundAttachment: "fixed",
-      '@media (max-width: 1024px)': { // Apply styles for screens smaller than lg breakpoint
-        backgroundAttachment: 'fixed', // Set the background attachment to "fixed" for smaller screens
-
-      }
-     }}
->
-      <div className="max-w-5xl mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+    <div
+      className="w-full h-screen sm:h-screen lg:h-[85vh] xl:h-[70vh] flex flex-col justify-center items-center relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        overflowY: "hidden",
+        backgroundAttachment: "fixed",
+        "@media (max-width: 1024px)": {
+          // Apply styles for screens smaller than lg breakpoint
+          backgroundAttachment: "fixed", // Set the background attachment to "fixed" for smaller screens
+        },
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-2 lg:grid lg:grid-cols-2 lg:gap-4 items-center">
         <div className="text-center lg:text-left">
           <h6 className="text-white mb-4 text-sm font-bold">
             WE HAVE A SOLID BACKGROUND
@@ -166,44 +148,50 @@ const Section2 = () => {
             FinTech; Infrastructure, Projects & PPP; Private Client;
             Restructuring & Insolvency; and Tax.
           </p>
-          <button className="mt-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300">
-            <Link href="/about"className="text-white">
+          <button className="mt-6 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+          >
+            <Link href="/about" className="text-white">
               Read More
             </Link>
           </button>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
           <div
-            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+            className={`counter-item ${
+              countersVisible ? "animate" : ""
+            } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-yellow-500 text-6xl">
-              {awardsWon}
-            </h3>
-            <p className="text-white text-xs">Awards Won</p>
+            <h3 className="gradient-text text-6xl font-extrabold">{awardsWon}</h3>
+            <p className="text-white text-xs font-extrabold">Awards Won</p>
           </div>
           <div
-            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+            className={`counter-item ${
+              countersVisible ? "animate" : ""
+            } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-yellow-500 text-6xl">
-              {workHours}
-            </h3>
-            <p className="text-white text-xs">Year Of Establishment</p>
+            <h3 className="gradient-text text-6xl font-extrabold">{workHours}</h3>
+            <p className="text-white text-xs font-extrabold">Year Of Establishment</p>
           </div>
           <div
-            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+            className={`counter-item ${
+              countersVisible ? "animate" : ""
+            } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-yellow-500 text-6xl">
-              {greatReviews}
-            </h3>
-            <p className="text-white text-xs">Year Of Partnership</p>
+            <h3 className="text-6xl font-extrabold gradient-text"
+            >{greatReviews}</h3>
+            <p className="text-white text-xs font-extrabold">Year Of Partnership</p>
           </div>
           <div
-            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+            className={`counter-item ${
+              countersVisible ? "animate" : ""
+            } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-yellow-500 text-6xl">
-              {projectsDone}
-            </h3>
-            <p className="text-white text-xs">projects Done</p>
+            <h3 className="gradient-text text-6xl font-extrabold">{projectsDone}</h3>
+            <p className="text-white text-xs font-extrabold">projects Done</p>
           </div>
         </div>
       </div>
