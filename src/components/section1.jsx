@@ -20,7 +20,12 @@ const Section1 = () => {
     */}
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10">
-          <div className="bg-[#A65A2A] p-4">
+          <div className="p-4"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+          >
             <div className="flex justify-center items-center">
               <img src="/images/mission.png" alt="mission" className="w-12 h-12" />
             </div>
@@ -30,7 +35,12 @@ const Section1 = () => {
               timely, efficient and cost effective manner.
             </p>
           </div>
-          <div className="bg-[#A65A2A] p-4">
+          <div className="p-4"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+          >
             <div className="flex justify-center items-center">
               <img src="/images/vision.svg" alt="vision" className="w-12 h-12" />
             </div>
@@ -39,7 +49,12 @@ const Section1 = () => {
               To be the leading law firm in Kenya and beyond.
             </p>
           </div>
-          <div className="bg-[#A65A2A] p-4">
+          <div className="p-4"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+          >
             <div className="flex justify-center items-center">
               <img src="/images/values.png" alt="values" className="w-12 h-12" />
             </div>

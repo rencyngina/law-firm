@@ -81,7 +81,9 @@ const Section2 = () => {
 
   const buttonStyles = {
     height: "50px",
-    background: '#A65A2A',
+    // background: '#A65A2A',
+    background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
     width: "170px",
     border: "none",
     fontSize: "16px",
@@ -111,7 +113,7 @@ const Section2 = () => {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    color: "#A65A2A",
+    // color: "#A65A2A",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     transition: "transform 0.3s ease-in-out",
     cursor: "pointer",
@@ -121,7 +123,7 @@ const Section2 = () => {
     };
 
   return (
-    <div className="w-full" id="about" style={sectionStyle}>
+    <div className="w-full min-h-screen" id="about" style={sectionStyle}>
       <div className="lg:flex sm:block mt-8 px-32">
         <div style={leftSideStyle}>
       <h6 className="text-white mb-4 lg:text-sm sm:text-xs font-bold">
@@ -129,12 +131,13 @@ const Section2 = () => {
       </h6>
       <h1 className="text-white md:text-4xl">
         Our solutions for your
-        <span className="text-[#A65A2A]"> Growth</span>
+        <br />
+        <span className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">Growth</span>
       </h1>
       <br />
-      <p className="text-white lg:text-xl sm:text-lg mt-4">
+      <p className="text-white lg:text-xl sm:text-xs mt-4">
         {/* Your left side content */}
-        Established in <span className="font-bold text-[#A65A2A]">1977</span>, Muenda RoyFord & Company Advocates is a leading African
+        Established in <span className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">1977</span>, Muenda RoyFord & Company Advocates is a leading African
         law firm renowned for its comprehensive range of legal services,
         including dispute resolution and corporate & commercial law. We have
         consistently earned top-tier recognition in Kenya from prestigious
@@ -142,7 +145,7 @@ const Section2 = () => {
         Legal 500
       </p>
       <br />
-      <p className="text-white lg:text-xl sm:text-lg mt-4">
+      <p className="text-white lg:text-xl sm:text-sm mt-4">
         Our specialized legal expertise spans various areas, locally and
         regionally, encompassing Arbitration; Asset Tracing & Recoveries;
         Banking & Finance; Capital Markets; Conveyancing & Real Estate;
@@ -160,7 +163,7 @@ const Section2 = () => {
         style={buttonStyles}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="bg-gradient-to-b from-gray-800 to-gray-900"
+        className="h-23 w-44 border-none"
       >
         <Link style={{ textDecoration: 'none', color: 'white' }} href="/about">
           Read More
@@ -172,7 +175,7 @@ const Section2 = () => {
         <div className={`counter-item ${countersVisible ? "animate" : ""}`}
           style={counterItemsstyles}
           >
-          <h3>{awardsWon}</h3>
+          <h3 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{awardsWon}</h3>
           <p
           style={{ fontSize: "14px", whiteSpace: "nowrap", color: "white" }}>
           Awards Won
@@ -182,7 +185,7 @@ const Section2 = () => {
             className={`counter-item ${countersVisible ? "animate" : ""}`}
             style={counterItemsstyles}
           >
-            <h3>{workHours}</h3>
+            <h3 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{workHours}</h3>
             <p
               style={{ fontSize: "14px", whiteSpace: "nowrap", color: "white" }}
             >
@@ -195,7 +198,7 @@ const Section2 = () => {
               className={`counter-item ${countersVisible ? "animate" : ""}`}
               style={counterItemsstyles}
             >
-              <h2>{greatReviews}</h2>
+              <h2 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{greatReviews}</h2>
               <p
                 style={{
                   fontSize: "14px",
@@ -210,7 +213,7 @@ const Section2 = () => {
               className={`counter-item ${countersVisible ? "animate" : ""}`}
               style={counterItemsstyles}
             >
-              <h2>{awardsWon}</h2>
+              <h2 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{awardsWon}</h2>
               <p
                 style={{
                   fontSize: "14px",

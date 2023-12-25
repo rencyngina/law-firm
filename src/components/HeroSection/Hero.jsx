@@ -65,26 +65,26 @@ const Hero = () => {
   };
 
   return (
-    <div style={{ position: "relative", height: "90vh" }}>
+    <div className="relative w-full h-[90vh]">
       <Image
         src={imagesData[currentIndex].image}
         alt="Hero Image"
         layout="fill"
         objectFit="cover"
       />
-      <div style={overlayStyle}>
-        <h1
-          style={titleStyle}
-          className="text-4xl lg:text-5xl text-white font-extrabold"
-        >
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 sm:p-8">
+        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-lg lg:text-6xl leading-relaxed font-extrabold mb-8">
           {imagesData[currentIndex].title}
         </h1>
-        <p style={descriptionStyle} className="text-lg lg:text-xl text-white">
+        <p className=" text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
         <button
-          className="btn btn-primary mt-6 bg-[#F6ED6F]"
-          style={buttonStyle}
+          className="text-lg lg:text-xl leading-6 w-48 h-16 mt-6"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
         >
           {imagesData[currentIndex].buttonLabel}
         </button>
@@ -105,46 +105,6 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-const overlayStyle = {
-  position: "absolute",
-  top: 0,
-  left: 0,
-  width: "100%",
-  height: "100%",
-  backgroundColor: "rgba(26, 25, 25, 0.8)",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  textAlign: "center",
-  color: "white",
-  padding: "20px",
-};
-
-const titleStyle = {
-  // fontSize: "4rem",
-  // color: "white",
-  // fontWeight: "bold",
-  lineHeight: "1.5",
-  width: "50%",
-};
-
-const descriptionStyle = {
-  // fontSize: "1.5rem",
-  // color: "white",
-  lineHeight: "1.5",
-  width: "50%",
-};
-
-const buttonStyle = {
-  fontSize: "1.5rem",
-  color: "white",
-  lineHeight: "1.2",
-  width: "180px",
-  height: "60px",
-  backgroundColor: "#A65A2A",
 };
 
 export default Hero;
