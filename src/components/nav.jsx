@@ -151,7 +151,7 @@ const LandingNavBar = () => {
         </li>
         <li>
           <Link
-            href="/pricing"
+            href="/team"
             className="text-base text-gray-700 hover:underline"
           >
             Our Lawyers
@@ -186,28 +186,115 @@ const LandingNavBar = () => {
                 Home
               </Link>
             </li>
+            <li className="relative">
+          <div
+            onClick={toggleAboutDropdown}
+            className="text-base text-gray-700 cursor-pointer"
+          >
+            About Us{" "}
+            <RiArrowDropDownLine
+              className="inline"
+              style={{
+                fontSize: "1.8rem",
+              }}
+            />
+          </div>
+          {aboutDropdownOpen && (
+            <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
+              {/* Dropdown content */}
+              <li>
+                <Link
+                id="about"
+                  href="/about"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Who We Are
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/team"
+                  className="block py-2  border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/careers"
+                  className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  News
+                </Link>
+              </li>
+            </ul>
+          )}
+        </li>
+            <li className="relative">
+          <div
+            onClick={toggleExpertiseDropdown}
+            className="text-base text-gray-700 cursor-pointer"
+          >
+            Expertise{" "}
+            <RiArrowDropDownLine
+              className="inline"
+              style={{
+                fontSize: "1.8rem",
+              }}
+            />
+          </div>
+          {expertiseDropdownOpen && (
+            <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
+              <li>
+                <Link
+                  href="/practice-areas"
+                  id="practice-areas"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Practise Area
+                </Link>
+              </li>
+              <li>
+              <Link
+                  href="/about-us"
+                  className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Sectors
+                </Link>
+              </li>
+              <li>
+              <Link
+                  href="/about-us"
+                  className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                >
+                  Brochures
+                </Link>
+              </li>
+            </ul>
+          )}
+        </li>
             <li>
-              <Link href="/features" className="border-b mt-4" onClick={toggleMobileMenu}>
-               About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq" className="border-b mt-4" onClick={toggleMobileMenu}>
-                Expertise
-              </Link>
-            </li>
-            <li>
-              <Link href="/recipes" className="border-b mt-4" onClick={toggleMobileMenu}>
+              <Link href="/team" className="border-b mt-4" onClick={toggleMobileMenu}>
                 Our Lawyers
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="border-b mt-4" onClick={toggleMobileMenu}>
-                Contact Us
-              </Link>
+            <Link href="/contact">
+            <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
+              Contact Us
+              <GoArrowUpRight size={20} className="ml-2" />
+            </button>
+          </Link>
             </li>
           </ul>
-          {/* ... Your logo goes here ... */}
           <div className="flex items-center">
             <Link href="/">
               <Image

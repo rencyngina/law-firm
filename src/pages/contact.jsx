@@ -121,7 +121,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="btn-submit"
+              className="btn-submit bg-gradient-to-b from-gray-800 to-gray-900"
             >
               Submit
             </button>

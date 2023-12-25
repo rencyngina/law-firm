@@ -3,15 +3,14 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-body {
-  overflow-x: hidden;
+* {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   box-sizing: border-box;
-  object-fit: cover;
-  
+  padding: 0;
+  margin: 0;
+
 }
+
 
 .input-field {
   width: 100%;
@@ -21,6 +20,10 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .btn-submit {

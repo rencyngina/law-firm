@@ -121,7 +121,7 @@ const Section2 = () => {
     };
 
   return (
-    <div className="w-full" id="about" style={sectionStyle}>
+    <div className="w-full min-h-screen" id="about" style={sectionStyle}>
       <div className="lg:flex sm:block mt-8 px-32">
         <div style={leftSideStyle}>
       <h6 className="text-white mb-4 lg:text-sm sm:text-xs font-bold">
@@ -132,7 +132,7 @@ const Section2 = () => {
         <span className="text-[#A65A2A]"> Growth</span>
       </h1>
       <br />
-      <p className="text-white lg:text-xl sm:text-lg mt-4">
+      <p className="text-white lg:text-xl sm:text-xs mt-4">
         {/* Your left side content */}
         Established in <span className="font-bold text-[#A65A2A]">1977</span>, Muenda RoyFord & Company Advocates is a leading African
         law firm renowned for its comprehensive range of legal services,
@@ -142,7 +142,7 @@ const Section2 = () => {
         Legal 500
       </p>
       <br />
-      <p className="text-white lg:text-xl sm:text-lg mt-4">
+      <p className="text-white lg:text-xl sm:text-sm mt-4">
         Our specialized legal expertise spans various areas, locally and
         regionally, encompassing Arbitration; Asset Tracing & Recoveries;
         Banking & Finance; Capital Markets; Conveyancing & Real Estate;

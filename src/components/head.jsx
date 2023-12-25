@@ -13,10 +13,13 @@ const Head = () => {
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 w-full">
       <div className="container mx-auto py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between items-center text-white text-sm">
-          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+          <Link
+            href="tel:+2348030000000"
+            className="flex items-center mt-2 mb-3 sm:mb-0"
+          >
             <FaPhone className="mr-2" />
             <p className="mr-4 hidden sm:block">+234 803 000 0000</p>
-          </div>
+          </Link>
           <div className="flex items-center mt-2 mb-3 sm:mb-0">
             <MdEmail className="mr-2" />
             <p className="mr-4 hidden sm:block">
