@@ -88,7 +88,7 @@ const Section2 = () => {
     fontWeight: "bolder",
     color: "white",
     transition: "background 0.3s, color 0.3s",
-    marginTop: '10px'
+    marginTop: '4px'
   };
 
   const handleMouseEnter = (event) => {
@@ -122,9 +122,9 @@ const Section2 = () => {
 
   return (
     <div className="w-full" id="about" style={sectionStyle}>
-      <div className="lg:flex sm:block">
+      <div className="lg:flex sm:block mt-8 px-32">
         <div style={leftSideStyle}>
-      <h6 className="text-white mb-4 lg:text-sm sm:text-xs">
+      <h6 className="text-white mb-4 lg:text-sm sm:text-xs font-bold">
         WE HAVE A SOLID BACKGROUND
       </h6>
       <h1 className="text-white md:text-4xl">
@@ -134,7 +134,7 @@ const Section2 = () => {
       <br />
       <p className="text-white lg:text-xl sm:text-lg mt-4">
         {/* Your left side content */}
-        Established in <span className="font-bold text-[#A65A2A]">1977</span>, Oraro & Company Advocates is a leading African
+        Established in <span className="font-bold text-[#A65A2A]">1977</span>, Muenda RoyFord & Company Advocates is a leading African
         law firm renowned for its comprehensive range of legal services,
         including dispute resolution and corporate & commercial law. We have
         consistently earned top-tier recognition in Kenya from prestigious
