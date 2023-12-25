@@ -57,9 +57,6 @@ const Section2 = () => {
     justifyContent: "center",
     alignItems: "center",
     backgroundAttachment: "fixed",
-    margin: "0",
-    // padding: '0'
-    padding: "50px",
   };
 
   const leftSideStyle = {
@@ -123,104 +120,90 @@ const Section2 = () => {
     };
 
   return (
-    <div className="w-full" id="about" style={sectionStyle}>
-      <div className="lg:flex sm:block mt-8 px-32">
-        <div style={leftSideStyle}>
-      <h6 className="text-white mb-4 lg:text-sm sm:text-xs font-bold">
-        WE HAVE A SOLID BACKGROUND
-      </h6>
-      <h1 className="text-white md:text-4xl font-bold">
-        Our solutions for your
-        <br />
-        <span className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">Growth</span>
-      </h1>
-      <br />
-      <p className="text-white lg:text-xl sm:text-xs mt-4">
-        {/* Your left side content */}
-        Established in <span className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">2016</span>, MWENDA ROYFORD & CO ADVOCATE is a leading African
-        law firm renowned for its comprehensive range of legal services,
-        including dispute resolution and corporate & commercial law. We have
-        consistently earned top-tier recognition in Kenya from prestigious
-        international legal directories like Chambers Global, IFLR1000, and
-        Legal 500
-      </p>
-      <br />
-      <p className="text-white lg:text-xl sm:text-sm mt-4">
-        Our specialized legal expertise spans various areas, locally and
-        regionally, encompassing Arbitration; Asset Tracing & Recoveries;
-        Banking & Finance; Capital Markets; Conveyancing & Real Estate;
-        Corporate & Commercial; Dispute Resolution; Employment & Labour;
-        FinTech; Infrastructure, Projects & PPP; Private Client;
-        Restructuring & Insolvency; and Tax.
-      </p>
-      <br />
-      <button
-        style={buttonStyles}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className="h-23 w-44 border-none"
-      >
-        <Link style={{ textDecoration: 'none', color: 'white' }} href="/about">
-          Read More
-        </Link>
-      </button>
-    </div>
-        <div style={rightSideStyle}>
-        <div className="flex">
-        <div className={`counter-item ${countersVisible ? "animate" : ""}`}
-          style={counterItemsstyles}
-          >
-          <h3 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{awardsWon}</h3>
-          <p
-          style={{ fontSize: "14px", whiteSpace: "nowrap", color: "white" }}>
-          Awards Won
+     <div className="w-full h-screen sm:h-screen lg:h-[85vh] xl:h-[70vh] flex flex-col justify-center items-center relative overflow-hidden"
+     style={{
+      backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      overflowY: 'hidden',
+      backgroundAttachment: "fixed",
+      '@media (max-width: 1024px)': { // Apply styles for screens smaller than lg breakpoint
+        backgroundAttachment: 'fixed', // Set the background attachment to "fixed" for smaller screens
+
+      }
+     }}
+>
+      <div className="max-w-5xl mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+        <div className="text-center lg:text-left">
+          <h6 className="text-white mb-4 text-sm font-bold">
+            WE HAVE A SOLID BACKGROUND
+          </h6>
+          <h1 className="text-white md:text-4xl font-bold">
+            Our solutions for your <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+              Growth
+            </span>
+          </h1>
+          <p className="text-white lg:text-lg sm:text-sm mt-4">
+            {/* Your left side content */}
+            Established in{" "}
+            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+              2016
+            </span>
+            , MWENDA ROYFORD & CO ADVOCATE is a leading African law firm
+            renowned for its comprehensive range of legal services, including
+            dispute resolution and corporate & commercial law. We have
+            consistently earned top-tier recognition in Kenya from prestigious
+            international legal directories like Chambers Global, IFLR1000, and
+            Legal 500
           </p>
+          <p className="text-white lg:text-xl sm:text-sm mt-4">
+            Our specialized legal expertise spans various areas, locally and
+            regionally, encompassing Arbitration; Asset Tracing & Recoveries;
+            Banking & Finance; Capital Markets; Conveyancing & Real Estate;
+            Corporate & Commercial; Dispute Resolution; Employment & Labour;
+            FinTech; Infrastructure, Projects & PPP; Private Client;
+            Restructuring & Insolvency; and Tax.
+          </p>
+          <button className="mt-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300">
+            <Link href="/about"className="text-white">
+              Read More
+            </Link>
+          </button>
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
+          <div
+            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+          >
+            <h3 className="text-yellow-500 text-6xl">
+              {awardsWon}
+            </h3>
+            <p className="text-white text-xs">Awards Won</p>
           </div>
           <div
-            className={`counter-item ${countersVisible ? "animate" : ""}`}
-            style={counterItemsstyles}
+            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{workHours}</h3>
-            <p
-              style={{ fontSize: "14px", whiteSpace: "nowrap", color: "white" }}
-            >
-              Year Of Establishment
-            </p>
+            <h3 className="text-yellow-500 text-6xl">
+              {workHours}
+            </h3>
+            <p className="text-white text-xs">Year Of Establishment</p>
           </div>
-        </div>
-          <div className="flex flex-wrap gap-2">
-            <div
-              className={`counter-item ${countersVisible ? "animate" : ""}`}
-              style={counterItemsstyles}
-            >
-              <h2 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{greatReviews}</h2>
-              <p
-                style={{
-                  fontSize: "14px",
-                  whiteSpace: "nowrap",
-                  color: "white",
-                }}
-              >
-                Partners
-              </p>
-            </div>
-            <div
-              className={`counter-item ${countersVisible ? "animate" : ""}`}
-              style={counterItemsstyles}
-            >
-              <h2 className="text-transparent bg-gradient-to-r bg-clip-text from-yellow-300 via-yellow-500 to-yellow-700">{awardsWon}</h2>
-              <p
-                style={{
-                  fontSize: "14px",
-                  whiteSpace: "nowrap",
-                  color: "white",
-                  fontWeight: "bold",
-                }}
-              >
-                Years Of Partner
-                Experience
-              </p>
-            </div>
+          <div
+            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+          >
+            <h3 className="text-yellow-500 text-6xl">
+              {greatReviews}
+            </h3>
+            <p className="text-white text-xs">Year Of Partnership</p>
+          </div>
+          <div
+            className={`counter-item ${countersVisible ? "animate" : ""} bg-gray-900 bg-opacity-90 flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
+          >
+            <h3 className="text-yellow-500 text-6xl">
+              {projectsDone}
+            </h3>
+            <p className="text-white text-xs">projects Done</p>
           </div>
         </div>
       </div>
