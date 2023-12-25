@@ -8,15 +8,15 @@ import Link from 'next/link';
 const Practice = () => {
   const data = [
     { id: 1, name: 'Conveyance and Property Law', imageSrc: '/images/assets.jpg', linkTo: '/about' },
-    { id: 2, name: 'Commercial and Business Law', imageSrc: '/images/8r.jpg', linkT0: '' },
-    { id: 3, name: 'Child and Family Law', imageSrc: '/images/familylaw.jpg', linkTo: '' },
-    { id: 4, name: 'Probate and Estate Administration', imageSrc: '/images/property.jpg', linkTo: '' },
-    { id: 5, name: 'Labour and Employment Law', imageSrc: '/images/11r.jpg', linkTo: '' },
-    { id: 6, name: 'Alternative Dispute Resolution (ADR)', imageSrc: '/images/service_03.jpg', linkTo: '' },
-    { id: 7, name: 'Tort and Insurance Law', imageSrc: '/images/law1.jpg', linkTo: '' },
-    { id: 8, name: 'Banking and Finance', imageSrc: '/images/service_01.jpg', linkTo: '' },
-    { id: 9, name: 'Criminal Law', imageSrc: '/images/brief.jpeg', linkTo: '' },
-    { id: 10, name: 'Co-operative Societies Law', imageSrc: '/images/coprate1.jpg', linkTo: '' },
+    { id: 2, name: 'Commercial and Business Law', imageSrc: '/images/8r.jpg', linkT0: '/commercial' },
+    { id: 3, name: 'Child and Family Law', imageSrc: '/images/familylaw.jpg', linkTo: '/family' },
+    { id: 4, name: 'Probate and Estate Administration', imageSrc: '/images/property.jpg', linkTo: '/estate-Administration' },
+    { id: 5, name: 'Labour and Employment Law', imageSrc: '/images/11r.jpg', linkTo: '/employment-law' },
+    { id: 6, name: 'Alternative Dispute Resolution (ADR)', imageSrc: '/images/service_03.jpg', linkTo: '/dispute' },
+    { id: 7, name: 'Tort and Insurance Law', imageSrc: '/images/law1.jpg', linkTo: '/insurance-law' },
+    { id: 8, name: 'Banking and Finance', imageSrc: '/images/service_01.jpg', linkTo: '/banking-finance' },
+    { id: 9, name: 'Criminal Law', imageSrc: '/images/brief.jpeg', linkTo: '/criminal-law' },
+    { id: 10, name: 'Co-operative Societies Law', imageSrc: '/images/coprate1.jpg', linkTo: '/societies-law' },
   ];
 
   return (

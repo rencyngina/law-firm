@@ -79,7 +79,13 @@ const Hero = () => {
         <p className=" text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
-        <button className="text-lg lg:text-xl leading-6 w-48 h-16 bg-[#A65A2A] mt-6">
+        <button
+          className="text-lg lg:text-xl leading-6 w-48 h-16 mt-6"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+        >
           {imagesData[currentIndex].buttonLabel}
         </button>
         <div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">

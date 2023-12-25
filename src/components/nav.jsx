@@ -92,20 +92,6 @@ const LandingNavBar = () => {
             </ul>
           )}
         </li>
-        
-        {/* Centered Logo */}
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src="/images/logo1.png"
-              alt="Logo"
-              className="cursor-pointer"
-              height={90}
-              width={90}
-            />
-          </Link>
-        </div>
-        
         <li className="relative">
           <div
             onClick={toggleExpertiseDropdown}
@@ -143,12 +129,24 @@ const LandingNavBar = () => {
                   href="/about-us"
                   className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
-                  Brochures
+                  Booklets
                 </Link>
               </li>
             </ul>
           )}
         </li>
+        {/* Centered Logo */}
+        <div className="flex items-center">
+          <Link href="/">
+            <Image
+              src="/images/logo2.png"
+              alt="Logo"
+              className="cursor-pointer"
+              height={90}
+              width={90}
+            />
+          </Link>
+        </div>
         <li>
           <Link
             href="/team"
@@ -157,8 +155,20 @@ const LandingNavBar = () => {
             Our Lawyers
           </Link>
         </li>
+        <li>
+          <Link href='/publication'
+          className="text-base text-gray-700 hover:underline"
+          >
+          Publication
+          </Link>
+        </li>
         <Link href="/contact">
-          <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
+          <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+          style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+          >
             Contact Us
             <GoArrowUpRight size={20} className="ml-2" />
           </button>
@@ -288,7 +298,12 @@ const LandingNavBar = () => {
             </li>
             <li>
             <Link href="/contact">
-            <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center">
+            <button className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900  focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+            style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
+            >
               Contact Us
               <GoArrowUpRight size={20} className="ml-2" />
             </button>
