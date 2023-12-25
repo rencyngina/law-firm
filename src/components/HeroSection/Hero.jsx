@@ -46,7 +46,7 @@ const Hero = () => {
     },
   ];
 
-useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
     }, 10000);
@@ -59,7 +59,9 @@ useEffect(() => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + imagesData.length) % imagesData.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + imagesData.length) % imagesData.length
+    );
   };
 
   return (
@@ -71,17 +73,33 @@ useEffect(() => {
         objectFit="cover"
       />
       <div style={overlayStyle}>
-       <h1 style={titleStyle} className="text-4xl lg:text-5xl text-white font-extrabold">{imagesData[currentIndex].title}</h1>
-<p style={descriptionStyle}className="text-lg lg:text-xl text-white">{imagesData[currentIndex].description}</p>
-        <button className="btn btn-primary mt-6 bg-[#F6ED6F]" style={buttonStyle}>
+        <h1
+          style={titleStyle}
+          className="text-4xl lg:text-5xl text-white font-extrabold"
+        >
+          {imagesData[currentIndex].title}
+        </h1>
+        <p style={descriptionStyle} className="text-lg lg:text-xl text-white">
+          {imagesData[currentIndex].description}
+        </p>
+        <button
+          className="btn btn-primary mt-6 bg-[#F6ED6F]"
+          style={buttonStyle}
+        >
           {imagesData[currentIndex].buttonLabel}
         </button>
-        <div className="flex justify-center mt-6 gap-96">
-          <button className="btn btn-primary m-2" onClick={handlePrev}>
-            <GrPrevious />
+        <div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
+          <button
+            className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"
+            onClick={handlePrev}
+          >
+            <GrPrevious className="text-black" />
           </button>
-          <button className="btn btn-primary" onClick={handleNext}>
-            <GrNext />
+          <button
+            className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"
+            onClick={handleNext}
+          >
+            <GrNext className="text-black" />
           </button>
         </div>
       </div>

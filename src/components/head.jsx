@@ -6,6 +6,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import Link from "next/link";
 
 const Head = () => {
   return (
@@ -48,4 +49,3 @@ const Head = () => {
 };
 
 export default Head;
-
