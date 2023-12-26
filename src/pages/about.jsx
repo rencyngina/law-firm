@@ -12,7 +12,7 @@ const About = () => {
         className="bg-white"
         id="about"
         style={{
-          height: "120vh",
+          height: "103vh",
         }}
       >
         <div
@@ -27,9 +27,9 @@ const About = () => {
         >
           <h1 className="text-5xl text-white">Who we are</h1>
         </div>
-        <div className="container mx-auto py-10">
-          <div className="w-3/4 mx-auto">
-            <p className="text-justify text-black text-lg pt-10">
+        <div className="container mx-auto py-4">
+          <div className="px-4 mx-auto">
+            <p className="lg:text-justify text-black text-xs lg:text-lg lg:pt-10 pt-8">
               Established in <span className="text-green-500">2016</span>, MWENDA ROYFORD & CO ADVOCATE is one of the leading
               African law firm renowned for its comprehensive range of legal
               services, including dispute resolution and corporate & commercial
@@ -37,7 +37,7 @@ const About = () => {
               from prestigious international legal directories like Chambers
               Global, IFLR1000, and Legal 500.
             </p>
-            <p className="text-justify pt-10 text-lg">
+            <p className="lg:text-justify text-black text-xs lg:text-lg lg:pt-10 pt-8">
               Our specialized legal expertise spans various areas, locally and
               regionally, encompassing Arbitration; Asset Tracing & Recoveries;
               Banking & Finance; Capital Markets; Conveyancing & Real Estate;
@@ -50,7 +50,7 @@ const About = () => {
               private equity, education, energy, real estate, financial
               services, manufacturing & industries, and the public sector.
             </p>
-            <p className="text-justify text-lg pt-10">
+            <p className="lg:text-justify text-black text-xs lg:text-lg lg:pt-10 pt-8">
               Our firm is founded on the principles of integrity,
               professionalism and excellence in service. We are committed to
               providing our clients with practical and innovative legal
@@ -58,7 +58,7 @@ const About = () => {
               of advocates is highly regarded for their expertise and experience
               in a wide range of practice areas.
             </p>
-            <p className="text-justify text-lg pt-10">
+            <p className="lg:text-justify text-black text-xs lg:text-lg lg:pt-10 pt-8">
               Through our direct provision of services and strategic
               partnerships with leading law firms worldwide, we offer both local
               and cross-jurisdictional legal support. As a full Affiliate Member
@@ -68,7 +68,7 @@ const About = () => {
               deliver cross-border legal counsel while upholding the highest
               professional standards.
             </p>
-            <p className="text-justify pt-10 text-lg">
+            <p className="lg:text-justify text-black text-xs lg:text-lg lg:pt-10 pt-8">
               At Oraro & Company Advocates, we take pride in nurturing strong
               client relationships and delivering quality legal services. Our
               partner-led approach leverages both local insights and global

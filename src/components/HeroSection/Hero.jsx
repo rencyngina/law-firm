@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import masaaiImage from "../../../public/images/law1.jpg";
+import masaaiImage from "../../../public/images/logo2.png";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
@@ -65,7 +65,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[90vh]">
+    <div className="relative w-full h-[79vh] lg:h-[85.8vh] xl:h-[88]">
       <Image
         src={imagesData[currentIndex].image}
         alt="Hero Image"
@@ -73,14 +73,14 @@ const Hero = () => {
         objectFit="cover"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 sm:p-8">
-        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-lg sm:text-2xl sm:font-bold lg:text-6xl leading-relaxed lg:font-extrabold mb-8">
-  {imagesData[currentIndex].title}
-</h1>
+        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl leading-relaxed lg:font-extrabold mb-4">
+          {imagesData[currentIndex].title}
+        </h1>
         <p className=" text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
         <button
-          className="text-lg lg:text-xl leading-6 w-48 h-16 mt-6"
+          className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6"
           style={{
             background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
