@@ -71,14 +71,6 @@ const LandingNavBar = () => {
               </li>
               <li>
                 <Link
-                  href="/careers"
-                  className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/news"
                   className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                 >
@@ -240,14 +232,6 @@ const LandingNavBar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/careers"
-                      className="block py-2 border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                    >
-                      Careers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/news"
                       className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                     >
@@ -334,16 +318,6 @@ const LandingNavBar = () => {
             </li>
           </ul>
           <div className="flex items-center">
-            {/*<Link href="/">
-              <Image
-                src="/images/logo1.png"
-                alt="Logo"
-                className="cursor-pointer"
-                height={90}
-                width={90}
-              />
-        </Link>*/}
-
             <button
               className="text-2xl text-gray-700 mt-4"
               onClick={toggleMobileMenu}
