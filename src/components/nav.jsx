@@ -201,10 +201,7 @@ const LandingNavBar = () => {
           {/* ... mobile navigation links ... */}
           <ul className="space-y-5">
             <li className="border-b w-full">
-              <Link
-                href="/"
-                onClick={toggleMobileMenu}
-              >
+              <Link href="/" onClick={toggleMobileMenu}>
                 Home
               </Link>
             </li>
@@ -261,11 +258,7 @@ const LandingNavBar = () => {
               )}
             </li>
             <li className="border-b w-full">
-              <Link
-                href="/team"
-                onClick={toggleMobileMenu}
-                className="mb-4"
-              >
+              <Link href="/team" onClick={toggleMobileMenu} className="mb-4">
                 Our Lawyers
               </Link>
             </li>
@@ -329,7 +322,7 @@ const LandingNavBar = () => {
             <li className="border-b w-full">
               <Link href="/">
                 <button
-                  className="px-4  mb-4 py-2 text-base font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+                  className="px-4  mb-4 py-2 text-base font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-full focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center lg:rounded-full xl:rounded-full"
                   style={{
                     background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
