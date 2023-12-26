@@ -47,58 +47,8 @@ const Section2 = () => {
     };
   }, []);
 
-  const sectionStyle = {
-    height: "75vh",
-    backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundAttachment: "fixed",
-  };
 
-  const leftSideStyle = {
-    flex: 1,
-  };
 
-  const rightSideStyle = {
-    flex: 1,
-    // padding: "20px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    color: `rgb(0, 208, 132)`,
-    fontSize: "50px",
-    fontWeight: "bolder",
-    fontFamily: "poppins",
-  };
-
-  const buttonStyles = {
-    height: "50px",
-    // background: '#A65A2A',
-    background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-    width: "170px",
-    border: "none",
-    fontSize: "16px",
-    fontWeight: "bolder",
-    color: "white",
-    transition: "background 0.3s, color 0.3s",
-    marginTop: "4px",
-  };
-
-  const handleMouseEnter = (event) => {
-    event.target.style.background = "#A65A2A";
-    event.target.style.color = "#A65A2A";
-  };
-
-  const handleMouseLeave = (event) => {
-    event.target.style.background = "#A65A2A";
-    event.target.style.color = "#A65A2A";
-  };
 
   return (
     <div
@@ -116,9 +66,9 @@ const Section2 = () => {
         },
       }}
     >
-      <div className="max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
-        <div className=" p-4">
-          <h6 className="text-white mb-4 text-xl font-bold">
+      <div className="max-w-7xl lg:max-w-5xl xl:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
+        <div className=" p-2">
+          <h6 className="text-white mb-3 text-lg lg:text-xl xl:text-xl font-bold">
             WE HAVE A SOLID BACKGROUND
           </h6>
           <h1 className="text-white md:text-4xl text-lg font-bold">
@@ -127,7 +77,7 @@ const Section2 = () => {
               Growth
             </span>
           </h1>
-          <p className="text-white lg:text-lg sm:text-sm mt-4">
+          <p className="text-white lg:text-lg xl:text-xl text-lg lg:mt-0 xl:mt-6 mt-4">
             Established in{" "}
             <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
               2016
@@ -139,7 +89,7 @@ const Section2 = () => {
             international legal directories like Chambers Global, IFLR1000, and
             Legal 500
           </p>
-          <p className="text-white lg:text-xl sm:text-sm mt-4">
+          <p className="text-white lg:text-lg xl:text-xl text-lg lg:mt-0 xl:mt-6 mt-4">
             Our specialized legal expertise spans various areas, locally and
             regionally, encompassing Arbitration; Asset Tracing & Recoveries;
             Banking & Finance; Capital Markets; Conveyancing & Real Estate;
@@ -147,7 +97,7 @@ const Section2 = () => {
             FinTech; Infrastructure, Projects & PPP; Private Client;
             Restructuring & Insolvency; and Tax.
           </p>
-          <button className="mt-6 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
+          <button className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
           style={{
             background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
@@ -158,7 +108,7 @@ const Section2 = () => {
             </Link>
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0 p-4">
+        <div className="grid grid-cols-2 gap-4 mt-6 lg:mt-0 p-4">
           <div
             className={`counter-item ${
               countersVisible ? "animate" : ""

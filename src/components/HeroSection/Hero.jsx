@@ -73,7 +73,7 @@ const Hero = () => {
         objectFit="cover"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 sm:p-8">
-        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl leading-relaxed lg:font-extrabold mb-4">
+        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
           {imagesData[currentIndex].title}
         </h1>
         <p className=" text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">

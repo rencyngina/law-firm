@@ -20,22 +20,22 @@ const Section1 = () => {
     */}
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10">
-          <div className="p-4"
+          <div className="p-4 lg:p-6 xl:p-8"
           style={{
             background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
           }}
           >
             <div className="flex justify-center items-center">
-              <img src="/images/mission.png" alt="mission" className="w-12 h-12" />
+              <img src="/images/mission.png" alt="mission" className="w-12 lg:w-16 lg:h-16 h-12 xl:w-18 xl:h-18" />
             </div>
-            <h1 className="text-xl font-bold text-center mt-4 mb-2">Mission</h1>
+            <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">Mission</h1>
             <p className="text-center">
               To provide our clients with the highest quality legal services in a
               timely, efficient and cost effective manner.
             </p>
           </div>
-          <div className="p-4"
+          <div className="p-4 lg:p-6 xl:p-8"
           style={{
             background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
@@ -44,12 +44,12 @@ const Section1 = () => {
             <div className="flex justify-center items-center">
               <img src="/images/vision.svg" alt="vision" className="w-12 h-12" />
             </div>
-            <h1 className="text-xl font-bold text-center mt-4 mb-2">Vision</h1>
+            <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">Vision</h1>
             <p className="text-center">
               To be the leading law firm in Kenya and beyond.
             </p>
           </div>
-          <div className="p-4"
+          <div className="p-4 lg:p-6 xl:p-8"
           style={{
             background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
@@ -58,11 +58,19 @@ const Section1 = () => {
             <div className="flex justify-center items-center">
               <img src="/images/values.png" alt="values" className="w-12 h-12" />
             </div>
-            <h1 className="text-xl font-bold text-center mt-4 mb-2">Values</h1>
-            <p className="text-center">
+            <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">Values</h1>
+            {/*<p className="text-center">
               Integrity, Professionalism, Teamwork, Commitment, Accountability,
               Excellence.
-            </p>
+        </p>*/}
+        <ul className="text-sm lg:text-lg xl:text-lg font-bold mt-4 mb-2">
+          <li>Integrity</li>
+          <li>Professionalism</li>
+          <li>Teamwork</li>
+          <li>Commitment</li>
+          <li>Accountability</li>
+          <li>Excellence</li>
+        </ul>
           </div>
         </div>
       </div>

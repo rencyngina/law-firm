@@ -94,14 +94,14 @@ const Team = () => {
             backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-5xl text-white">Our Team</h1>
-          <p className="text-white text-xl mt-4">
+          <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Team</h1>
+          <p className="text-white text-lg lg:text-xl xl:text-2xl mt-4">
             Meet the team behind the scenes
           </p>
         </div>
         {/* Team Goes here with social links*/}
         <div className="container mx-auto py-8 px-4">
-        <h1 className="text-3xl font-semibold text-gray-800 mb-6">
+        <h1 className="text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
             Our Team
           </h1>
           <p className="text-gray-600 mb-12">
@@ -114,7 +114,11 @@ const Team = () => {
             {teamData.map((member) => (
               <div
                 key={member.id}
-                className="bg-gray-100 rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                className="rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                style={{
+            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+          }}
               >
                 <div className="relative">
                   <Image

@@ -25,7 +25,10 @@ const About = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Who we are</h1>
+          <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">Who we are</h1>
+          {/*<p className="text-lg lg:text-xl xl:text-2xl text-white mt-2">
+          ABOUT US
+        </p>*/}
         </div>
         <div className="container mx-auto py-4">
           <div className="px-4 mx-auto">
