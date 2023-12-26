@@ -5,6 +5,8 @@ import Image from "next/image";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import { MdOutlineVerticalAlignTop } from "react-icons/md";
+
 
 function FooterLinks() {
   const scrollToTop = () => {
@@ -70,7 +72,7 @@ function FooterLinks() {
                       href="#"
                       className="transition hover:opacity-75 text-gray-200"
                     >
-                      P.O. Box 51236 - 00200, Nairobi, Kenya.
+                     5TH AVENUE OFFICE SUITES 4TH FLOOR SUITE 4 – 15 OFF NGONG ROAD
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -116,45 +118,6 @@ function FooterLinks() {
                       className="transition hover:opacity-75 text-gray-200"
                     >
                       Join Our team
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-span-2 sm:col-span-1">
-                <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
-                  Legal
-                </p>
-                <ul className="lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Privacy & Disclosure Policies
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Cookies Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Refund Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Hiring Statistics
                     </a>
                   </li>
                 </ul>
@@ -296,7 +259,7 @@ function FooterLinks() {
         </div>
       </footer>
       <div
-        className="text-center text-white bg-gray-800"
+        className="text-center justify-center items-center text-white bg-gray-800"
         onClick={scrollToTop}
         style={{
           padding: "10px",
@@ -304,7 +267,7 @@ function FooterLinks() {
           zIndex: '10'
         }}
       >
-      back top
+      <MdOutlineVerticalAlignTop className="justify-center items-center" />
       </div>
     </>
   );

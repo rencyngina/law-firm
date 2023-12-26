@@ -3,7 +3,7 @@ import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 
-const Sector = () => {
+const Publication = () => {
   return (
     <>
     <Head />
@@ -25,7 +25,7 @@ const Sector = () => {
            backgroundAttachment: "fixed",
          }}
        >
-         <h1 className="text-5xl text-white">Sectors</h1>
+         <h1 className="text-5xl text-white">Publication</h1>
        </div>
        </div>
        <FooterLinks />
@@ -33,4 +33,4 @@ const Sector = () => {
   );
 }
 
-export default Sector;
+export default Publication;

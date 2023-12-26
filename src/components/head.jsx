@@ -18,19 +18,19 @@ const Head = () => {
             className="flex items-center mt-2 mb-3 sm:mb-0"
           >
             <FaPhone className="mr-2" />
-            <p className="mr-4 hidden sm:block">+234 803 000 0000</p>
+            <p className="mr-4 hidden sm:block">+254 701331176</p>
           </Link>
           <div className="flex items-center mt-2 mb-3 sm:mb-0">
             <MdEmail className="mr-2" />
             <p className="mr-4 hidden sm:block">
-              legal@oraro.co.ke
+              info@mwendaroyfordadvocates.co.ke
               <a href="mailto:legal@araro.co.ke"></a>
             </p>
           </div>
           <div className="flex items-center mt-2 mb-3 sm:mb-0">
             <IoLocationSharp className="mr-2" />
             <p className="hidden sm:block">
-              ACK Garden Annex, 6th Floor, 1st Ngong Avenue
+             5TH AVENUE OFFICE SUITES 4TH FLOOR SUITE 4 – 15 OFF NGONG ROAD
             </p>
           </div>
           <div className="flex items-center mt-2 mb-3 sm:mb-0">

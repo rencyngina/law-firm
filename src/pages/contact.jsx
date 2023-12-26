@@ -41,7 +41,7 @@ const Contact = () => {
     <>
       <Head />
       <LandingNavBar />
-      <div className="bg-white flex flex-col" id="contact">
+      <div className="bg-white flex flex-col" id="contact h-[70vh] lg:h-[85vh] xl:h-[90vh]">
         <div
           className="h-52 w-full flex flex-col justify-center items-center"
           style={{
@@ -50,6 +50,7 @@ const Contact = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
+            objectFit: 'cover'
           }}
         >
           <h1 className="lg:text-5xl sm:text-lg text-white">Contact Us</h1>
@@ -58,9 +59,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="container mx-auto mt-8 px-4">
+        <div className="container lg:grid lg:grid-cols-2 lg:gap-2 justify-center mx-auto mt-8 px-4 lg:p-8 p-0 xl:p-10">
           <section className="text-center">
-            <h1 className="text-3xl mt-8 mb-4">Send Us a Message</h1>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="grid grid-cols-1 gap-4">
                 <input
@@ -122,14 +122,13 @@ const Contact = () => {
               </button>
             </form>
           </section>
-          <section className="text-center mt-8">
-            <h1 className="text-3xl mb-4">Our Location</h1>
+          <section className="text-center mt-8 p-2 lg:p-0 xl:p-0">
             <div className="sm:grid-cols-1 lg:grid-cols-1">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center p-0">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d414.6107271344538!2d-84.39783285948984!3d33.763616353875854!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1703529936281!5m2!1sen!2ske"
-                  width="100%"
-                  height="300"
+                  width="700"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
