@@ -38,9 +38,11 @@ const Section1 = () => {
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">
               Mission
             </h1>
-            <p className="text-center">
-              To provide our clients with the highest quality legal services in
-              a timely, efficient and cost effective manner.
+            <p className="">
+              Our mission is to assist our clients in achieving their objectives
+              as smoothly and efficiently as possible whilst minimizing the
+              legal and regulatory risks, both within Kenya and further a field
+              in Africa.
             </p>
           </div>
           <div
@@ -60,8 +62,11 @@ const Section1 = () => {
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">
               Vision
             </h1>
-            <p className="text-center">
-              To be the leading law firm in Kenya and beyond.
+            <p className="">
+              We intend to build strong associations with leading law firms in
+              UK, South Africa, Uganda, Tanzania, Sudan, Ethiopia, United States
+              of America to name but a few, to give us considerable strength in
+              legal matters with an international or regional ingredient.
             </p>
           </div>
           <div

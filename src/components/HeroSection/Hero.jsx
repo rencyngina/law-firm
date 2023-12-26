@@ -71,6 +71,7 @@ const Hero = () => {
         alt="Hero Image"
         layout="fill"
         objectFit="cover"
+        className="object-fit"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4 sm:p-8">
         <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">

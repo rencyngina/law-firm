@@ -23,7 +23,7 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Nkonge Royford Mwenda",
+      name: "Jackline Waceke Njenga",
       image: '/images/JKTK.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
@@ -33,7 +33,7 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Nkonge Royford Mwenda",
+      name: "Lisper Njeri",
       image: '/images/JKTK.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
@@ -43,7 +43,7 @@ const Team = () => {
     },
     {
       id: 4,
-      name: "Nkonge Royford Mwenda",
+      name: " Boaz Amoro Nyakeri",
       image: '/images/John-Mbaluto.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
@@ -53,7 +53,7 @@ const Team = () => {
     },
     {
       id: 5,
-      name: "Nkonge Royford Mwenda",
+      name: "Ngava Joy Kaaria",
       image: '/images/John-Mbaluto.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
@@ -63,7 +63,7 @@ const Team = () => {
     },
     {
       id: 6,
-      name: "Nkonge Royford Mwenda",
+      name: "Ngava Joy Kaaria",
       image: '/images/John-Mbaluto.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
