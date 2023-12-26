@@ -102,7 +102,7 @@ const Section2 = () => {
 
   return (
     <div
-      className="w-full h-screen sm:h-screen lg:h-[85vh] xl:h-[70vh] flex flex-col justify-center items-center relative overflow-hidden"
+      className="w-full h-screen lg:h-[75vh] xl:h-[78vh] flex flex-col justify-center items-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
         backgroundPosition: "center",
@@ -116,19 +116,18 @@ const Section2 = () => {
         },
       }}
     >
-      <div className="max-w-7xl mx-auto px-2 lg:grid lg:grid-cols-2 lg:gap-4 items-center">
-        <div className="text-center lg:text-left">
-          <h6 className="text-white mb-4 text-sm font-bold">
+      <div className="max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
+        <div className=" p-4">
+          <h6 className="text-white mb-4 text-xl font-bold">
             WE HAVE A SOLID BACKGROUND
           </h6>
-          <h1 className="text-white md:text-4xl font-bold">
+          <h1 className="text-white md:text-4xl text-lg font-bold">
             Our solutions for your <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
               Growth
             </span>
           </h1>
           <p className="text-white lg:text-lg sm:text-sm mt-4">
-            {/* Your left side content */}
             Established in{" "}
             <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
               2016
@@ -159,13 +158,13 @@ const Section2 = () => {
             </Link>
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
+        <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0 p-4">
           <div
             className={`counter-item ${
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text text-6xl font-extrabold">{awardsWon}</h3>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{awardsWon}</h3>
             <p className="text-white text-xs font-extrabold">Awards Won</p>
           </div>
           <div
@@ -173,7 +172,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text text-6xl font-extrabold">{workHours}</h3>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{workHours}</h3>
             <p className="text-white text-xs font-extrabold">Year Of Establishment</p>
           </div>
           <div
@@ -181,7 +180,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="text-6xl font-extrabold gradient-text"
+            <h3 className="font-bold text-2xl lg:text-6xl gradient-text"
             >{greatReviews}</h3>
             <p className="text-white text-xs font-extrabold">Year Of Partnership</p>
           </div>
@@ -190,7 +189,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text text-6xl font-extrabold">{projectsDone}</h3>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{projectsDone}</h3>
             <p className="text-white text-xs font-extrabold">projects Done</p>
           </div>
         </div>

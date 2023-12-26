@@ -21,7 +21,7 @@ function FloatingChatButton(props) {
   return (
     <div style={floatingButtonStyle} onClick={props.handleChatButtonClick}>
       <IconContext.Provider value={{ size: '2.5rem' }}>
-        <FaComments />
+        <FaComments className='text-4xl lg:text-6xl xl:text-5xl'/>
       </IconContext.Provider>
     </div>
   );

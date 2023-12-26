@@ -17,7 +17,7 @@ function FooterLinks() {
   return (
     <>
       <footer className="bg-gradient-to-b from-gray-800 to-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-lg lg:max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-teal-300">
               <Image
@@ -33,7 +33,7 @@ function FooterLinks() {
                   <h2 className="lg:text-xl sm:text-xl font-bold text-white">
                     About
                   </h2>
-                  <p className="lg:text-sm sm:text-lg mt-4 text-white">
+                  <p className="lg:text-sm text-sm mt-4 text-white">
                     Muenda RoyFord & Company Advocates is a full-service market-leading
                     African law firm established in 1977 with a strong focus on
                     dispute resolution and corporate & commercial law. With a
@@ -44,26 +44,7 @@ function FooterLinks() {
                   </p>
                 </div>
               </div>
-              {/*<div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-                <form className="w-full">
-                  <label htmlFor="UserEmail" className="sr-only">
-                    {" "}
-                    Email{" "}
-                  </label>
-                  <div className="border  p-2 focus-within:ring border-gray-800 sm:flex sm:items-center sm:gap-4">
-                    <input
-                      type="email"
-                      id="UserEmail"
-                      placeholder="john@rhcp.com"
-                      className="w-full border-none focus:border-transparent focus:ring-transparent bg-gray-900 text-white sm:text-sm  py-4 px-2"
-                    />
-                    <button className="mt-1 w-full bg-[#A65A2A] rounded px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
-                      Sign Up
-                    </button>
-                  </div>
-                </form>
-  </div>*/}
-              <div className="col-span-1 sm:col-span-1 lg:col-span-1">
+              <div className="col-span-2 lg:col-span-1">
                 <p className="text-xl font-bold text-[#A65A2A]">
                   Our Location
                 </p>
@@ -107,6 +88,7 @@ function FooterLinks() {
                   </li>
                 </ul>
               </div>
+              <div className="flex lg:block gap-10">
               <div className="col-span-2 sm:col-span-1">
                 <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
                   Company
@@ -134,37 +116,6 @@ function FooterLinks() {
                       className="transition hover:opacity-75 text-gray-200"
                     >
                       Join Our team
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-span-2 sm:col-span-1">
-                <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
-                  Helpful Links
-                </p>
-                <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      FAQs
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Live Chat
                     </a>
                   </li>
                 </ul>
@@ -207,6 +158,7 @@ function FooterLinks() {
                     </a>
                   </li>
                 </ul>
+              </div>
               </div>
               <div className="col-span-2 sm:col-span-1">
                 <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">

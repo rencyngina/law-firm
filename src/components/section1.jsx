@@ -4,11 +4,11 @@ const Section1 = () => {
   return (
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
-        <h1 className="text-3xl md:text-5xl lg:text-3xl xl:text-3xl font-bold text-center mb-6">
+        <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold mb-4">
           Why Choose Us ?
         </h1>
-        <div className="w-24 h-1 bg-[#A65A2A] mx-auto mb-10"></div>
-        <p className="text-lg md:text-xl lg:text-lg xl:text-lg leading-relaxed text-center">
+        <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
+        <p className="text-sm md:text-xl lg:text-lg xl:text-lg leading-relaxed">
           Muenda RoyFord & Company Advocates takes great pride in its strong client
           relationships, deeply rooted in the provision of exceptional legal
           services. Our approach combines local expertise with global perspectives,
