@@ -21,7 +21,7 @@ const EstateAdministration = () => {
           }}
         >
           <h1 className="text-xl lg:text-2xl xl:text-3xl text-white">
-            EstateAdministration
+            Estate Administration
           </h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
@@ -29,12 +29,13 @@ const EstateAdministration = () => {
             src="/images/property.jpg"
             width={500}
             height={300}
-            className="w-82 h-42"
+            className="w-82 h-42 mt-6"
           />
           <div className="lg:mb-6 xl:mb-8">
-            <h1 className="text-3xl text-center lg:text-left mt-10 font-bold mb-6">
+            <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
               Overview
             </h1>
+            <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
               Our Conveyancing & Real Estate practice group has rich experience
               in providing strategic and practical advice to local and
@@ -63,6 +64,7 @@ const EstateAdministration = () => {
                 <h1 className="text-2xl lg:text-3xl xl:text-4xl mb-4">
                   Key Contacts
                 </h1>
+                <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
               {/* Contact 1 */}
@@ -144,6 +146,7 @@ const EstateAdministration = () => {
               <h1 className="text-xl lg:text-2xl xl:text-3xl mb-4">
                 Experience
               </h1>
+              <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               {/* Experience*/}
               <p className="text-lg lg:text-xl xl:text-2xl mb-6">
                 Recently, we have been involved in:
