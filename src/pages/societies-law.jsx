@@ -72,7 +72,7 @@ const SocietiesLaw = () => {
               <div className="bg-white p-4 rounded shadow-lg transition duration-300 hover:bg-gray-600">
                 <div className="relative h-40 overflow-hidden rounded-t">
                   <Image
-                    src="/images/John-Mbaluto.webp"
+                    src="/images/JKTK.webp"
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
@@ -122,7 +122,7 @@ const SocietiesLaw = () => {
               <div className="bg-white p-4 rounded shadow-lg transition duration-300 hover:bg-gray-600">
                 <div className="relative h-40 overflow-hidden rounded-t">
                   <Image
-                    src="/images/John-Mbaluto.webp"
+                    src="/images/NLC.webp"
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"

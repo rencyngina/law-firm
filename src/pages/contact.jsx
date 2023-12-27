@@ -41,7 +41,10 @@ const Contact = () => {
     <>
       <Head />
       <LandingNavBar />
-      <div className="bg-white flex flex-col" id="contact h-[70vh] lg:h-[85vh] xl:h-[90vh]">
+      <div
+        className="bg-white flex flex-col"
+        id="contact h-[70vh] lg:h-[85vh] xl:h-[90vh]"
+      >
         <div
           className="h-52 w-full flex flex-col justify-center items-center"
           style={{
@@ -50,7 +53,7 @@ const Contact = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
-            objectFit: 'cover'
+            objectFit: "cover",
           }}
         >
           <h1 className="lg:text-5xl sm:text-lg text-white">Contact Us</h1>
@@ -61,6 +64,9 @@ const Contact = () => {
 
         <div className="container lg:grid lg:grid-cols-2 lg:gap-2 justify-center mx-auto mt-8 px-4 lg:p-8 p-0 xl:p-10">
           <section className="text-center">
+          <h1 className="text-lg lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
+            SEND US A MESSAGE
+          </h1>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="grid grid-cols-1 gap-4">
                 <input
@@ -122,7 +128,17 @@ const Contact = () => {
               </button>
             </form>
           </section>
-          <section className="text-center mt-8 p-2 lg:p-0 xl:p-0">
+          <section className="mt-8 p-2 lg:p-0 xl:p-0">
+          <p className="text-md lg:text-xl xl:text-2xl ">
+          FIND US HERE
+          </p>
+          <div className="w-28 h-1 bg-[#A65A2A] mb-8 mt-4"></div>
+          <h1 className="text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
+            Map & Location
+          </h1>
+          <p className="text-md lg:text-xl xl:text-xl mb-8">
+          We are located along 5th avenue office suite 4th floor suite 4 – 15 off gong road
+          </p>
             <div className="sm:grid-cols-1 lg:grid-cols-1">
               <div className="flex justify-center items-center p-0">
                 <iframe
@@ -135,7 +151,7 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              </div>
+            </div>
           </section>
         </div>
       </div>
