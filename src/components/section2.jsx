@@ -47,12 +47,9 @@ const Section2 = () => {
     };
   }, []);
 
-
-
-
   return (
     <div
-      className="w-full h-screen lg:h-[75vh] xl:h-[78vh] flex flex-col justify-center items-center relative overflow-hidden"
+      className="w-full h-auto lg:h-[75vh] xl:h-[78vh] flex flex-col justify-center items-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
         backgroundPosition: "center",
@@ -61,8 +58,7 @@ const Section2 = () => {
         overflowY: "hidden",
         backgroundAttachment: "fixed",
         "@media (max-width: 1024px)": {
-          // Apply styles for screens smaller than lg breakpoint
-          backgroundAttachment: "fixed", // Set the background attachment to "fixed" for smaller screens
+          backgroundAttachment: "fixed",
         },
       }}
     >
@@ -97,24 +93,27 @@ const Section2 = () => {
             FinTech; Infrastructure, Projects & PPP; Private Client;
             Restructuring & Insolvency; and Tax.
           </p>
-          <button className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
-          style={{
-            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+          <button
+            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
+            style={{
+              background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
               radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-          }}
+            }}
           >
             <Link href="/about" className="text-white">
               Read More
             </Link>
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-6 lg:mt-0 p-3">
+        <div className="grid grid-cols-2 gap-4 mt-6 lg:mt-0 p-4">
           <div
             className={`counter-item ${
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{awardsWon}</h3>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+              {awardsWon}
+            </h3>
             <p className="text-white text-xs font-extrabold">Awards Won</p>
           </div>
           <div
@@ -122,24 +121,33 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{workHours}</h3>
-            <p className="text-white text-xs font-extrabold">Year Of Establishment</p>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+              {workHours}
+            </h3>
+            <p className="text-white text-xs font-extrabold">
+              Year Of Establishment
+            </p>
           </div>
           <div
             className={`counter-item ${
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="font-bold text-2xl lg:text-6xl gradient-text"
-            >{greatReviews}</h3>
-            <p className="text-white text-xs font-extrabold">Year Of Partnership</p>
+            <h3 className="font-bold text-2xl lg:text-6xl gradient-text">
+              {greatReviews}
+            </h3>
+            <p className="text-white text-xs font-extrabold">
+              Year Of Partnership
+            </p>
           </div>
           <div
             className={`counter-item ${
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">{projectsDone}</h3>
+            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+              {projectsDone}
+            </h3>
             <p className="text-white text-xs font-extrabold">projects Done</p>
           </div>
         </div>

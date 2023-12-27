@@ -17,7 +17,7 @@ const Hero = () => {
       image: masaaiImage,
       title: "MWENDA ROYFORD & COMPANY ADVOCATE",
       description: "Where Exelence Meets Justice",
-      buttonLabel: "About Us",
+      buttonLabel: "Who we are",
       linkTo: "/about",
     },
     {
