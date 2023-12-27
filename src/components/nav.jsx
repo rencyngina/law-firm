@@ -127,7 +127,7 @@ const LandingNavBar = () => {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/images/logo2.png"
+              src="/images/LOGOS3-removebg.png"
               alt="Logo"
               className="cursor-pointer"
               height={90}
