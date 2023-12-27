@@ -38,10 +38,10 @@ const Practice = () => {
         </div>
 
         <div className="container mx-auto px-4 py-12">
-          <div className="flex flex-wrap justify-center">
+          <div className="block lg:grid lg:grid-cols-3 gap-6">
             {data.map((item) => (
-              <div key={item.id} className="w-full md:w-4/12 lg:w-3/12 mb-12 px-4">
-                <div className="shadow-lg rounded overflow-hidden">
+              <div key={item.id} className="mb-4">
+                <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
                     src={item.imageSrc}
@@ -50,8 +50,8 @@ const Practice = () => {
                     className="w-full h-auto"
                     style={{ maxHeight: '250px' }}
                   />
-                  <div className="p-4 text-center">
-                  <a href={item.linkTo} className="text-blue-500 hover:text-blue-700">
+                  <div className="p-4 text-center bg-[rgb(17,24,39)]">
+                  <a href={item.linkTo} className="text-[#A65A2A] hover:text-yellow-700">
                       <h5 className="text-lg font-bold mb-2">{item.name}</h5>
                   </a>
                   </div>

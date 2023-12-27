@@ -272,7 +272,7 @@ const LandingNavBar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/about-us"
+                      href="/sector"
                       className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                     >
                       Sectors
