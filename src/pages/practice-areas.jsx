@@ -31,7 +31,7 @@ const Practice = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
+            // backgroundAttachment: 'fixed',
           }}
         >
           <h1 className="text-5xl text-white">Practice Areas</h1>
