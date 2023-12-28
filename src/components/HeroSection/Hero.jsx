@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import masaaiImage from "../../../public/images/logo2.png";
+import masaaiImage from "../../../public/images/royford.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
@@ -46,6 +46,14 @@ const Hero = () => {
     },
   ];
 
+  const handleHover = (event) => {
+    event.target.style.border = '1px solid black';
+  };
+
+  const handleHoverExit = (event) => {
+    event.target.style.border = 'none';
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
@@ -81,14 +89,17 @@ const Hero = () => {
           {imagesData[currentIndex].description}
         </p>
         <button
-          className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6"
-          style={{
-            background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-          }}
-        >
-          {imagesData[currentIndex].buttonLabel}
-        </button>
+      className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6"
+      style={{
+        background: 'rgb(208,178,22)',
+        border: 'none', // Initially no border
+        transition: 'border 0.3s ease', // Add a transition for smooth effect
+      }}
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHoverExit}
+    >
+      {imagesData[currentIndex].buttonLabel}
+    </button>
         {/*<div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
           <button
             className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"

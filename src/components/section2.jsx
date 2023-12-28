@@ -96,8 +96,7 @@ const Section2 = () => {
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
-              background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+              background: 'rgb(208,178,22)'
             }}
           >
             <Link href="/about" className="text-white">
@@ -111,7 +110,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+            <h3 className="text-[rgb(208,178,22)] font-bold text-2xl lg:text-6xl">
               {awardsWon}
             </h3>
             <p className="text-white text-xs font-extrabold">Awards Won</p>
@@ -121,7 +120,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+            <h3 className="text-[rgb(208,178,22)] font-bold text-2xl lg:text-6xl">
               {workHours}
             </h3>
             <p className="text-white text-xs font-extrabold">
@@ -133,7 +132,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="font-bold text-2xl lg:text-6xl gradient-text">
+            <h3 className="font-bold text-2xl lg:text-6xl text-[rgb(208,178,22)]">
               {greatReviews}
             </h3>
             <p className="text-white text-xs font-extrabold">
@@ -145,7 +144,7 @@ const Section2 = () => {
               countersVisible ? "animate" : ""
             } bg-[rgb(38,38,38)] flex flex-col justify-center items-center p-4 transition-transform duration-300 cursor-pointer`}
           >
-            <h3 className="gradient-text font-bold text-2xl lg:text-6xl">
+            <h3 className="text-[rgb(208,178,22)] font-bold text-2xl lg:text-6xl">
               {projectsDone}
             </h3>
             <p className="text-white text-xs font-extrabold">projects Done</p>
