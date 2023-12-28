@@ -142,7 +142,7 @@ const Contact = () => {
             <div className="sm:grid-cols-1 lg:grid-cols-1">
               <div className="flex justify-center items-center p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d414.6107271344538!2d-84.39783285948984!3d33.763616353875854!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1703529936281!5m2!1sen!2ske"
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3988.791699620398!2d36.78176001089665!3d-1.2997965986823754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s5TH%20AVENUE%20OFFICE%20SUITES%204TH%20FLOOR%20SUITE%204%20%E2%80%93%2015%20OFF%20NGONG%20ROAD!5e0!3m2!1sen!2ske!4v1703769902782!5m2!1sen!2ske"
                   width="700"
                   height="450"
                   style={{ border: 0 }}

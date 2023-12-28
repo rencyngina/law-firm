@@ -4,6 +4,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import { BsTwitterX } from "react-icons/bs";
 
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -131,7 +132,7 @@ const LandingNavBar = () => {
               alt="Logo"
               className="cursor-pointer"
               height={90}
-              width={90}
+              width={200}
             />
           </Link>
         </div>
@@ -155,8 +156,7 @@ const LandingNavBar = () => {
           <button
             className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
             style={{
-              background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+              background: 'rgb(208,178,22)'
             }}
           >
             Contact Us
@@ -164,16 +164,15 @@ const LandingNavBar = () => {
           </button>
         </Link>
         <Link href="/">
-          <button
-            className="px-4 py-2 text-base font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
-            style={{
-              background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-            }}
-          >
-            LogIn
-          </button>
-        </Link>
+      <button
+        className="px-4 py-2 text-base lg:text-lg xl:text-xl font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+        style={{
+          background: 'rgb(208,178,22)',
+        }}
+      >
+        LogIn
+      </button>
+    </Link>
       </ul>
 
       {/* Mobile Navigation */}
@@ -294,9 +293,8 @@ const LandingNavBar = () => {
                 <button
                   className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900  focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center mb-4"
                   style={{
-                    background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-                  }}
+          background: 'rgb(208,178,22)',
+        }}
                 >
                   Contact Us
                   <GoArrowUpRight size={20} className="ml-2" />
@@ -308,9 +306,8 @@ const LandingNavBar = () => {
                 <button
                   className="px-4  mb-4 py-2 text-base font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-full focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center lg:rounded-full xl:rounded-full"
                   style={{
-                    background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
-                  }}
+          background: 'rgb(208,178,22)',
+        }}
                 >
                   LogIn
                 </button>

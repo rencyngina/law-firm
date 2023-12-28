@@ -11,7 +11,7 @@ const Sector = () => {
       id: 1,
       sector: "Construction",
       ImageSrc: "/images/assets.jpg",
-      linkTo: "/about",
+      linkTo: "/construction",
     },
     {
       id: 1,
