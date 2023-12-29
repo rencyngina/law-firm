@@ -51,7 +51,7 @@ const Section2 = () => {
     <div
       className="w-full h-auto lg:h-[75vh] xl:h-[78vh] flex flex-col justify-center items-center relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)), url(/images/14r.jpg)`,
+        backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)),url(/images/14r.jpg)`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -64,7 +64,7 @@ const Section2 = () => {
     >
       <div className="max-w-7xl lg:max-w-5xl xl:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
         <div className=" p-2">
-          <h6 className="text-white mb-3 text-lg lg:text-xl xl:text-xl font-bold">
+          <h6 className="text-white mb-2 mt-2 text-lg lg:text-xl xl:text-xl font-bold">
             WE HAVE A SOLID BACKGROUND
           </h6>
           <h1 className="text-white md:text-4xl text-lg font-bold">
