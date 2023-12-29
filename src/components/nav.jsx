@@ -156,7 +156,7 @@ const LandingNavBar = () => {
           <button
             className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             Contact Us
@@ -164,15 +164,15 @@ const LandingNavBar = () => {
           </button>
         </Link>
         <Link href="/">
-      <button
-        className="px-4 py-2 text-base lg:text-lg xl:text-xl font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
-        style={{
-          background: 'rgb(208,178,22)',
-        }}
-      >
-        LogIn
-      </button>
-    </Link>
+          <button
+            className="px-4 py-2 text-base lg:text-lg xl:text-xl font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+            style={{
+              background: "rgb(208,178,22)",
+            }}
+          >
+            LogIn
+          </button>
+        </Link>
       </ul>
 
       {/* Mobile Navigation */}
@@ -196,10 +196,10 @@ const LandingNavBar = () => {
                 Home
               </Link>
             </li>
-            <li className="relative z-10 border-b w-full">
+            <li className="relative z-20 border-b w-full">
               <div
                 onClick={toggleAboutDropdown}
-                className="text-base text-gray-700 cursor-pointer mb-4"
+                className="text-base text-black cursor-pointer mb-4"
               >
                 About Us{" "}
                 <RiArrowDropDownLine
@@ -248,7 +248,7 @@ const LandingNavBar = () => {
             <li className="relative z-10 border-b w-full">
               <div
                 onClick={toggleExpertiseDropdown}
-                className="text-base text-gray-700 cursor-pointer mb-4"
+                className="text-base text-black cursor-pointer mb-4"
               >
                 Expertise{" "}
                 <RiArrowDropDownLine
@@ -293,8 +293,8 @@ const LandingNavBar = () => {
                 <button
                   className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900  focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center mb-4"
                   style={{
-          background: 'rgb(208,178,22)',
-        }}
+                    background: "rgb(208,178,22)",
+                  }}
                 >
                   Contact Us
                   <GoArrowUpRight size={20} className="ml-2" />
@@ -304,10 +304,10 @@ const LandingNavBar = () => {
             <li className="border-b w-full">
               <Link href="/">
                 <button
-                  className="px-4  mb-4 py-2 text-base font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-full focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center lg:rounded-full xl:rounded-full"
+                  className="px-4  mb-4 py-2 text-base text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-full focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center lg:rounded-full xl:rounded-full"
                   style={{
-          background: 'rgb(208,178,22)',
-        }}
+                    background: "rgb(208,178,22)",
+                  }}
                 >
                   LogIn
                 </button>
