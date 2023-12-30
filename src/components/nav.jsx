@@ -10,6 +10,7 @@ const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
   const [expertiseDropdownOpen, setExpertiseDropdownOpen] = useState(false);
+  const [publicationDropdownOpen, setPublicationDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -26,6 +27,13 @@ const LandingNavBar = () => {
     setExpertiseDropdownOpen(!expertiseDropdownOpen);
     if (aboutDropdownOpen) {
       setAboutDropdownOpen(false);
+    }
+  };
+
+  const togglePublicationDropdown = () => {
+    setPublicationDropdownOpen(!publicationDropdownOpen);
+    if (publicationDropdownOpen) {
+      setPublicationDropdownOpen(false);
     }
   };
 
@@ -196,7 +204,7 @@ const LandingNavBar = () => {
                 Home
               </Link>
             </li>
-            <li className="relative z-20 border-b w-full">
+            <li className="relative z-30 border-b w-full">
               <div
                 onClick={toggleAboutDropdown}
                 className="text-base text-black cursor-pointer mb-4"
@@ -245,7 +253,7 @@ const LandingNavBar = () => {
                 Our Lawyers
               </Link>
             </li>
-            <li className="relative z-10 border-b w-full">
+            <li className="relative z-20 border-b w-full">
               <div
                 onClick={toggleExpertiseDropdown}
                 className="text-base text-black cursor-pointer mb-4"
@@ -283,6 +291,34 @@ const LandingNavBar = () => {
                       className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                     >
                       Brochures
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li className="relative z-10 border-b w-full">
+              <div
+                onClick={togglePublicationDropdown}
+                className="text-base text-black cursor-pointer mb-4"
+              >
+                Publication{" "}
+                <RiArrowDropDownLine
+                  className="inline"
+                  style={{
+                    fontSize: "1.8rem",
+                  }}
+                />
+              </div>
+              {publicationDropdownOpen && (
+                <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
+                  {/* Dropdown content */}
+                  <li>
+                    <Link
+                      href="/practice-areas"
+                      id="practice-areas"
+                      className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
+                    >
+                      News
                     </Link>
                   </li>
                 </ul>
