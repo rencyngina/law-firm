@@ -14,7 +14,7 @@ const Partners = () => {
               <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -32,7 +32,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -50,7 +50,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -68,7 +68,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -86,7 +86,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -104,7 +104,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/geet.jpg'
+                    src='/images/John-Mbaluto.webp'
                     width={500}
                     height={500}
                     className="w-full h-auto"

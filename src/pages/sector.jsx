@@ -19,7 +19,7 @@ const Sector = () => {
       ImageSrc: "/images/8r.jpg",
       linkTo: "/about",
     },
-    { id: 1, sector: "Energy", ImageSrc: "/images/11r.jpg", linkTo: "/about" },
+    { id: 1, sector: "Energy", ImageSrc: "/images/John-Mbaluto.webp", linkTo: "/about" },
     {
       id: 1,
       sector: "Financial Services",
