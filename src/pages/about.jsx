@@ -19,7 +19,7 @@ const About = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed", // Modified this line for background attachment
+            // backgroundAttachment: "fixed",
           }}
         >
           <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">Who we are</h1>

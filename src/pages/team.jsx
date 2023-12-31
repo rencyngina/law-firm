@@ -91,7 +91,7 @@ const Team = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
+            // backgroundAttachment: "fixed",
           }}
         >
           <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Team</h1>

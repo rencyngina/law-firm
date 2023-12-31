@@ -15,16 +15,6 @@ Mwenda Royford and company advocates is a law firm based in Nairobi Kenya. The f
 - Taxation
 - Family Law
 
-The firm has a wide range of clients from individuals to corporates. The firm has a wide range of practice areas including but not limited to:
-- Corporate and Commercial Law
-- Conveyancing and Real Estate
-- Banking and Finance
-- Intellectual Property
-- Employment and Labour Relations
-- Litigation and Dispute Resolution
-- Taxation
-- Family Law
-
 
 ## About the Project
 
