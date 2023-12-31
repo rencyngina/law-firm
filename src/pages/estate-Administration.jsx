@@ -37,12 +37,12 @@ const EstateAdministration = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              Our Conveyancing & Real Estate practice group has rich experience
-              in providing strategic and practical advice to local and
-              international clients on acquisition and disposal of land,
-              conveyancing, commercial & residential development, leases,
-              licenses, project financing, structuring of complex projects and
-              joint ventures.
+              The firm has extensive experience in creating and advising on
+              securities, including mortgages, charges, debentures, loan
+              agreements for Bank, Micro-finance Institutions and Lending
+              companies, transfer of property and real estate rights’
+              transactions, long term leases for development and sectional
+              property transactions among others.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
