@@ -12,6 +12,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [opacity, setOpacity] = useState(1);
 
   const imagesData = [
     {
@@ -83,6 +84,20 @@ const Hero = () => {
     };
   }, [touchEnd]);
 
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setOpacity(0); // Set opacity to 0 for smooth fade-out transition
+
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
+        setOpacity(1); // Set opacity back to 1 for smooth fade-in transition
+      }, 5000); // Wait for 5 second before changing to the next image
+
+    }, 10000); // Change image every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [imagesData.length]);
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
   };
@@ -101,6 +116,12 @@ const Hero = () => {
         layout="fill"
         objectFit="cover"
         className="object-fit"
+        style={{
+          opacity: opacity,
+          // transition: 'opacity 2s ease-in-out',
+          transition: 'opacity 1.5s ease-in-out',
+        }}
+        
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
         <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
@@ -109,17 +130,18 @@ const Hero = () => {
         <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
-        <button className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6" style={{ background: 'rgb(208,178,22)', border: 'none', transition: 'border 0.3s ease' }}>
+        <button className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6 mr-10 lg:mr-20 xl:mr-32" style={{ background: 'rgb(208,178,22)', border: 'none', transition: 'border 0.3s ease' }}>
           {imagesData[currentIndex].buttonLabel}
         </button>
-        {/*<div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
-          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none" onClick={handlePrev}>
+         <div className="hidden lg:flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
+          {/* Conditional rendering of buttons based on screen size */}
+          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none  sm:flex" onClick={handlePrev}>
             <GrPrevious className="text-black" />
           </button>
-          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none" onClick={handleNext}>
+          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none sm:flex" onClick={handleNext}>
             <GrNext className="text-black" />
           </button>
-  </div>*/}
+        </div>
       </div>
     </div>
   );
