@@ -75,8 +75,8 @@ const Section1 = () => {
           </motion.div>
           <motion.div
             initial={{ y: -10, opacity: 0 }}
-            animate={thirdSectionControls}
-            transition={{ duration: 1, delay: 0.1 }}
+            animate={secondSectionControls}
+            transition={{ duration: 0.8, delay: 0.5 }}
             className="p-4 lg:p-6 xl:p-8"
             style={{
               background: "rgb(208,178,22)",
@@ -101,8 +101,8 @@ const Section1 = () => {
           </motion.div>
           <motion.div
             initial={{ y: -10, opacity: 0 }}
-            animate={secondSectionControls}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            animate={thirdSectionControls}
+            transition={{ duration: 1, delay: 0.1 }}
             className="p-4 lg:p-6 xl:p-8"
             style={{
               background: "rgb(208,178,22)",

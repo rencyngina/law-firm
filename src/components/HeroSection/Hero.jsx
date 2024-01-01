@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
 import masaaiImage from "../../../public/images/royford.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
-import { GrNext } from "react-icons/gr";
-import { GrPrevious } from "react-icons/gr";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [opacity, setOpacity] = useState(1);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const imagesData = [
     {
       image: masaaiImage,
       title: "MWENDA ROYFORD & COMPANY ADVOCATE",
-      description: "Where Exelence Meets Justice",
+      description: "Where Excellence Meets Justice",
       buttonLabel: "Who we are",
       linkTo: "/about",
     },
@@ -32,7 +33,7 @@ const Hero = () => {
       image: fifthImage,
       title: "Banking & Finance",
       description:
-        "Our Banking & Finance practise area is well regarded for its expertise in advising in both contentious and non-contentious matters",
+        "Our Banking & Finance practice area is well regarded for its expertise in advising in both contentious and non-contentious matters",
       buttonLabel: "Our Expertise",
       linkTo: "/practice-areas",
     },
@@ -40,27 +41,47 @@ const Hero = () => {
       image: secondImage,
       title: "Assets Tracing & Recovery",
       description:
-        "Our Asset Tracing & Recoveries practice area is a recognised leader in advising both contentious and noncontentious complex tracing and recovery of assets and in restructuring & insolvencies.",
+        "Our Asset Tracing & Recoveries practice area is a recognized leader in advising both contentious and non-contentious complex tracing and recovery of assets and in restructuring & insolvencies.",
       buttonLabel: "Our Services",
       linkTo: "/services",
     },
   ];
 
-  const handleHover = (event) => {
-    event.target.style.border = '1px solid black';
-  };
-
-  const handleHoverExit = (event) => {
-    event.target.style.border = 'none';
-  };
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-    }, 10000);
+    const handleSwipe = () => {
+      if (touchStart - touchEnd > 50) {
+        // Swiped left, go to next image
+        handleNext();
+      } else if (touchEnd - touchStart > 50) {
+        // Swiped right, go to previous image
+        handlePrev();
+      }
+    };
 
-    return () => clearInterval(interval);
-  }, [imagesData.length]);
+    const handleTouchStart = (event) => {
+      setTouchStart(event.touches[0].clientX);
+    };
+
+    const handleTouchMove = (event) => {
+      setTouchEnd(event.touches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+      handleSwipe();
+      setTouchStart(0);
+      setTouchEnd(0);
+    };
+
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [touchEnd]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
@@ -85,38 +106,24 @@ const Hero = () => {
         <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
           {imagesData[currentIndex].title}
         </h1>
-        <p className=" text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
+        <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
-        <button
-      className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6"
-      style={{
-        background: 'rgb(208,178,22)',
-        border: 'none', // Initially no border
-        transition: 'border 0.3s ease', // Add a transition for smooth effect
-      }}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHoverExit}
-    >
-      {imagesData[currentIndex].buttonLabel}
-    </button>
+        <button className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6" style={{ background: 'rgb(208,178,22)', border: 'none', transition: 'border 0.3s ease' }}>
+          {imagesData[currentIndex].buttonLabel}
+        </button>
         {/*<div className="flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
-          <button
-            className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"
-            onClick={handlePrev}
-          >
+          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none" onClick={handlePrev}>
             <GrPrevious className="text-black" />
           </button>
-          <button
-            className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none"
-            onClick={handleNext}
-          >
+          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none" onClick={handleNext}>
             <GrNext className="text-black" />
           </button>
-        </div>*/}
+  </div>*/}
       </div>
     </div>
   );
 };
 
 export default Hero;
+
