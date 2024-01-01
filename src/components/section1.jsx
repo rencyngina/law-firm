@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useEffect, useCallback } from "react";
+import { motion, useAnimation } from "framer-motion";
 // bg-gradient-to-b from-gray-800 to-gray-900
 const Section1 = () => {
+  const firstSectionControls = useAnimation();
+  const secondSectionControls = useAnimation();
+  const thirdSectionControls = useAnimation();
+
+  const handleScroll = useCallback(() => {
+    const scrollY = window.scrollY;
+
+    if (scrollY >= 100) {
+      firstSectionControls.start({ opacity: 1, y: 0 });
+    }
+
+    if (scrollY >= 400) {
+      secondSectionControls.start({ opacity: 2, y: 0 });
+    }
+
+    if (scrollY >= 800) {
+      thirdSectionControls.start({ opacity: 3, y: 0 });
+    }
+  }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
   return (
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
@@ -21,10 +47,13 @@ const Section1 = () => {
     */}
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10">
-          <div
+          <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={firstSectionControls}
+            transition={{ duration: 0.5 }}
             className="p-4 lg:p-6 xl:p-8"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <div className="flex justify-center items-center">
@@ -43,11 +72,14 @@ const Section1 = () => {
               legal and regulatory risks, both within Kenya and further a field
               in Africa.
             </p>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={thirdSectionControls}
+            transition={{ duration: 1, delay: 0.1 }}
             className="p-4 lg:p-6 xl:p-8"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <div className="flex justify-center items-center">
@@ -66,11 +98,14 @@ const Section1 = () => {
               of America to name but a few, to give us considerable strength in
               legal matters with an international or regional ingredient.
             </p>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={secondSectionControls}
+            transition={{ duration: 0.8, delay: 0.5 }}
             className="p-4 lg:p-6 xl:p-8"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <div className="flex justify-center items-center">
@@ -91,7 +126,7 @@ const Section1 = () => {
               <li className="mb-2 lg:mb-1 xl:mb-1">Accountability</li>
               <li className="mb-2 lg:mb-1 xl:mb-1">Excellence</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
