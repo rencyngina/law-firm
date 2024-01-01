@@ -35,7 +35,7 @@ const Commercial = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              The firm is committed to creatively and efficiently providing the
+              <span className="font-bold">Mwenda RoyFord & Company Advocates</span> firm is committed to creatively and efficiently providing the
               full range of Commercial Law services and solutions for our
               corporate and business clients (i.e. local and foreign). We have
               been involved in the preparation of a wide range of custom made
