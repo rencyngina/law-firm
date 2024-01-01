@@ -37,7 +37,7 @@ const EstateAdministration = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              The firm has extensive experience in creating and advising on
+              Mwenda RoyFord & Company Advocates has extensive experience in creating and advising on
               securities, including mortgages, charges, debentures, loan
               agreements for Bank, Micro-finance Institutions and Lending
               companies, transfer of property and real estate rights’

@@ -35,7 +35,7 @@ const BankingFinance = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              We advise on the structuring and implementation of significant
+              at <span className="font-bold"> Mwenda RoyFord & Company Advocates </span> We advise on the structuring and implementation of significant
               financial transactions including debt and equity issued and in
               relation to compliance with the local regulatory regime. We also
               provide opinions on Kenyan law to lenders, the Kenyan Government,
