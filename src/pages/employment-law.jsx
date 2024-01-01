@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
@@ -7,25 +7,22 @@ import Image from "next/image";
 const EmploymentLaw = () => {
   return (
     <>
-    <Head />
-     <LandingNavBar />
-     <div
-       className="bg-white h-auto w-full"
-       id="contact"
-     >
-       <div
-         className="h-52 w-full flex flex-col justify-center items-center"
-         style={{
-           backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/11r.jpg)`,
-           backgroundPosition: "center",
-           backgroundSize: "cover",
-           backgroundRepeat: "no-repeat",
-           backgroundAttachment: "fixed", // Modified this line for background attachment
-         }}
-       >
-         <h1 className="text-5xl text-white">EmploymentLaw</h1>
-       </div>
-       <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
+      <Head />
+      <LandingNavBar />
+      <div className="bg-white h-auto w-full" id="contact">
+        <div
+          className="h-52 w-full flex flex-col justify-center items-center"
+          style={{
+            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/11r.jpg)`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed", // Modified this line for background attachment
+          }}
+        >
+          <h1 className="text-5xl text-white">EmploymentLaw</h1>
+        </div>
+        <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
             src="/images/11r.jpg"
             width={500}
@@ -38,12 +35,13 @@ const EmploymentLaw = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              Our Conveyancing & Real Estate practice group has rich experience
-              in providing strategic and practical advice to local and
-              international clients on acquisition and disposal of land,
-              conveyancing, commercial & residential development, leases,
-              licenses, project financing, structuring of complex projects and
-              joint ventures.
+              The firm offers a comprehensive employment law service providing
+              employers, employees and self-employed with advice on employment
+              policies, contracts termination, wages and benefits, collective
+              bargaining agreements, workplace safety, workmen’s compensation
+              and pensions as well as dealing with employment related disputes.
+              We also assist companies to carry out the Employment audit in
+              terms of the requirements as required by law.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
@@ -191,10 +189,10 @@ const EmploymentLaw = () => {
             </div>
           </div>
         </div>
-       </div>
-       <FooterLinks />
+      </div>
+      <FooterLinks />
     </>
   );
-}
+};
 
 export default EmploymentLaw;
