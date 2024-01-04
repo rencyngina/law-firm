@@ -74,7 +74,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Patners />
-      <FloatingChatButton onClick={toggleForm} />
+      {/*<FloatingChatButton onClick={toggleForm} />*/}
       {isFormVisible && (
         <div className="fixed bottom-0 right-0 z-50">
           <div className="relative">
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </div>
       )}
-      <Newsletter />
+      {/*<Newsletter />*/}
       <FooterLinks />
     </main>
   );

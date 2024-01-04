@@ -28,7 +28,9 @@ const Section1 = () => {
   }, [handleScroll]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38">
+    <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38"
+    id="section1"
+    >
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
         <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold mb-4">
           Why Choose Us ?

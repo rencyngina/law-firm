@@ -2,14 +2,15 @@ import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaComments } from 'react-icons/fa';
 import { BsChatRightTextFill } from "react-icons/bs";
+import { BsChatSquare } from "react-icons/bs";
+
 
 
 const floatingButtonStyle = {
   position: 'fixed',
   bottom: '20px',
   right: '40px',
-  background: `radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-              radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)`,
+  background: '#D0B216',
   color: 'white',
   borderRadius: '50%',
   padding: '10px',
@@ -20,8 +21,8 @@ const floatingButtonStyle = {
 function FloatingChatButton(props) {
   return (
     <div style={floatingButtonStyle} onClick={props.handleChatButtonClick}>
-      <IconContext.Provider value={{ size: '2.5rem' }}>
-        <FaComments className='text-4xl lg:text-6xl xl:text-5xl'/>
+      <IconContext.Provider value={{ size: '2.8rem' }}>
+        <FaComments className='text-3xl lg:text-6xl xl:text-5xl'/>
       </IconContext.Provider>
     </div>
   );
