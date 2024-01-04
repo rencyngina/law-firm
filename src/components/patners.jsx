@@ -15,7 +15,7 @@ const Partners = () => {
               <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/JKTK.webp'
+                    src='/images/intelliwealth logo 2.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -33,7 +33,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/John-Mbaluto.webp'
+                    src='/images/Arifu-Logo.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -51,7 +51,7 @@ const Partners = () => {
             <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/John-Mbaluto.webp'
+                    src='/images/Arifu-Logo.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -66,10 +66,10 @@ const Partners = () => {
                   </p>
                   </div>
             </div>
-            <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
+            {/*<div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/John-Mbaluto.webp'
+                    src='/images/Arifu-Logo.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -77,17 +77,17 @@ const Partners = () => {
                   />
                   <div className="p-4 text-center bg-[rgb(17,24,39)]">
                   <h5 className="text-[#A65A2A] text-lg font-bold mb-2 hover:text-yellow-700">
-                    James Gitau
+                    Arifu
                   </h5>
                   <p>
                   description
                   </p>
                   </div>
-            </div>
-            <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
+  </div>*/}
+            {/*<div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/John-Mbaluto.webp'
+                    src='/images/intelliwealth logo 2.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -95,17 +95,17 @@ const Partners = () => {
                   />
                   <div className="p-4 text-center bg-[rgb(17,24,39)]">
                   <h5 className="text-[#A65A2A] text-lg font-bold mb-2 hover:text-yellow-700">
-                    James Gitau
+                    intelliwealth
                   </h5>
                   <p>
                   description
                   </p>
                   </div>
-            </div>
-            <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
+  </div>*/}
+            {/*<div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
-                    src='/images/John-Mbaluto.webp'
+                    src='/images/intelliwealth logo 2.png'
                     width={500}
                     height={500}
                     className="w-full h-auto"
@@ -119,7 +119,7 @@ const Partners = () => {
                   description
                   </p>
                   </div>
-            </div>
+  </div>*/}
       </div>
     </div>
   );

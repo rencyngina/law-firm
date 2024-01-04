@@ -1,18 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { GrNext } from "react-icons/gr";
-import { GrPrevious } from "react-icons/gr";
+import { LuArrowDownCircle } from "react-icons/lu";
+import { useRouter } from 'next/router';
+
 
 import masaaiImage from "../../../public/images/royford.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
+import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const [opacity, setOpacity] = useState(1);
+  const sectionRef = useRef(null);
+  const router = useRouter();
+  const [showIcon, setShowIcon] = useState(false);
 
   const imagesData = [
     {
@@ -86,7 +91,7 @@ const Hero = () => {
 
    useEffect(() => {
     const interval = setInterval(() => {
-      setOpacity(0); // Set opacity to 0 for smooth fade-out transition
+      setOpacity(1); // Set opacity to 0 for smooth fade-out transition
 
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
@@ -108,8 +113,31 @@ const Hero = () => {
     );
   };
 
+  const scrollToSection = () => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const handleLinkClick = () => {
+    scrollToSection();
+    router.push('#section1');
+  };
+
+  useEffect(() => {
+    // Delay the animation to show the icon after a short time (you can adjust the time)
+    const timeout = setTimeout(() => {
+      setShowIcon(true);
+    }, 1000); // Show after 1 second
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
-    <div className="relative w-full h-[79vh] lg:h-[85.8vh] xl:h-[88]">
+    <div className="relative w-full h-[88vh] lg:h-[85.8vh] xl:h-[88]">
       <Image
         src={imagesData[currentIndex].image}
         alt="Hero Image"
@@ -118,7 +146,6 @@ const Hero = () => {
         className="object-fit"
         style={{
           opacity: opacity,
-          // transition: 'opacity 2s ease-in-out',
           transition: 'opacity 1.5s ease-in-out',
         }}
         
@@ -130,22 +157,29 @@ const Hero = () => {
         <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
           {imagesData[currentIndex].description}
         </p>
-        <button className="text-sm lg:text-xl w-28 h-10 lg:w-48 lg:h-16 mt-6 mr-10 lg:mr-20 xl:mr-32" style={{ background: 'rgb(208,178,22)', border: 'none', transition: 'border 0.3s ease' }}>
-          {imagesData[currentIndex].buttonLabel}
-        </button>
-         <div className="hidden lg:flex justify-center mt-6 gap-8 sm:gap-12 md:gap-16 lg:gap-24">
-          {/* Conditional rendering of buttons based on screen size */}
-          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none  sm:flex" onClick={handlePrev}>
-            <GrPrevious className="text-black" />
-          </button>
-          <button className="btn btn-primary rounded-full bg-white h-12 w-12 flex items-center justify-center focus:outline-none sm:flex" onClick={handleNext}>
-            <GrNext className="text-black" />
-          </button>
-        </div>
       </div>
+      <ScrollLink
+        to="section1" // ID of the section to scroll to
+        spy={true}
+        smooth={true}
+        offset={-70} // Adjust offset if needed
+        duration={500} // Duration of the scroll animation
+        className="absolute bottom-0 left-0 flex gap-4 justify-center items-center p-4 lg:p-16"
+        onClick={scrollToSection}
+      >
+      <LuArrowDownCircle
+          className={`text-2xl text-white ${
+            showIcon ? 'see-more-icon visible' : 'see-more-icon'
+          }`}
+        />
+        <h1 className="text-white text-sm lg:text-xl leading-relaxed">
+          See More
+        </h1>
+      </ScrollLink>
     </div>
   );
 };
 
 export default Hero;
+
 
