@@ -18,7 +18,6 @@ const Family = () => {
           style={{
             backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/familylaw.jpg)`,
             backgroundPosition: "center",
-            objectFit: "contain",
             objectFit: "cover",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
