@@ -67,7 +67,7 @@ const Hero = () => {
   }, [totalImages]);
 
   return (
-    <div className="relative w-full h-[88vh] lg:h-[85.8vh] xl:h-[88] overflow-hidden">
+    <div className="relative w-full h-[83vh] lg:h-[85.8vh] xl:h-[88] overflow-hidden">
       {imagesData.map((image, index) => (
         <div
           key={index}
@@ -80,6 +80,10 @@ const Hero = () => {
             alt={`Slide ${index}`}
             layout="fill"
             className="object-fit"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
             <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
