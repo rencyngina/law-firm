@@ -69,7 +69,7 @@ const About = () => {
               professional standards.
             </p>
            <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
-              At Oraro & Company Advocates, we take pride in nurturing strong
+              At Mwenda RoyFord & Company Advocates, we take pride in nurturing strong
               client relationships and delivering quality legal services. Our
               partner-led approach leverages both local insights and global
               perspectives to meet the unique needs of our clients.
