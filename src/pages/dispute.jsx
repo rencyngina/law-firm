@@ -97,7 +97,6 @@ const Dispute = () => {
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
-                    objectFit="cover"
                     // className="rounded"
                   />
                 </div>
@@ -122,7 +121,6 @@ const Dispute = () => {
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
-                    objectFit="cover"
                     // className="rounded"
                   />
                 </div>

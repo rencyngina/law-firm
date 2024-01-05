@@ -1,22 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { LuArrowDownCircle } from "react-icons/lu";
-import { useRouter } from 'next/router';
-
+import { Link as ScrollLink } from "react-scroll";
 
 import masaaiImage from "../../../public/images/royford.jpg";
 import fourthImage from "../../../public/images/brief.jpeg";
 import fifthImage from "../../../public/images/service_03.jpg";
 import secondImage from "../../../public/images/assets.jpg";
-import { Link as ScrollLink } from 'react-scroll';
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-  const [opacity, setOpacity] = useState(1);
-  const sectionRef = useRef(null);
-  const router = useRouter();
   const [showIcon, setShowIcon] = useState(false);
 
   const imagesData = [
@@ -53,123 +48,60 @@ const Hero = () => {
     },
   ];
 
-  useEffect(() => {
-    const handleSwipe = () => {
-      if (touchStart - touchEnd > 50) {
-        // Swiped left, go to next image
-        handleNext();
-      } else if (touchEnd - touchStart > 50) {
-        // Swiped right, go to previous image
-        handlePrev();
-      }
-    };
-
-    const handleTouchStart = (event) => {
-      setTouchStart(event.touches[0].clientX);
-    };
-
-    const handleTouchMove = (event) => {
-      setTouchEnd(event.touches[0].clientX);
-    };
-
-    const handleTouchEnd = () => {
-      handleSwipe();
-      setTouchStart(0);
-      setTouchEnd(0);
-    };
-
-    document.addEventListener("touchstart", handleTouchStart);
-    document.addEventListener("touchmove", handleTouchMove);
-    document.addEventListener("touchend", handleTouchEnd);
-
-    return () => {
-      document.removeEventListener("touchstart", handleTouchStart);
-      document.removeEventListener("touchmove", handleTouchMove);
-      document.removeEventListener("touchend", handleTouchEnd);
-    };
-  }, [touchEnd]);
-
-   useEffect(() => {
-    const interval = setInterval(() => {
-      setOpacity(1); // Set opacity to 0 for smooth fade-out transition
-
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-        setOpacity(1); // Set opacity back to 1 for smooth fade-in transition
-      }, 5000); // Wait for 5 second before changing to the next image
-
-    }, 10000); // Change image every 10 seconds
-
-    return () => clearInterval(interval);
-  }, [imagesData.length]);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesData.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + imagesData.length) % imagesData.length
-    );
-  };
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
-
-  const handleLinkClick = () => {
-    scrollToSection();
-    router.push('#section1');
-  };
+  const totalImages = imagesData.length;
 
   useEffect(() => {
-    // Delay the animation to show the icon after a short time (you can adjust the time)
     const timeout = setTimeout(() => {
       setShowIcon(true);
-    }, 1000); // Show after 1 second
+    }, 10000);
 
     return () => clearTimeout(timeout);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
+    }, 8000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [totalImages]);
+
   return (
-    <div className="relative w-full h-[88vh] lg:h-[85.8vh] xl:h-[88]">
-      <Image
-        src={imagesData[currentIndex].image}
-        alt="Hero Image"
-        layout="fill"
-        objectFit="cover"
-        className="object-fit"
-        style={{
-          opacity: opacity,
-          transition: 'opacity 1.5s ease-in-out',
-        }}
-        
-      />
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
-        <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
-          {imagesData[currentIndex].title}
-        </h1>
-        <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
-          {imagesData[currentIndex].description}
-        </p>
-      </div>
+    <div className="relative w-full h-[88vh] lg:h-[85.8vh] xl:h-[88] overflow-hidden">
+      {imagesData.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute top-0 left-0 w-full h-[88vh] lg:h-[85.8vh] xl:h-[88] transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={image.image}
+            alt={`Slide ${index}`}
+            layout="fill"
+            className="object-fit"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
+            <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-6xl xl:text-7xl leading-relaxed lg:font-extrabold mb-2">
+              {image.title}
+            </h1>
+            <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
+              {image.description}
+            </p>
+          </div>
+        </div>
+      ))}
       <ScrollLink
-        to="section1" // ID of the section to scroll to
+        to="section1"
         spy={true}
         smooth={true}
-        offset={-70} // Adjust offset if needed
-        duration={500} // Duration of the scroll animation
+        offset={-70}
+        duration={500}
         className="absolute bottom-0 left-0 flex gap-4 justify-center items-center p-4 lg:p-16"
-        onClick={scrollToSection}
       >
-      <LuArrowDownCircle
+        <LuArrowDownCircle
           className={`text-2xl text-white ${
-            showIcon ? 'see-more-icon visible' : 'see-more-icon'
+            showIcon ? "see-more-icon visible" : "see-more-icon"
           }`}
         />
         <h1 className="text-white text-sm lg:text-xl leading-relaxed">
@@ -181,5 +113,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-

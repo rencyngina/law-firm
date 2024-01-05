@@ -3,8 +3,11 @@ import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
+import familyContent from "../pages/content/familyContent.json";
 
 const Family = () => {
+  const { bannerText, overview, keyContacts, experience } = familyContent;
+
   return (
     <>
       <Head />
@@ -20,7 +23,7 @@ const Family = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Family</h1>
+          <h1 className="text-5xl text-white">{bannerText}</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -34,22 +37,24 @@ const Family = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-[rgb(208,178,22)] text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              Journey with our firm through the heart-wrenching and triumphant
-              landscapes of child and family law. As trailblazers, we navigate
-              the intricate tapestry of Local and International adoptions,
-              offering a lifeline to families seeking to expand their love
-              across borders.
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+              The firm offers a comprehensive employment law service providing
+              employers, employees and self-employed with advice on employment
+              policies, contracts termination, wages and benefits, collective
+              bargaining agreements, workplace safety, workmens compensation
+              and pensions as well as dealing with employment related disputes.
+              We also assist companies to carry out the Employment audit in
+              terms of the requirements as required by law.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Brace yourself for the legal theatrics as we provide sagacious
-              consultation and fierce litigation representation in the realms of
-              Adoptions, Guardianships, Custody battles, and the emotional
-              terrain of Divorce. Witness our prowess in orchestrating fair
-              Maintenance settlements and championing diverse Family Law
-              Applications, where every case is a compelling chapter in the epic
-              tale of familial justice and harmony.
+              Chambers Global Guide, one of the most prestigious global legal
+              directories, in its 2021 rankings, noted the practice area as a
+              notable practice group that continues to enhance its reputation
+              and market share in Kenya’s real estate space. Similarly, the
+              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
+              Construction team for their outstanding contribution to the
+              practice area.
             </p>
           </div>
         </div>
@@ -65,12 +70,11 @@ const Family = () => {
               </div>
 
               {/* Contact 1 */}
-              <div className="bg-white p-4 rounded shadow-lg">
+              <div className="bg-white p-4 rounded shadow-lg transition duration-300">
                 <div className="relative h-40 overflow-hidden rounded-t">
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
-                    objectFit="cover"
                     // className="rounded"
                   />
                 </div>
@@ -84,17 +88,18 @@ const Family = () => {
                       <span className="font-semibold">Email:</span>{" "}
                       pamella@example.com
                     </li>
+                    {/* Add more contact information here if needed */}
                   </ul>
                 </div>
               </div>
 
               {/* Contact 2 */}
-              <div className="bg-white p-4 rounded shadow-lg ">
+              <div className="bg-white p-4 rounded shadow-lg transition duration-300 ">
                 <div className="relative h-40 overflow-hidden rounded-t">
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
-                    objectFit="cover"
+                    // className="rounded"
                   />
                 </div>
                 <div className="pt-4">
@@ -113,12 +118,11 @@ const Family = () => {
               </div>
 
               {/* Contact 3 */}
-              <div className="bg-white p-4 rounded shadow-lg">
+              <div className="bg-white p-4 rounded shadow-lg transition duration-300">
                 <div className="relative h-40 overflow-hidden rounded-t">
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
-                    objectFit="cover"
                     // className="rounded"
                   />
                 </div>
@@ -147,29 +151,39 @@ const Family = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md"></li>
                 <li className="leading-normal text-md">
-                  In a recent legal odyssey, our firm fearlessly embarked on a
-                  riveting international adoption case, deftly unraveling
-                  complexities to secure joyous family unions.
+                  Acted for a leading Kenyan investments and real estate company
+                  in the sale of 10 high- end villas worth USD 100 million in a
+                  gated community in Karen. We advised the parties on the joint
+                  venture arrangement and facilitated the negotiation of the
+                  joint venture agreement and the transfer of the land to the
+                  joint venture reference.
                 </li>
                 <li className="leading-normal text-md">
-                  As legal virtuosos, we orchestrated a gripping custody
-                  dispute, crafting a favorable arrangement that reverberated
-                  with the harmonious cadence of a child's best interests.
+                  Acted for a leading Kenyan investments and real estate company
+                  in the acquisition of a 10-acre piece of land in Ridgeways,
+                  Kiambu worth USD 92.5 Million. We advised on all aspects of
+                  the acquisition, conducting legal due diligence and
+                  negotiating the sale and purchase agreement.
                 </li>
                 <li className="leading-normal text-md">
-                  In the arena of high-stakes divorce, we wielded our legal
-                  prowess like a finely honed sword, navigating treacherous
-                  property divisions, negotiating spousal support, and artfully
-                  resolving child custody matters.
+                  Acting for a leading Kenyan real estate and investments firm
+                  in the acquisition of a property worth USD 13 million.
                 </li>
                 <li className="leading-normal text-md">
-                  This multifaceted experience illuminates our mastery in the
-                  diverse realms of Child and Family Law—a testament to our
-                  unwavering commitment to securing triumphant resolutions for
-                  clients amid the intricate tapestry of family-related legal
-                  challenges.
+                  Advisor to a Pan-African financial institution with offices in
+                  several African countries, in the acquisition of a property in
+                  Nairobi worth USD 12 million
+                </li>
+                <li className="leading-normal text-md">
+                  Acting for a leading Kenyan real estate and investments firm
+                  in the acquisition of a property worth USD 13 million
+                </li>
+                <li className="leading-normal text-md">
+                  Acting a leading Turkish construction company in partnership
+                  with a German investment firm in a joint venture project with
+                  landowners for the development of a multi-million dollar
+                  mixed-use project in Nairobi.
                 </li>
               </ul>
             </div>

@@ -1,0 +1,41 @@
+{
+  "bannerText": "Family",
+  "bannerDescription": "Journey with our firm through...",
+  "overview": {
+    "title": "Overview",
+    "content": [
+      "Journey with our firm through the heart-wrenching...",
+      "Brace yourself for the legal theatrics..."
+    ]
+  },
+  "keyContacts": [
+    {
+      "name": "Pamella Ager",
+      "position": "Partner",
+      "email": "pamella@example.com",
+      "image": "/images/John-Mbaluto.webp"
+    },
+    {
+      "name": "John Mbaluto",
+      "position": "Partner",
+      "email": "test@gmail.com",
+        "image": "/images/John-Mbaluto.webp"
+    },
+    {
+      "name": "John Mbaluto",
+      "position": "Partner",
+      "email": "test@gmail.com",
+        "image": "/images/John-Mbaluto.webp"
+    }
+  ],
+  "experience": {
+    "title": "Experience",
+    "subTitle": "Recently, we have been involved in:",
+    "recentCases": [
+      " In a recent legal odyssey, our firm fearlessly embarked on ariveting international adoption case, deftly unraveling complexities to secure joyous family unions.",
+      "As legal virtuosos, we orchestrated a gripping custody dispute, crafting a favorable arrangement that reverberated",
+      "In the arena of high-stakes divorce, we wielded our legal prowess like a finely honed sword, navigating treacherous property divisions, negotiating spousal support, and artfully resolving child custody matters.",
+      "This multifaceted experience illuminates our mastery in the diverse realms of Child and Family Law—a testament to our unwavering commitment to securing triumphant resolutions for clients amid the intricate tapestry of family-related legal challenges."
+    ]
+  }
+}
