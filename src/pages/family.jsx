@@ -21,7 +21,6 @@ const Family = () => {
             objectFit: "cover",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
           <h1 className="text-5xl text-white">{bannerText}</h1>
