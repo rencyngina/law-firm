@@ -28,8 +28,9 @@ const Section1 = () => {
   }, [handleScroll]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38"
-    id="section1"
+    <div
+      className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38"
+      id="section1"
     >
       <div className="container mx-auto px-4 md:px-8 lg:px-16 xl:px-20 text-white">
         <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold mb-4">
@@ -37,11 +38,14 @@ const Section1 = () => {
         </h1>
         <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
         <p className="text-sm md:text-xl lg:text-lg xl:text-lg leading-relaxed">
-          Muenda RoyFord & Company Advocates takes great pride in its strong
-          client relationships, deeply rooted in the provision of exceptional
-          legal services. Our approach combines local expertise with global
-          perspectives, ensuring the highest quality representation for our
-          clients.
+          Muenda RoyFord & Company Advocates takes great pride in its{" "}
+          <span className="font-bold">strong client relationships</span>,which
+          are{" "}
+          <span className="font-bold">
+            deeply rooted in the provision of exceptional legal services
+          </span>
+          . Our approach combines local expertise with global perspectives,
+          ensuring the highest quality representation for our clients.
         </p>
       </div>
       {/*
@@ -120,7 +124,7 @@ const Section1 = () => {
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">
               Values
             </h1>
-            <ul className="list-disc text-sm p-4 lg:text-lg xl:text-lg font-bold mt-4 mb-2 lg:ml-4 xl:ml-6">
+            <ul className="list-disc text-sm p-4 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
               <li className="mb-2 lg:mb-1 xl:mb-1">Integrity</li>
               <li className="mb-2 lg:mb-1 xl:mb-1">Professionalism</li>
               <li className="mb-2 lg:mb-1 xl:mb-1">Teamwork</li>
