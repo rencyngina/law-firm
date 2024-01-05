@@ -67,7 +67,7 @@ const Hero = () => {
   }, [totalImages]);
 
   return (
-    <div className="relative w-full h-[65vh] lg:h-[85.8vh] xl:h-[88] overflow-hidden md:h-[78vh] xs:h-[50vh]">
+    <div className="relative w-full h-[68vh] lg:h-[85.8vh] xl:h-[88] overflow-hidden md:h-[78vh] xs:h-[50vh]">
       {imagesData.map((image, index) => (
         <div
           key={index}
