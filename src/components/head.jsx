@@ -14,7 +14,7 @@ const Head = () => {
       <div className="container mx-auto py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between items-center text-white text-sm">
           <Link
-            href="tel:+2348030000000"
+            href="tel:+254 701331176"
             className="flex items-center mt-2 mb-3 sm:mb-0"
           >
             <FaPhone className="mr-2" />
