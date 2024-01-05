@@ -60,7 +60,7 @@ const Family = () => {
         </div>
         {/* Experience and key Contacts to be added */}
         <div className="container mx-auto p-10 xl:p-22 lg:p-14 border-b lg:mb-10">
-          <div className="block lg:grid lg:grip-col-2 xl:grid-cols-2 lg:gap-8">
+          <div className="block lg:grid lg:grip-col-2 xl:grid-cols-2 lg:gap-8 mt-6">
             <div className="gap-4 mt-0 grid grid-cols-1 lg:grid-cols-3 lg:mb-40 xl:mt-50">
               <div className="lg:col-span-3">
                 <h1 className="text-2xl lg:text-3xl xl:text-4xl mb-4">

@@ -13,7 +13,7 @@ const Commercial = () => {
         <div
           className="h-52 w-full flex flex-col justify-center items-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/call.jpg)`,
+            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/coporate.png)`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const Commercial = () => {
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
-            src="/images/property.jpg"
+            src="/images/coporate.png"
             width={500}
             height={300}
             className="w-82 h-42 mt-6"
