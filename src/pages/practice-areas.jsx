@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Practice = () => {
   const data = [
     { id: 1, name: 'Conveyance and Property Law', imageSrc: '/images/assets.jpg', linkTo: '/estate-Administration' },
-    { id: 2, name: 'Commercial and Business Law', imageSrc: '/images/coporate.png', linkT0: '/commercial' },
+    { id: 2, name: 'Commercial and Business Law', imageSrc: '/images/coporate.png', linkTo: '/commercial' },
     { id: 3, name: 'Child and Family Law', imageSrc: '/images/familylaw.jpg', linkTo: '/family' },
     { id: 4, name: 'Probate and Estate Administration', imageSrc: '/images/property.jpg', linkTo: '/estate-Administration' },
     { id: 5, name: 'Labour and Employment Law', imageSrc: '/images/11r.jpg', linkTo: '/employment-law' },
