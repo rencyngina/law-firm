@@ -5,13 +5,14 @@ import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
 import familyContent from "../pages/content/familyContent.json";
+import { BiLogoGmail } from "react-icons/bi";
+
 
 const Family = () => {
   const { bannerText, overview, keyContacts, experience } = familyContent;
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="family">
         <div
@@ -112,8 +113,8 @@ const Family = () => {
                     <li className="mb-2">
                       <span className="font-semibold">Position:</span> Partner
                     </li>
-                    <li className="mb-2">
-                      <span className="font-semibold">Email:</span>{" "}
+                    <li className="mb-2" mailto=''>
+                      <BiLogoGmail />{" "}
                       pamella@example.com
                     </li>
                     {/* Add more contact information here if needed */}
@@ -137,8 +138,8 @@ const Family = () => {
                     <li className="mb-2">
                       <span className="font-semibold">Position:</span> Partner
                     </li>
-                    <li className="mb-2">
-                      <span className="font-semibold">Email:</span>{" "}
+                    <li className="mb-2" mailto=''>
+                      <BiLogoGmail />{" "}
                       pamella@example.com
                     </li>
                     {/* Add more contact information here if needed */}
@@ -180,6 +181,7 @@ const Family = () => {
         </div>
       </div>
       <FooterLinks />
+      <Head />
     </>
   );
 };
