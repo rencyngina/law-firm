@@ -28,6 +28,7 @@ const Dispute = () => {
             width={500}
             height={300}
             className="w-82 h-42 mt-6"
+            alt=""
           />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
@@ -73,6 +74,7 @@ const Dispute = () => {
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
                     objectFit="cover"
+                    alt=""
                     // className="rounded"
                   />
                 </div>
@@ -97,6 +99,7 @@ const Dispute = () => {
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
+                    alt=""
                     // className="rounded"
                   />
                 </div>
@@ -121,6 +124,7 @@ const Dispute = () => {
                   <Image
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
+                    alt=""
                     // className="rounded"
                   />
                 </div>

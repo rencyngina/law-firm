@@ -28,6 +28,7 @@ const BankingFinance = () => {
             width={500}
             height={300}
             className="w-82 h-42 mt-6"
+            alt="BankingFinance"
           />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
@@ -76,6 +77,7 @@ const BankingFinance = () => {
                     src="/images/John-Mbaluto.webp"
                     layout="fill"
                     objectFit="cover"
+                    alt="BankingFinance"
                     // className="rounded"
                   />
                 </div>
@@ -102,6 +104,7 @@ const BankingFinance = () => {
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
+                    alt="BankingFinance"
                   />
                 </div>
                 <div className="pt-4">
@@ -127,6 +130,7 @@ const BankingFinance = () => {
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
+                    alt="BankingFinance"
                   />
                 </div>
                 <div className="pt-4">
