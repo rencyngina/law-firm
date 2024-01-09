@@ -102,7 +102,7 @@ const Partners = () => {
                   </p>
                   </div>
   </div>*/}
-            {/*<div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
+            <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
                     alt="Practice Area"
                     src='/images/intelliwealth logo 2.png'
@@ -119,7 +119,7 @@ const Partners = () => {
                   description
                   </p>
                   </div>
-  </div>*/}
+  </div>
       </div>
     </div>
   );
