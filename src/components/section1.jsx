@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 // bg-gradient-to-b from-gray-800 to-gray-900
 const Section1 = () => {
   const firstSectionControls = useAnimation();
@@ -63,10 +64,12 @@ const Section1 = () => {
             }}
           >
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src="/images/mission.png"
                 alt="mission"
                 className="w-12 lg:w-16 lg:h-16 h-12 xl:w-18 xl:h-18"
+                width={20}
+                height={20}
               />
             </div>
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">
@@ -89,10 +92,12 @@ const Section1 = () => {
             }}
           >
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src="/images/vision.svg"
                 alt="vision"
                 className="w-12 h-12"
+                width={20}
+                height={20}
               />
             </div>
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">
@@ -115,10 +120,12 @@ const Section1 = () => {
             }}
           >
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src="/images/values.png"
                 alt="values"
                 className="w-12 h-12"
+                width={20}
+                height={20}
               />
             </div>
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold text-center mt-4 mb-2">

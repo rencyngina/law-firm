@@ -31,6 +31,7 @@ const Arbitration = () => {
             width={500}
             height={300}
             className="w-82 h-42 mt-6"
+            alt='arbitration'
           />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
@@ -76,6 +77,7 @@ const Arbitration = () => {
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
+                    alt='arbitration'
                   />
                 </div>
                 <div className="pt-4">
@@ -101,6 +103,7 @@ const Arbitration = () => {
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
+                    alt='arbitration'
                   />
                 </div>
                 <div className="pt-4">
@@ -126,6 +129,7 @@ const Arbitration = () => {
                     layout="fill"
                     objectFit="cover"
                     // className="rounded"
+                    alt='arbitration'
                   />
                 </div>
                 <div className="pt-4">
