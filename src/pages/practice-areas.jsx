@@ -32,7 +32,6 @@ const Practice = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            // backgroundAttachment: 'fixed',
           }}
         >
           <h1 className="text-5xl text-white">Practice Areas</h1>
@@ -50,6 +49,7 @@ const Practice = () => {
                     height={500}
                     className="w-full h-auto"
                     style={{ maxHeight: '250px' }}
+                    loading="lazy"
                   />
                   <div className="p-4 text-center bg-[rgb(17,24,39)]">
                   <a href={item.linkTo} className="text-[#A65A2A] hover:text-yellow-700">
