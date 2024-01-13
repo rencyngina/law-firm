@@ -2,19 +2,9 @@
 
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
-import { FaPhone } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
-import { MdOutlineVerticalAlignTop } from "react-icons/md";
 import { BsTwitterX } from "react-icons/bs";
 
 function FooterLinks() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <>
@@ -243,17 +233,6 @@ function FooterLinks() {
           </div>
         </div>
       </footer>
-      <div
-        className="text-center justify-center items-center text-white bg-gray-800"
-        onClick={scrollToTop}
-        style={{
-          padding: "10px",
-          cursor: "pointer",
-          zIndex: "10",
-        }}
-      >
-        <MdOutlineVerticalAlignTop className="justify-center items-center" />
-      </div>
     </>
   );
 }

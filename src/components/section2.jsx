@@ -69,7 +69,7 @@ const Section2 = () => {
           </h6>
           <h1 className="text-white md:text-4xl text-lg font-bold">
             Our solutions for your <br />
-            <span className="bg-clip-text text-transparent bg-[#D0B216]">
+            <span className="text-[#D0B216] background-clip-text">
               Growth
             </span>
           </h1>
@@ -96,7 +96,7 @@ const Section2 = () => {
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <Link href="/about" className="text-white">
