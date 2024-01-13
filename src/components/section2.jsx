@@ -69,13 +69,13 @@ const Section2 = () => {
           </h6>
           <h1 className="text-white md:text-4xl text-lg font-bold">
             Our solutions for your <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+            <span className="text-[#D0B216] background-clip-text">
               Growth
             </span>
           </h1>
           <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
             Established in{" "}
-            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+            <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016
             </span>
             , MWENDA ROYFORD & CO ADVOCATE is a leading African law firm
@@ -96,7 +96,7 @@ const Section2 = () => {
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <Link href="/about" className="text-white">
