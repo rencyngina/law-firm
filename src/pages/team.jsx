@@ -60,17 +60,7 @@ const Team = () => {
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
-    },
-    {
-      id: 6,
-      name: "Ngava Joy Kaaria",
-      image: '/images/John-Mbaluto.webp',
-      work: 'Senior advocate',
-      email: 'royford@example.com',
-      facebook: 'https://www.facebook.com/royford',
-      twitter: 'https://www.twitter.com/royford',
-      instagram: 'https://www.instagram.com/royford',
-    },
+    }
   ];
 
   return (
@@ -110,7 +100,7 @@ const Team = () => {
             quia voluptas quae. Quisquam quos modi, fugiat dolorum vero ex
             voluptatum, voluptate, quibusdam quia voluptas quae.
             </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamData.map((member) => (
               <div
                 key={member.id}

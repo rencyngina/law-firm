@@ -49,6 +49,7 @@ const Commercial = () => {
               clients.
             </p>
             <br />
+            {/*  Querry data using json from a file*/}
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
               Chambers Global Guide, one of the most prestigious global legal
               directories, in its 2021 rankings, noted the practice area as a
