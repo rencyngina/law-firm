@@ -5,7 +5,6 @@ import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
 
 function FooterLinks() {
-
   return (
     <>
       <footer className="bg-gradient-to-b from-gray-800 to-gray-900">
@@ -121,8 +120,7 @@ function FooterLinks() {
                   <li>
                     <a
                       href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
+                      className="transition hover:opacity-75 text-gray-200">
                       SEO Infographics
                     </a>
                   </li>

@@ -36,7 +36,7 @@ const Head = () => {
           >
             <IoLocationSharp className="mr-2" />
             <p className="hidden sm:block">
-             5TH AVENUE OFFICE SUITES 4TH FLOOR SUITE 4 – 15 OFF NGONG ROAD
+             5th avenue office suites 4th floor suite 4 – 15 off ngong road
             </p>
           </div>
           <div className="flex items-center mt-2 mb-3 sm:mb-0">
