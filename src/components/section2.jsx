@@ -74,24 +74,17 @@ const Section2 = () => {
             </span>
           </h1>
           <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
+          
+            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+            
             Established in{" "}
             <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016
             </span>
-            , MWENDA ROYFORD & CO ADVOCATE is a leading African law firm
-            renowned for its comprehensive range of legal services, including
-            dispute resolution and corporate & commercial law. We have
-            consistently earned top-tier recognition in Kenya from prestigious
-            international legal directories like Chambers Global, IFLR1000, and
-            Legal 500
+            Dive into the heart of legal excellence with Mwenda Royford & Co Advocates, where the art of law transforms into a thrilling symphony of unparalleled expertise and relentless dedication. Established in 2016, our firm stands as a beacon of legal prowess, a powerhouse fueled by a cadre of exceptional legal minds.
           </p>
           <p className="text-white lg:text-lg xl:text-xl text-lg lg:mt-0 xl:mt-6 mt-4">
-            Our specialized legal expertise spans various areas, locally and
-            regionally, encompassing Arbitration; Asset Tracing & Recoveries;
-            Banking & Finance; Capital Markets; Conveyancing & Real Estate;
-            Corporate & Commercial; Dispute Resolution; Employment & Labour;
-            FinTech; Infrastructure, Projects & PPP; Private Client;
-            Restructuring & Insolvency; and Tax.
+          Imagine a legal realm where experience is not just a metric but a legacy. Mwenda Royford & Co Advocates boasts a treasure trove of legal virtuosos, each advocate a maestro in their own right. Our team, a fusion of private practice virtuosos, public sector stalwarts, and international legal luminaries, creates a harmonious ensemble that sets us leagues apart from other corporate commercial law firms in Kenya.
           </p>
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"

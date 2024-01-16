@@ -25,7 +25,7 @@ function FooterLinks() {
                     About
                   </h2>
                   <p className="lg:text-sm text-sm mt-4 text-white">
-                    Muenda RoyFord & Company Advocates is a full-service
+                    Mwenda RoyFord & Company Advocates is a full-service
                     market-leading African law firm established in 2016 with a
                     strong focus on dispute resolution and corporate &
                     commercial law. With a dedicated team of partners, senior

@@ -3,10 +3,10 @@ import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
-import familyContent from "../pages/content/familyContent.json";
+import familyContent from "./content/familyContent.json";
 import { BiLogoGmail } from "react-icons/bi";
 
-function Construction() {
+function EnergySector() {
 
   return (
     <>
@@ -22,7 +22,7 @@ function Construction() {
             // backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Construction</h1>
+          <h1 className="text-5xl text-white">EnergySector</h1>
           </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -38,24 +38,20 @@ function Construction() {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-            Embark on a thrilling odyssey through Kenya's dynamic construction arena, a pulsating realm of double-digit growth igniting opportunities in real estate, energy, and infrastructure. This 
-            narrative of progress, fueled by private financing, is a testament to the success story of our nation.
-At Mwenda Royford and Company Advocates, the construction landscape isn't just a domain; it's the essence of our expertise. Picture a tapestry woven with deep sector experiences, propelling us to advise seamlessly in contentious and non-contentious matters within the construction narrative.
-
+            Our legal mastery meets the complexities of a dynamic regulatory environment.
+            In an era of substantial oil and mineral discoveries, our prowess in the energy sector stands as a beacon, navigating the intricate legal terrain with finesse. Picture a symphony of expertise, where large-scale infrastructure projects seamlessly blend with our commitment to bolster domestic and foreign export.            
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-            In our symphony of legal brilliance, harmonizing with our prowess in Conveyancing & Real Estate, we stand as advisors to visionaries—owners, developers, contracting professionals, and lenders. Envision a canvas where we navigate the intricacies of land acquisition, construction disputes, local and international arbitration, project agreements, financing, and the structuring of complex projects.
-            Join us at Mwenda Royford and Company Advocates, where construction isn't just an industry; it's a thrilling saga of legal mastery, transforming challenges into triumphs in the heart of Kenya's construction renaissance.            
+            At Mwenda Royford and Company Advocates, our dedication to the energy sector is more than legal advice; it's an unwavering commitment to being trailblazers in this transformative industry. As we collaborate closely with the Infrastructure, Projects & PPP practice area, we stand at the forefront, offering our clients not just legal counsel but a gateway to success in the pulsating energy renaissance of Kenya.
             </p>
           </div>
         </div>
-        {/* Experience and key Contacts to be added */}
         
       <FooterLinks />
     </>
   );
 };
 
-export default Construction;
+export default EnergySector;
 

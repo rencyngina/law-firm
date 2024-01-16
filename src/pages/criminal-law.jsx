@@ -35,20 +35,12 @@ const CriminalLaw = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              The firm handles defences on all matters of criminal law including
-              fraud, traffic, theft to name but a few. We do also watch brief
-              for our clients in cases where our clients have interest in a
-              criminal prosecution outcome.
+            Picture a scenario where legal defenses transcend the ordinary, weaving a narrative of resilience and strategic acumen.
+            In the heart of our practice, we navigate the complexities of criminal law, handling defenses with an unparalleled commitment to justice. Whether it's fraud, traffic violations, theft, or other criminal matters, our firm stands as a bastion of legal prowess, turning each defense into a thrilling legal saga.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            But our commitment doesn't end with defense; we actively watch brief for clients, ensuring their interests are safeguarded in the outcome of criminal prosecutions. Mwenda Royford and Company Advocates redefine Criminal Law, offering not just legal services but immersive experiences marked by resilience, strategic brilliance, and the thrill of navigating the challenging landscape of criminal defense. Trust us to not just handle cases but to craft legal narratives that transcend expectations in the dynamic realm of Criminal Law.
             </p>
           </div>
         </div>
@@ -152,39 +144,22 @@ const CriminalLaw = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
+                Our firm stood as a formidable legal force, handling defenses across the spectrum of criminal law, from fraud to traffic violations and theft. 
                 </li>
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
+                Imagine a scenario where legal battles are not just 
+                fought but strategically navigated, each case a thrilling
+                 saga of resilience and acumen. Our commitment goes 
+                 beyond traditional defense; we actively engage in watch
+                 briefs for clients, ensuring their interests are 
+                 championed in criminal prosecutions. Mwenda Royford and 
+                 Company Advocates redefine Criminal Law, offering not 
+                 just legal representation but immersive experiences
+                  marked by strategic brilliance, resilience, and the
+                   thrill of navigating the complex landscape of criminal
+                    defense. Trust us to not just handle cases but to craft legal narratives that transcend expectations in the dynamic realm of Criminal Law.
                 </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
-                </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
-                </li>
+                
               </ul>
             </div>
           </div>

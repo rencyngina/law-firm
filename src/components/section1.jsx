@@ -43,7 +43,7 @@ const Section1 = () => {
         </h1>
         <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
         <p className="text-sm md:text-xl lg:text-lg xl:text-lg leading-relaxed">
-          Muenda RoyFord & Company Advocates takes great pride in its{" "}
+          Mwenda RoyFord & Company Advocates takes great pride in its{" "}
           <span className="font-bold">strong client relationships</span>,which
           are{" "}
           <span className="font-bold">
@@ -80,10 +80,13 @@ const Section1 = () => {
               Mission
             </h1>
             <p className="">
-              Our mission is to assist our clients in achieving their objectives
-              as smoothly and efficiently as possible whilst minimizing the
-              legal and regulatory risks, both within Kenya and further a field
-              in Africa.
+            Our mission is to pioneer a legal revolution as architects 
+            of triumph to guide clients seamlessly, transforming legal 
+            challenges into victory within Kenya and across Africa in a 
+            thrilling journey to coherently achieve objectives, navigating legal
+             complexities, and minimize risks with visionary efficiency shaped by our commitment to
+              excellence. 
+            Why Choose Us-            
             </p>
           </motion.div>
           <motion.div
@@ -108,10 +111,7 @@ const Section1 = () => {
               Vision
             </h1>
             <p className="">
-              We intend to build strong associations with leading law firms in
-              UK, South Africa, Uganda, Tanzania, Sudan, Ethiopia, United States
-              of America to name but a few, to give us considerable strength in
-              legal matters with an international or regional ingredient.
+            Our Vision is to forge robust partnerships and formidable powerhouse of international and regional legal strength, with premier law firms across Europe, Africa, and USA setting new standards and ensuring unparalleled excellence in every legal matter we undertake.
             </p>
           </motion.div>
           <motion.div
@@ -136,12 +136,12 @@ const Section1 = () => {
               Values
             </h1>
             <ul className="list-disc text-sm p-4 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-              <li className="mb-2 lg:mb-1 xl:mb-1">Integrity</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Professionalism</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Teamwork</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Commitment</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Accountability</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Excellence</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Innovation Beyond Borders</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Unyielding Commitment to Justice</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Client Triumph is our Triumph</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Versatility in Legal Mastery</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Global Vision, Local Insight</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">Inspirational Leadership</li>
             </ul>
           </motion.div>
         </div>

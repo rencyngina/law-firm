@@ -36,23 +36,11 @@ const Dispute = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              The firm offers a comprehensive employment law service providing
-              employers, employees and self-employed with advice on employment
-              policies, contracts termination, wages and benefits, collective
-              bargaining agreements, workplace safety, workmen’s compensation
-              and pensions as well as dealing with employment related disputes.
-              We also assist companies to carry out the Employment audit in
-              terms of the requirements as required by law.
+            Our dispute resolution transcends legal conventions. Our commitment to ADR, particularly in Arbitration and Mediation, unfolds as a riveting narrative of swift conflict resolution intertwined with the delicate art of relationship mending. Imagine a legal landscape where disputes, be it within families, registered societies, community groups, or business entities, are not just resolved but transformed into opportunities for growth and understanding.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            Our triumphs in this arena are emblematic of our prowess, showcasing the adept handling of disputes involving diverse stakeholders. Mwenda Royford and Company Advocates redefine ADR, presenting a thrilling saga of conflict transformation where resolutions go beyond legalities to foster enduring relationships. Trust us to navigate the intricacies of Arbitration and Mediation, crafting resolutions that are not just legal victories but captivating stories of harmony, restoration, and lasting connections.
             </p>
           </div>
         </div>
@@ -154,39 +142,15 @@ const Dispute = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
+                Our legal expertise meets the art of conflict transformation. Picture a scenario where the swift resolution of disputes is not just a legal triumph but a thrilling narrative of relationship restoration
                 </li>
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
+                In one remarkable experience, our commitment to ADR unfolded as a gripping saga. We successfully navigated disputes entwined with the complexities of families, registered societies, community groups, and business persons. This wasn't merely about settling legal matters; it was about redefining relationships, fostering understanding, and turning conflicts into opportunities for growth.
                 </li>
                 <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
+                At Mwenda Royford and Company Advocates, ADR is not just a service; it's a captivating story of conflict resolution that goes beyond the legal realm. Trust us to craft resolutions that are not just solutions but thrilling tales of harmony, restoration, and enduring connections in diverse and challenging scenarios.
                 </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
-                </li>
+                
               </ul>
             </div>
           </div>
