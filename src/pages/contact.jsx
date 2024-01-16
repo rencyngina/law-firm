@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="container lg:grid lg:grid-cols-2 lg:gap-2 justify-center mx-auto mt-8 px-4 lg:p-8 p-0 xl:p-10">
           <section className="text-center">
           <h1 className="text-lg lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
-            SEND US A MESSAGE
+            Request for a call back
           </h1>
              <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="grid grid-cols-1 gap-4">
