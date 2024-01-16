@@ -6,7 +6,7 @@ import Image from "next/image";
 import familyContent from "../pages/content/familyContent.json";
 import { BiLogoGmail } from "react-icons/bi";
 
-function Construction() {
+function Financials() {
 
   return (
     <>
@@ -22,7 +22,7 @@ function Construction() {
             // backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Construction</h1>
+          <h1 className="text-5xl text-white">Financials</h1>
           </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -38,15 +38,13 @@ function Construction() {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-            Embark on a thrilling odyssey through Kenya's dynamic construction arena, a pulsating realm of double-digit growth igniting opportunities in real estate, energy, and infrastructure. This 
-            narrative of progress, fueled by private financing, is a testament to the success story of our nation.
-At Mwenda Royford and Company Advocates, the construction landscape isn't just a domain; it's the essence of our expertise. Picture a tapestry woven with deep sector experiences, propelling us to advise seamlessly in contentious and non-contentious matters within the construction narrative.
-
+            Dive into the heart of financial vibrancy with Mwenda Royford and Company Advocates, where the rhythm of the financial sector's pulse is matched by our nuanced understanding of its intricate dynamics.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-            In our symphony of legal brilliance, harmonizing with our prowess in Conveyancing & Real Estate, we stand as advisors to visionaries—owners, developers, contracting professionals, and lenders. Envision a canvas where we navigate the intricacies of land acquisition, construction disputes, local and international arbitration, project agreements, financing, and the structuring of complex projects.
-            Join us at Mwenda Royford and Company Advocates, where construction isn't just an industry; it's a thrilling saga of legal mastery, transforming challenges into triumphs in the heart of Kenya's construction renaissance.            
+            In a sector shaped by meticulous regulatory oversight, we navigate the challenges and harness the opportunities that come with stringent disclosure requirements and a demanding business environment. Beyond legal jargon, our expertise manifests in technically sound, practical, and 
+            commercially effective advice, ensuring that our clients not only survive but thrive in this dynamic financial landscape.
+Picture a legal ensemble that extends beyond traditional boundaries, providing a symphony of services encompassing business support, restructuring, insolvency, corporate advisory, dispute resolution, litigation, employment and labor advice, local and international arbitration, and tax dispute resolution. At Mwenda Royford and Company Advocates, we don't just understand the complexities; we orchestrate success in the financial sector with unparalleled legal finesse.
             </p>
           </div>
         </div>
@@ -57,5 +55,6 @@ At Mwenda Royford and Company Advocates, the construction landscape isn't just a
   );
 };
 
-export default Construction;
+export default Financials;
+
 

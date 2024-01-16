@@ -38,22 +38,11 @@ const EstateAdministration = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              Mwenda RoyFord & Company Advocates has extensive experience in creating and advising on
-              securities, including mortgages, charges, debentures, loan
-              agreements for Bank, Micro-finance Institutions and Lending
-              companies, transfer of property and real estate rights’
-              transactions, long term leases for development and sectional
-              property transactions among others.
+            Step into a realm where our Conveyancing & Real Estate practice group, seasoned in high-stakes legal theatrics, orchestrates a symphony of success for local and international clients. With a tapestry of rich experience, we guide you through the thrilling narratives of land acquisition and disposal, seamlessly executing conveyancing acrobatics
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            Marvel at our expertise in sculpting the skylines of commercial and residential development, choreographing leases and licenses with finesse. Witness the pulse-pounding drama of project financing unfold, and behold the artistry in structuring complex projects and joint ventures. Join us in rewriting the thrilling saga of property law, where every chapter resonates with strategic brilliance and practical triumphs. 
             </p>
           </div>
         </div>
@@ -157,38 +146,7 @@ const EstateAdministration = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
-                </li>
-                <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
-                </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
+                In a recent legal spectacle, our Conveyancing & Real Estate prowess took center stage as we orchestrated a breathtaking acquisition of prime real estate for an international client. Navigating a labyrinth of legal complexities, we seamlessly executed the conveyancing ballet, ensuring a flawless transition of property ownership. The saga continued as we lent our expertise to a high-stakes commercial development, sculpting a skyline that echoed with success. Leases and licenses became a canvas for us to paint strategic masterpieces, and the orchestration of project financing showcased our financial wizardry. In the realm of complex projects and joint ventures, our legal virtuosity shone, crafting structures that stood as monuments to our unwavering commitment to excellence in Conveyance and Property Law.
                 </li>
               </ul>
             </div>

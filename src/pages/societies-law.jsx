@@ -35,27 +35,12 @@ const SocietiesLaw = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              The firm has and continuous to represent, guide and offer its
-              legal services to the various co-operative societies in different
-              parts of the country and more particularly in the agricultural
-              sector which hosts the bulk of the cooperative movement especially
-              in the coffee and tea sectors. The firm has been instrumental in
-              the dissemination and interpretation of the newly introduced
-              compulsory registration of all public service vehicles into
-              cooperative societies and has been involved in advising on
-              compliance and implementation of this policy. We have handled
-              cooperative Societies disputes resolution through the established
-              tribunal mechanism.
+            Picture a scenario where legal expertise meets the cooperative movement, and strategic guidance transforms regulatory challenges into triumphs.
+            Our firm proudly represents and guides various co-operative societies across the country, with a special focus on the vibrant agricultural sector, including the pivotal coffee and tea industries. In a trailblazing initiative, we played a key role in disseminating and interpreting the compulsory registration of public service vehicles into cooperative societies, providing invaluable advice on compliance and implementation of this groundbreaking policy.            
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            But our commitment doesn't stop there; we've navigated cooperative societies disputes through established tribunal mechanisms, ensuring a seamless resolution process. Mwenda Royford and Company Advocates redefine Co-operative Societies Law, offering not just legal services but a thrilling journey of strategic guidance and transformative advocacy in the dynamic world of cooperative governance. Trust us to not just represent but to orchestrate legal strategies that redefine industry standards. 
             </p>
           </div>
         </div>
@@ -156,39 +141,16 @@ const SocietiesLaw = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
+                In a remarkable experience, our firm has been at the forefront, passionately representing and guiding various co-operative societies across the nation, with a spotlight on the agricultural sector, the epicenter of the cooperative movement, notably in coffee and tea.
                 </li>
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
+                Imagine a scenario where legal expertise becomes a driving force for change. Our firm played a pivotal role in disseminating and interpreting the groundbreaking compulsory registration of public service vehicles into cooperative societies. This innovative policy required not just legal insight but strategic advice on compliance and implementation, an area where our firm excels.
+                But our commitment doesn't stop at advisory; we've navigated the complexities of cooperative societies disputes, seamlessly resolving issues through established tribunal mechanisms. 
                 </li>
                 <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
+                Mwenda Royford and Company Advocates redefine Co-operative Societies Law, offering not just legal representation but an immersive experience marked by strategic brilliance, resilience, and transformative advocacy in the dynamic world of cooperative governance. Trust us to not just handle cases but to craft legal narratives that transcend expectations in the thrilling realm of Co-operative Societies Law.
                 </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
-                </li>
+               
               </ul>
             </div>
           </div>

@@ -36,26 +36,13 @@ const BankingFinance = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              <span className="font-bold text-black"> Mwenda RoyFord & Company Advocates </span> advises on the structuring and implementation of significant
-              financial transactions including debt and equity issued and in
-              relation to compliance with the local regulatory regime. We also
-              provide opinions on Kenyan law to lenders, the Kenyan Government,
-              its departments and rating agencies world-wide. In addition, we
-              advise on dealing with locally established counterparts in
-              particular on netting, derivatives and security and we are
-              regularly involved in the preparation of documents for swaps,
-              options, foreign exchange transactions and stock lending
-              transactions.
+            Our firm stands as a beacon of financial expertise, navigating the intricacies of significant transactions with precision and flair. 
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            Imagine a scenario where financial transactions are not just structured but orchestrated with finesse. In our dynamic portfolio, we advise on debt and equity issues, ensuring compliance with the local regulatory regime. It's not just about adhering to regulations; it's about crafting financial strategies that redefine the landscape.
+            In one riveting experience, we provided opinions on Kenyan law to lenders, the Kenyan Government, and rating agencies worldwide. Our involvement extended beyond routine advice; we actively advised on netting, derivatives, security, and played a crucial role in crafting intricate documents for swaps, options, foreign exchange transactions, and stock lending.
+            At Mwenda Royford and Company Advocates, Banking and Finance is not just a practice area; it's an immersive experience marked by strategic insight, precision, and the thrill of navigating the dynamic world of financial transactions. Trust us to not just advise but to orchestrate financial transactions that transcend industry standards.
             </p>
           </div>
         </div>
@@ -159,39 +146,15 @@ const BankingFinance = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
+                Picture a scenario where financial transactions are not just advised but meticulously structured and implemented, creating a symphony of strategic insight and precision.
+                In a remarkable experience, our firm played a pivotal role in significant financial transactions, guiding the structuring of debt and equity issues with finesse. Compliance with the local regulatory regime wasn't just a requirement; it was an opportunity to redefine financial strategies. We provided opinions on Kenyan law to lenders, the Kenyan Government, and global rating agencies, offering a nuanced understanding that transcends borders.
+                
                 </li>
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
+                Our expertise extended beyond routine advice, actively advising on netting, derivatives, and security. Mwenda Royford and Company Advocates became a key player in crafting intricate documents for swaps, options, foreign exchange transactions, and stock lending transactions.
+                At Mwenda Royford and Company Advocates, Banking and Finance isn't just a service; it's an immersive experience marked by strategic insight, precision, and the thrill of navigating the dynamic landscape of financial transactions. Trust us to not just advise but to orchestrate financial dealings that redefine industry norms.                
                 </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
-                </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
-                </li>
+                
               </ul>
             </div>
           </div>

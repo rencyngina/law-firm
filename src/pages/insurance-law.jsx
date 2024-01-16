@@ -36,21 +36,12 @@ const InsuranceLaw = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-              ROyford and company firm prosecutes and defends Tort and Insurance claims, Debt
-              Collection and Suits for premiums. We offer advice on insurance
-              claims and contracts. We provide compliance, transactional and
-              litigation to insurers and to financial services industry
-              generally.
+            Our firm stands as a formidable force, both prosecuting and defending in the arena of Tort and Insurance claims, Debt Collection, and Suits for premiums. We don't just practice law; we orchestrate legal symphonies.
             </p>
             <br />
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-              Chambers Global Guide, one of the most prestigious global legal
-              directories, in its 2021 rankings, noted the practice area as a
-              notable practice group that continues to enhance its reputation
-              and market share in Kenya’s real estate space. Similarly, the
-              Legal 500 EMEA 2021 recognised the firm’s Real Estate &
-              Construction team for their outstanding contribution to the
-              practice area.
+            Imagine a scenario where legal prowess meets the thrill of intricate claims and premium suits, where each case is not just a legal battle but a captivating narrative of strategy and precision. Our expertise extends beyond the `, offering nuanced advice on insurance claims and contracts, ensuring our clients navigate the complexities of the financial services industry with confidence.
+            At Mwenda Royford and Company Advocates, Tort and Insurance Law is not just a practice area; it's an immersive experience marked by legal finesse, strategic insight, and thrilling victories. Trust us to navigate the intricacies of Tort and Insurance claims, offering a seamless blend of compliance, transactional excellence, and litigation prowess that transcends industry standards.            
             </p>
           </div>
         </div>
@@ -154,38 +145,13 @@ const InsuranceLaw = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the sale of 10 high- end villas worth USD 100 million in a
-                  gated community in Karen. We advised the parties on the joint
-                  venture arrangement and facilitated the negotiation of the
-                  joint venture agreement and the transfer of the land to the
-                  joint venture reference.
+                Imagine a scenario where legal battles unfold as thrilling sagas, each case a captivating narrative of strategic prosecution and defense.
                 </li>
                 <li className="leading-normal text-md">
-                  Acted for a leading Kenyan investments and real estate company
-                  in the acquisition of a 10-acre piece of land in Ridgeways,
-                  Kiambu worth USD 92.5 Million. We advised on all aspects of
-                  the acquisition, conducting legal due diligence and
-                  negotiating the sale and purchase agreement.
+                In a remarkable experience, our firm showcased unparalleled expertise, navigating the intricacies of Tort and Insurance claims, Debt Collection, and Suits for premiums. This wasn't just about practicing law; it was about orchestrating legal symphonies where every case became a thrilling challenge met with precision and skill.
                 </li>
                 <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million.
-                </li>
-                <li className="leading-normal text-md">
-                  Advisor to a Pan-African financial institution with offices in
-                  several African countries, in the acquisition of a property in
-                  Nairobi worth USD 12 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting for a leading Kenyan real estate and investments firm
-                  in the acquisition of a property worth USD 13 million
-                </li>
-                <li className="leading-normal text-md">
-                  Acting a leading Turkish construction company in partnership
-                  with a German investment firm in a joint venture project with
-                  landowners for the development of a multi-million dollar
-                  mixed-use project in Nairobi.
+                Our advisory services extended beyond the courtroom, offering nuanced guidance on insurance claims and contracts. Mwenda Royford and Company Advocates redefine Tort and Insurance Law, presenting a thrilling saga of legal finesse, strategic insight, and triumphant defense. Trust us to not just handle cases but to craft legal experiences that transcend expectations in the dynamic landscape of Tort and Insurance Law.
                 </li>
               </ul>
             </div>
