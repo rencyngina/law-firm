@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import LandingNavBar from '../components/nav';
 import Head from '../components/head';
@@ -7,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Practice = () => {
-  const data = [
+  const practiceAreas = [
     { id: 1, name: 'Conveyance and Property Law', imageSrc: '/images/assets.jpg', linkTo: '/estate-Administration' },
     { id: 2, name: 'Commercial and Business Law', imageSrc: '/images/coporate.png', linkTo: '/commercial' },
     { id: 3, name: 'Child and Family Law', imageSrc: '/images/familylaw.jpg', linkTo: '/family' },
@@ -32,7 +31,6 @@ const Practice = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            // backgroundAttachment: 'fixed',
           }}
         >
           <h1 className="text-5xl text-white">Practice Areas</h1>
@@ -40,21 +38,22 @@ const Practice = () => {
 
         <div className="container mx-auto px-4 py-12">
           <div className="block lg:grid lg:grid-cols-3 gap-6">
-            {data.map((item) => (
-              <div key={item.id} className="mb-4">
+            {practiceAreas.map((area) => (
+              <div key={area.id} className="mb-4">
                 <div className="shadow-xl rounded overflow-hidden duration-300 transform hover:scale-95 hover:shadow-xl">
                   <Image
-                    alt="Practice Area"
-                    src={item.imageSrc}
+                    alt={`Practice Area - ${area.name}`}
+                    src={area.imageSrc}
                     width={500}
                     height={500}
                     className="w-full h-auto"
                     style={{ maxHeight: '250px' }}
+                    loading="lazy"
                   />
                   <div className="p-4 text-center bg-[rgb(17,24,39)]">
-                  <a href={item.linkTo} className="text-[#A65A2A] hover:text-yellow-700">
-                      <h5 className="text-lg font-bold mb-2">{item.name}</h5>
-                  </a>
+                    <Link href={area.linkTo}>
+                        <h5 className="text-lg font-bold mb-2 text-[#A65A2A] hover:text-yellow-700">{area.name}</h5>
+                    </Link>
                   </div>
                 </div>
               </div>
