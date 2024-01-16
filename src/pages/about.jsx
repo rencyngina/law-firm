@@ -24,13 +24,10 @@ const About = () => {
           }}
         >
           <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">Who we are</h1>
-          {/*<p className="text-lg lg:text-xl xl:text-2xl text-white mt-2">
-          ABOUT US
-        </p>*/}
         </div>
         <div className="container mx-auto h-auto py-4">
           <div className="px-4 mx-auto">
-            <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
+            <p className="lg:text-justify text-[#D0B216] text-md lg:text-lg lg:pt-8 pt-8 font-bold">
             Established in 2016, Mwenda Royford and Company Advocates stands at the forefront of legal innovation, sculpting a legacy of excellence with unwavering commitment. While our journey began more recently, our vision is anchored in a passion for transformative legal solutions, setting us apart in the legal landscape. 
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
@@ -64,8 +61,8 @@ const About = () => {
             
           </div>
         </div>
-      </div>
       <Foot />
+      </div>
     </>
   );
 };

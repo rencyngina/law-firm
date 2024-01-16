@@ -168,17 +168,6 @@ const SocietiesLaw = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
-                In a remarkable experience, our firm has been at the forefront, passionately representing and guiding various co-operative societies across the nation, with a spotlight on the agricultural sector, the epicenter of the cooperative movement, notably in coffee and tea.
-                </li>
-                <li className="leading-normal text-md">
-                Imagine a scenario where legal expertise becomes a driving force for change. Our firm played a pivotal role in disseminating and interpreting the groundbreaking compulsory registration of public service vehicles into cooperative societies. This innovative policy required not just legal insight but strategic advice on compliance and implementation, an area where our firm excels.
-                But our commitment doesn't stop at advisory; we've navigated the complexities of cooperative societies disputes, seamlessly resolving issues through established tribunal mechanisms. 
-                </li>
-                <li className="leading-normal text-md">
-                Mwenda Royford and Company Advocates redefine Co-operative Societies Law, offering not just legal representation but an immersive experience marked by strategic brilliance, resilience, and transformative advocacy in the dynamic world of cooperative governance. Trust us to not just handle cases but to craft legal narratives that transcend expectations in the thrilling realm of Co-operative Societies Law.
-                </li>
-               
                 {experienceList.map((experience, index) => (
                   <li key={index} className="leading-normal text-md">
                     {experience}
@@ -189,7 +178,6 @@ const SocietiesLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
       <Head />
     </>
   );
