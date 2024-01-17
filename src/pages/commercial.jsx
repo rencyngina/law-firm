@@ -37,7 +37,6 @@ const Commercial = () => {
     },
   ];
 
-
   return (
     <>
       <LandingNavBar />
@@ -52,7 +51,7 @@ const Commercial = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Commercial</h1>
+          <h1 className="text-5xl text-white">Commercial Law</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -68,13 +67,28 @@ const Commercial = () => {
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
             <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-            Dive into the heart of commerce with our Corporate & Commercial practice, where each transaction is a pulsating journey. Armed with a reservoir of sector-specific wisdom, we propel businesses to unprecedented heights, merging strategic vision with profound legal acumen and an intimate grasp of business dynamics.
+              Dive into the heart of commerce with our Corporate & Commercial
+              practice, where each transaction is a pulsating journey. Armed
+              with a reservoir of sector-specific wisdom, we propel businesses
+              to unprecedented heights, merging strategic vision with profound
+              legal acumen and an intimate grasp of business dynamics.
             </p>
             <br />
             {/*  Querry data using json from a file*/}
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-            Behold the legal symphony: our Corporate & Commercial practice seamlessly intertwines competition law, employment intricacies, financial finesse, regulatory astuteness, and taxation wizardry. Picture our recent conquests—a breathtaking saga featuring intricate mergers, daring acquisitions, visionary joint ventures, and contracts that redefine industry landscapes.
-            Our prowess is not just acknowledged; it's revered. Join us in the epicenter of corporate law, where each legal stroke is a strategic masterpiece, propelling businesses into realms of unparalleled growth. In the intricate dance of commerce, we are the choreographers, crafting success stories that resonate with the pulse of business brilliance.             
+            <p className="text-black leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+              Our Corporate & Commercial practice seamlessly intertwines
+              competition law, employment intricacies, financial finesse,
+              regulatory astuteness, and taxation wizardry. Picture our recent
+              conquests a breathtaking saga featuring intricate mergers, daring
+              acquisitions, visionary joint ventures, and contracts that
+              redefine industry landscapes. Our prowess is not just
+              acknowledged, it's revered.
+              <br />
+              Join us in the epicenter of corporate law, where each legal stroke
+              is a strategic masterpiece, propelling businesses into realms of
+              unparalleled growth. In the intricate dance of commerce, we are
+              the choreographers, crafting success stories that resonate with
+              the pulse of business brilliance.
             </p>
           </div>
         </div>
@@ -151,10 +165,30 @@ const Commercial = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 <li className="leading-normal text-md">
-                Mwenda Royford and Company Advocates elevate the practice of Commercial and Business Law through a sensational blend of creativity and efficiency, leaving an indelible mark on the legal landscape. They have orchestrated a diverse range of custom-made commercial and business agreements, tailoring solutions to meet the unique needs of both local and foreign corporate clients. Their expertise extends to advising on the intricate structuring of local and international companies, including for-profit and non-profit entities, showcasing their versatility in navigating complex business landscapes.
+                  Mwenda Royford and Company Advocates elevate the practice of
+                  Commercial and Business Law through a sensational blend of
+                  creativity and efficiency, leaving an indelible mark on the
+                  legal landscape. They have orchestrated a diverse range of
+                  custom-made commercial and business agreements, tailoring
+                  solutions to meet the unique needs of both local and foreign
+                  corporate clients.
+                  <br />
+                   Their expertise extends to advising on the
+                  intricate structuring of local and international companies,
+                  including for-profit and non-profit entities, showcasing their
+                  versatility in navigating complex business landscapes.
                 </li>
                 <li className="leading-normal text-md">
-                An exemplary experience lies in their adept formation and registration of Trusts and Foundations, attesting to their commitment to comprehensive legal solutions. Mwenda Royford and Company Advocates also stand out in conducting due diligence for companies, providing invaluable insights into institutional, governance, and ownership structures. The firm's offering of company secretarial services for corporate clients further underscores their dedication to facilitating seamless business operations, making them unparalleled leaders in the realm of Commercial and Business Law.
+                  An exemplary experience lies in their adept formation and
+                  registration of Trusts and Foundations, attesting to their
+                  commitment to comprehensive legal solutions. Mwenda Royford
+                  and Company Advocates also stand out in conducting due
+                  diligence for companies, providing invaluable insights into
+                  institutional, governance, and ownership structures. The
+                  firm's offering of company secretarial services for corporate
+                  clients further underscores their dedication to facilitating
+                  seamless business operations, making them unparalleled leaders
+                  in the realm of Commercial and Business Law.
                 </li>
               </ul>
             </div>

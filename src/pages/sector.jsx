@@ -10,25 +10,25 @@ const Sector = () => {
     {
       id: 1,
       sector: "Construction",
-      ImageSrc: "/images/assets.jpg",
+      ImageSrc: "/images/sector/Construction-Sector-1.webp",
       linkTo: "/construction",
     },
     {
       id: 2,
-      sector: "EnergySector",
-      ImageSrc: "/images/8r.jpg",
+      sector: "Energy Sector",
+      ImageSrc: "/images/sector/Energy-Sector.webp",
       linkTo: "/EnergySector",
     },
     {
       id: 3,
       sector: "Financials",
-      ImageSrc: "/images/law1.jpg",
+      ImageSrc: "/images/sector/Financial-Services-Sector.webp",
       linkTo: "/Financials",
     },
     {
       id: 4,
       sector: "Manufacturing and Industrials",
-      ImageSrc: "/images/service_03.jpg",
+      ImageSrc: "/images/sector/Manufacturing-Industrials-Sector.webp",
       linkTo: "/Industrials",
     },
     {
