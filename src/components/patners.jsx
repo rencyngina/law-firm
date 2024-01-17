@@ -7,17 +7,17 @@ import Link from "next/link";
 const Partners = () => {
   const partners = [
     {
-      name: "Royford Mwenda",
+      name: "Nkonge Royford Mwenda",
       sector: "Finance",
       image: "/images/JKTK.webp",
     },
     {
-      name: "John Mbaluto",
+      name: "Boaz Amoro Nyakundi",
       sector: "Technology",
       image: "/images/John-Mbaluto.webp",
     },
     {
-      name: "Jane Wangoi",
+      name: "Ngava Joy Kaaria",
       sector: "Legal",
       image: "/images/NLC.webp",
     },
@@ -68,8 +68,11 @@ const Partners = () => {
             In our dynamic portfolio, we specialize in debt and equity issues,
             ensuring compliance with local regulations. Beyond mere adherence,
             we craft innovative financial strategies.
+            <br />
+            Our team incluedes partners, associates and support staff; further
+            on-call counsel are available for specific project.
           </p>
-        <button
+          <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
               background: "rgb(208,178,22)",
@@ -86,4 +89,3 @@ const Partners = () => {
 };
 
 export default Partners;
-

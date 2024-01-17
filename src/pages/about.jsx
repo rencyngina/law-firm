@@ -28,7 +28,7 @@ const About = () => {
         </div>
         <div className="container mx-auto h-auto py-4">
           <div className="px-4 mx-auto">
-            <p className="lg:text-justify text-[#D0B216] text-md lg:text-lg lg:pt-8 pt-8 font-bold">
+            <p className="lg:text-justify text-[#02194E] text-md lg:text-lg lg:pt-8 pt-8 font-bold">
             Established in 2016, Mwenda Royford and Company Advocates stands at the forefront of legal innovation, sculpting a legacy of excellence with unwavering commitment. While our journey began more recently, our vision is anchored in a passion for transformative legal solutions, setting us apart in the legal landscape. 
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
@@ -44,8 +44,8 @@ const About = () => {
             <p className="text-2xl lg:text-5xl xl:text-6xl text-red">
             About us
             </p>
-            <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
-            Dive into the heart of legal excellence with Mwenda Royford & Co Advocates, where the art of law transforms into a thrilling symphony of unparalleled expertise and relentless dedication. Established in 2016, our firm stands as a beacon of legal prowess, a powerhouse fueled by a cadre of exceptional legal minds.
+            <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-6 pt-6">
+              <span className="font-bold">Royford & Co Advocates</span>, is where the art of law transforms into a thrilling symphony of unparalleled expertise and relentless dedication. Established in 2016, our firm stands as a beacon of legal prowess, a powerhouse fueled by a cadre of exceptional legal minds.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
             Imagine a legal realm where experience is not just a metric but a legacy. Mwenda Royford & Co Advocates boasts a treasure trove of legal virtuosos, each advocate a maestro in their own right. Our team, a fusion of private practice virtuosos, public sector stalwarts, and international legal luminaries, creates a harmonious ensemble that sets us leagues apart from other corporate commercial law firms in Kenya.

@@ -106,7 +106,7 @@ const Team = () => {
                 key={member.id}
                 className="rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out transform hover:scale-105"
                 style={{
-            background: '#D0B216'
+            background: ''
           }}
               >
                 <div className="relative">

@@ -76,14 +76,14 @@ const Section2 = () => {
             <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016{" "}
             </span>
-            Dive into the heart of legal excellence with Mwenda Royford & Co
-            Advocates, where the art of law transforms into a thrilling symphony
-            of unparalleled expertise and relentless dedication. Established in
-            2016, our firm stands as a beacon of legal prowess, a powerhouse
+            Mwenda Royford & Co
+            Advocates, we have transformed law into a thrilling symphony
+            of unparalleled expertise and relentless dedication.
+            our firm stands as a beacon of legal prowess, a powerhouse
             fueled by a cadre of exceptional legal minds.
           </p>
           <p className="text-white lg:text-lg xl:text-xl text-lg lg:mt-0 xl:mt-6 mt-4">
-            Imagine a legal realm where experience is not just a metric but a
+            In legal realm where experience is not just a metric but a
             legacy. Mwenda Royford & Co Advocates boasts a treasure trove of
             legal virtuosos, each advocate a maestro in their own right. Our
             team, a fusion of private practice virtuosos, public sector
