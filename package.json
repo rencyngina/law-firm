@@ -11,12 +11,16 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@mantine/core": "^7.3.2",
-    "@mantine/hooks": "^7.3.2",
+    "@mantine/carousel": "^7.4.1",
+    "@mantine/core": "^7.4.1",
+    "@mantine/hooks": "^7.4.1",
     "@material-tailwind/react": "^2.1.8",
     "@mui/icons-material": "^5.15.1",
     "@mui/material": "^5.15.1",
     "bootstrap": "^5.3.2",
+    "embla-carousel-react": "^8.0.0-rc19",
+    "flowbite": "^2.2.1",
+    "flowbite-react": "^0.7.2",
     "framer-motion": "^10.16.16",
     "gray-matter": "^4.0.3",
     "next": "14.0.4",
@@ -24,8 +28,11 @@
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.5.3",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.21.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
