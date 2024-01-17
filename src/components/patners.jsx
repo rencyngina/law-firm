@@ -4,6 +4,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
 const Partners = () => {
+  const partners = [
+    {
+      name: "Royford Mwenda",
+      sector: "Finance",
+      image: "/images/JKTK.webp",
+    },
+    {
+      name: "John Mbaluto",
+      sector: "Technology",
+      image: "/images/John-Mbaluto.webp",
+    },
+    {
+      name: "Jane Wangoi",
+      sector: "Legal",
+      image: "/images/NLC.webp",
+    },
+  ];
+
   return (
     <div className="w-full" id="partners">
       <div className="container mx-auto bg-[#FFFFFF] shadow-xl mt-10 mb-10 lg:flex lg:items-center xl:justify-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
@@ -17,36 +35,24 @@ const Partners = () => {
             interval={5000}
             transitionTime={500}
           >
-            <div>
-              <Image
-                src="/images/JKTK.webp"
-                width={500}
-                height={400}
-                className="w-full h-full object-cover"
-                alt="Partner 1"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/John-Mbaluto.webp"
-                width={500}
-                height={400}
-                className="w-full h-full object-cover"
-                alt="Partner 2"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/NLC.webp"
-                width={500}
-                height={400}
-                className="w-full h-full object-cover"
-                alt="Partner 3"
-              />
-            </div>
+            {partners.map((partner, index) => (
+              <div key={index}>
+                <Image
+                  src={partner.image}
+                  width={500}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  alt={partner.name}
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                  <div className="text-white">
+                    <h3>{partner.name}</h3>
+                    <p>{partner.sector}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </Carousel>
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          </div>
         </div>
         <div className="lg:w-1/2 lg:ml-6 xl:ml-8">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mt-6 lg:mt-0 mb-4">
@@ -64,7 +70,8 @@ const Partners = () => {
           </p>
           <a
             href="#contact"
-            className="text-[#A65A2A] font-semibold hover:underline">
+            className="text-[#A65A2A] font-semibold hover:underline"
+          >
             Our Lawyers
           </a>
         </div>

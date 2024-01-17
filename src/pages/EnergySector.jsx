@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
