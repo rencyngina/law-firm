@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Partners = () => {
   const partners = [
@@ -41,13 +42,13 @@ const Partners = () => {
                   src={partner.image}
                   width={500}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-lg"
                   alt={partner.name}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <div className="text-white">
-                    <h3>{partner.name}</h3>
-                    <p>{partner.sector}</p>
+                  <div className="text-white text-center">
+                    <h3 className="text-xl font-bold">{partner.name}</h3>
+                    <p className="text-sm">{partner.sector}</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +60,7 @@ const Partners = () => {
             Our Partners
           </h1>
           <div className="w-20 h-1 bg-[#A65A2A] mb-6"></div>
-          <p className="text-orange-500 text-lg lg:text-xl xl:text-2xl mb-4">
+          <p className="text-yellow-500 text-lg lg:text-xl xl:text-2xl mb-4">
             Our lawyers are enthusiastic, committed, flexible, and commercially
             minded.
           </p>
@@ -68,12 +69,16 @@ const Partners = () => {
             ensuring compliance with local regulations. Beyond mere adherence,
             we craft innovative financial strategies.
           </p>
-          <a
-            href="#contact"
-            className="text-[#A65A2A] font-semibold hover:underline"
+        <button
+            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
+            style={{
+              background: "rgb(208,178,22)",
+            }}
           >
-            Our Lawyers
-          </a>
+            <Link href="/about" className="text-white">
+              Get a Lawyer
+            </Link>
+          </button>
         </div>
       </div>
     </div>
@@ -81,3 +86,4 @@ const Partners = () => {
 };
 
 export default Partners;
+
