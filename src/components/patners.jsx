@@ -75,7 +75,7 @@ const Partners = () => {
               background: "rgb(208,178,22)",
             }}
           >
-            <Link href="/about" className="text-white">
+            <Link href="/team" className="text-white">
               Get a Lawyer
             </Link>
           </button>
