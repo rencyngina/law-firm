@@ -82,7 +82,7 @@ const Section2 = () => {
             our firm stands as a beacon of legal prowess, a powerhouse
             fueled by a cadre of exceptional legal minds.
           </p>
-          <p className="text-white lg:text-lg xl:text-xl text-lg lg:mt-0 xl:mt-6 mt-4">
+          <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
             In legal realm where experience is not just a metric but a
             legacy. Mwenda Royford & Co Advocates boasts a treasure trove of
             legal virtuosos, each advocate a maestro in their own right. Our
