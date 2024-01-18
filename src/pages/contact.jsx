@@ -37,7 +37,7 @@ const Contact = () => {
       if (response.status === 405) {
         // If the first request results in "Method GET not allowed," try the fallback URL
         const fallbackResponse = await fetch(
-          "https://brochure-law-firm-site.vercel.app/api/message",
+          "/api/message",
           {
             method: "POST",
             headers: {

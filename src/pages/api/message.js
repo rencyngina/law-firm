@@ -24,11 +24,12 @@ export default async function messageRequest(req, res) {
         TextBody: messageBody,
       });
 
-      if (response.Message !== undefined && response.Message !== null) {
+      if (response.Message) {
         toast.success('Message sent');
         return res.status(200).json({ message: 'Message sent' });
       } else {
         toast.error('Message not sent');
+        console.error('Error: Response does not contain a Message property', response);
         return res.status(400).json({ message: 'Message not sent' });
       }
     } catch (error) {
