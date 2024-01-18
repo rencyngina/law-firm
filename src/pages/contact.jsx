@@ -46,15 +46,15 @@ const Contact = () => {
           subject: "",
           message: "",
         });
-        toast.success('Message sent');  // Add this line
+        toast.success('Message sent');
       } else {
         const errorData = await response.json();
         console.log("Error:", errorData);
-        toast.error('Message not sent');  // Add this line
+        toast.error('Message not sent');
       }
     } catch (error) {
       console.log("Error:", error);
-      toast.error('Internal server error');  // Add this line
+      toast.error('Internal server error');
     }
   };
 
