@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';  // Add this line
-import 'react-toastify/dist/ReactToastify.css';  // Add this line
+import { ToastContainer, toast } from "react-toastify"; // Add this line
+import "react-toastify/dist/ReactToastify.css"; // Add this line
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 // import messageRequest from "./api/message";
@@ -34,27 +34,61 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      console.log(response);
+      if (response.status === 405) {
+        // If the first request results in "Method GET not allowed," try the fallback URL
+        const fallbackResponse = await fetch(
+          "https://brochure-law-firm-site.vercel.app/api/message",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
-      if (response.ok) {
-        const data = await response.json();
-        console.log("Form submitted:", formData);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-        toast.success('Message sent');
+        console.log(fallbackResponse);
+
+        if (fallbackResponse.ok) {
+          const data = await fallbackResponse.json();
+          console.log("Form submitted:", formData);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+          toast.success("Message sent");
+        } else {
+          const errorData = await fallbackResponse.json();
+          console.log("Error:", errorData);
+          toast.error("Message not sent");
+        }
       } else {
-        const errorData = await response.json();
-        console.log("Error:", errorData);
-        toast.error('Message not sent');
+        // Handle the original response
+        console.log(response);
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log("Form submitted:", formData);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+          toast.success("Message sent");
+        } else {
+          const errorData = await response.json();
+          console.log("Error:", errorData);
+          toast.error("Message not sent");
+        }
       }
     } catch (error) {
       console.log("Error:", error);
-      toast.error('Internal server error');
+      toast.error("Internal server error");
     }
   };
 
@@ -84,10 +118,10 @@ const Contact = () => {
 
         <div className="container lg:grid lg:grid-cols-2 lg:gap-2 justify-center mx-auto mt-8 px-4 lg:p-8 p-0 xl:p-10">
           <section className="text-center">
-          <h1 className="text-lg lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
-            Request for a call back
-          </h1>
-             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <h1 className="text-lg lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
+              Request for a call back
+            </h1>
+            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="grid grid-cols-1 gap-4">
                 {/* Form Input Fields */}
                 {["name", "email", "phone", "subject"].map((field) => (
@@ -124,14 +158,15 @@ const Contact = () => {
               </div>
             </form>
           </section>
-           <section className="mt-8 p-2 lg:p-0 xl:p-0">
+          <section className="mt-8 p-2 lg:p-0 xl:p-0">
             <p className="text-lg lg:text-xl xl:text-2xl">FIND US HERE</p>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8 mt-4"></div>
             <h1 className="text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
               Map & Location
             </h1>
             <p className="text-md lg:text-xl xl:text-xl mb-8">
-              We are located along 5th avenue office suite 4th floor suite 4 – 15 off gong road
+              We are located along 5th avenue office suite 4th floor suite 4 –
+              15 off gong road
             </p>
             <div className="flex justify-center items-center p-0">
               {/* Google Map Iframe */}
