@@ -6,6 +6,7 @@ import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsTwitterX } from "react-icons/bs";
 
+
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
@@ -154,7 +155,7 @@ const LandingNavBar = () => {
         </li>
         <Link href="/contact">
           <button
-            className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+            className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none  focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
             style={{
               background: "rgb(208,178,22)",
             }}

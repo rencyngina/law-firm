@@ -1,13 +1,9 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';  // Add this line
+import 'react-toastify/dist/ReactToastify.css';  // Add this line
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
-import FooterLinks from "../components/Footer/FooterLinks";
-import { FaYoutube } from "react-icons/fa";
-import Image from "next/image";
-import { FaPhone } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
-import Foot from "../components/foot";
+// import messageRequest from "./api/message";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,16 +22,40 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
+
+    try {
+      const response = await fetch("/api/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      console.log(response);
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Form submitted:", formData);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        toast.success('Message sent');  // Add this line
+      } else {
+        const errorData = await response.json();
+        console.log("Error:", errorData);
+        toast.error('Message not sent');  // Add this line
+      }
+    } catch (error) {
+      console.log("Error:", error);
+      toast.error('Internal server error');  // Add this line
+    }
   };
 
   return (
@@ -127,8 +147,9 @@ const Contact = () => {
             </div>
           </section>
         </div>
+        <ToastContainer />
       </div>
-      <Foot />
+      <Head />
     </>
   );
 };
