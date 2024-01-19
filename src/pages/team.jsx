@@ -94,7 +94,7 @@ const Team = () => {
             // backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Team</h1>
+          <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Lawyers</h1>
           <p className="text-white text-lg lg:text-xl xl:text-2xl mt-4">
             Meet the team behind the scenes
           </p>
