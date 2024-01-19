@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
-const Team = () => {
+const Lawyer = () => {
   const teamData = [
     {
       id: 1,
@@ -24,43 +24,14 @@ const Team = () => {
     {
       id: 2,
       name: "Jackline Waceke Njenga",
-      image: '/images/JKTK.webp',
+      image: '/images/lawyers/lawyer1.jpeg',
       work: 'Senior advocate',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
     },
-    {
-      id: 3,
-      name: "Lisper Njeri",
-      image: '/images/JKTK.webp',
-      work: 'Senior advocate',
-      email: 'royford@example.com',
-      facebook: 'https://www.facebook.com/royford',
-      twitter: 'https://www.twitter.com/royford',
-      instagram: 'https://www.instagram.com/royford',
-    },
-    {
-      id: 4,
-      name: " Boaz Amoro Nyakeri",
-      image: '/images/John-Mbaluto.webp',
-      work: 'Senior advocate',
-      email: 'royford@example.com',
-      facebook: 'https://www.facebook.com/royford',
-      twitter: 'https://www.twitter.com/royford',
-      instagram: 'https://www.instagram.com/royford',
-    },
-    {
-      id: 5,
-      name: "Ngava Joy Kaaria",
-      image: '/images/team/staff1.jpeg',
-      work: 'Senior advocate',
-      email: 'royford@example.com',
-      facebook: 'https://www.facebook.com/royford',
-      twitter: 'https://www.twitter.com/royford',
-      instagram: 'https://www.instagram.com/royford',
-    }
+    
   ];
 
   return (
@@ -84,23 +55,23 @@ const Team = () => {
             // backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Team</h1>
-          <p className="text-white text-lg lg:text-xl xl:text-2xl mt-4">
-            Meet the team behind the scenes
+          <h1 className="text-xl font-bold lg:text-2xl xl:text-5xl text-white">Our Lawyers</h1>
+          <p className="text-white text-sm lg:text-xl xl:text-2xl mt-4">
+            Meet Our Lawyers
           </p>
         </div>
         {/* Team Goes here with social links*/}
-        <div className="container mx-auto py-6 px-4">
+        <div className="container mx-auto py-8 px-4">
         <h1 className="text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 mb-6">
-            Our Team
+            Our Lawyers
           </h1>
-          <p className="text-gray-600 mb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quos modi, fugiat dolorum vero ex voluptatum, voluptate, quibusdam
-            quia voluptas quae. Quisquam quos modi, fugiat dolorum vero ex
-            voluptatum, voluptate, quibusdam quia voluptas quae.
+           <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
+          <p className="text-gray-600 mb-12 text-md lg:text-xl">
+            Our lawyers are highly qualified and experienced in their respective
+            fields. They are dedicated to providing the best legal services to
+            our clients.
             </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamData.map((member) => (
               <div
                 key={member.id}
@@ -119,7 +90,7 @@ const Team = () => {
                     className="object-cover w-full h-48"
                   />
                   <div className="absolute bottom-0 left-0 p-4">
-                    <h2 className="text-xl font-semibold text-white">
+                    <h2 className="text-xl font-semibold text-black">
                       {member.name}
                     </h2>
                     <p className="text-gray-200">{member.work}</p>
@@ -173,4 +144,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Lawyer;

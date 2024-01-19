@@ -104,7 +104,7 @@ const Hero = () => {
         className="absolute bottom-0 left-0 flex gap-4 justify-center items-center p-4 lg:p-16"
       >
         <LuArrowDownCircle
-          className={`text-2xl lg:text-4xl text-white animate-bounce ${
+          className={`text-2xl lg:text-3xl text-white animate-bounce ${
             showIcon ? "see-more-icon visible" : "see-more-icon"
           }`}
         />

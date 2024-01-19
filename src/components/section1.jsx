@@ -84,9 +84,7 @@ const Section1 = () => {
             of triumph to guide clients seamlessly, transforming legal 
             challenges into victory within Kenya and across Africa in a 
             thrilling journey to coherently achieve objectives, navigating legal
-             complexities, and minimize risks with visionary efficiency shaped by our commitment to
-              excellence. 
-            Why Choose Us-            
+             complexities, and minimize risks with visionary efficiency shaped by our commitment to excellence.            
             </p>
           </motion.div>
           <motion.div
