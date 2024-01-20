@@ -139,7 +139,7 @@ const LandingNavBar = () => {
         </div>
         <li>
           <Link
-            href="/team"
+            href="/Our-lawyer"
             className="text-base text-gray-700 hover:underline"
           >
             Our Lawyers
