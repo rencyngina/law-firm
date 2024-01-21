@@ -52,9 +52,16 @@ const Commercial = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">Commercial Law</h1>
+          <h1 className="text-xl lg:text-5xl text-white">Commercial Law</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
+        <Image
+            src="/images/coporate.png"
+            width={500}
+            height={300}
+            className="w-full lg:w-82 h-42 mt-6 lg:hidden xl:hidden"
+            alt=""
+          />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
               Overview
@@ -157,7 +164,7 @@ const Commercial = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   Mwenda Royford and Company Advocates elevate the practice of
                   Commercial and Business Law through a sensational blend of
                   creativity and efficiency, leaving an indelible mark on the

@@ -1,7 +1,7 @@
 import React from "react";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
-import FooterLinks from "../components/Footer/FooterLinks";
+// import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
 import { FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
@@ -39,7 +39,6 @@ const EmploymentLaw = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -59,7 +58,7 @@ const EmploymentLaw = () => {
             src="/images/11r.jpg"
             width={500}
             height={300}
-            className="w-82 h-42 mt-6"
+            className="w-full lg:w-82 h-42 mt-6 lg:hidden xl:hidden"
             alt=""
           />
           <div className="lg:mb-6 xl:mb-8">
@@ -67,12 +66,25 @@ const EmploymentLaw = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
-            Our comprehensive services redefine the employment legal landscape. Our firm stands as a stalwart, offering employers, employees, and the self-employed unparalleled expertise in employment policies, contract terminations, wages and benefits, collective bargaining agreements, workplace safety, workmen’s compensation, pensions, and adept resolution of employment-related disputes.
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
+              Our comprehensive services redefine the employment legal
+              landscape. Our firm stands as a stalwart, offering employers,
+              employees, and the self-employed unparalleled expertise in
+              employment policies, contract terminations, wages and benefits,
+              collective bargaining agreements, workplace safety, workmen’s
+              compensation, pensions, and adept resolution of employment-related
+              disputes.
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
-            What sets us apart is our commitment to guiding companies through Employment Audits, ensuring strict compliance with legal requirements. Mwenda Royford and Company Advocates excel in not only providing legal counsel but also fostering a strategic approach to employment matters, aligning with the dynamic needs of modern workplaces. Trust us to navigate the intricacies of Labour and Employment Law, providing clarity, precision, and transformative legal solutions for employers and employees alike.
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
+              What sets us apart is our commitment to guiding companies through
+              Employment Audits, ensuring strict compliance with legal
+              requirements. Mwenda Royford and Company Advocates excel in not
+              only providing legal counsel but also fostering a strategic
+              approach to employment matters, aligning with the dynamic needs of
+              modern workplaces. Trust us to navigate the intricacies of Labour
+              and Employment Law, providing clarity, precision, and
+              transformative legal solutions for employers and employees alike.
             </p>
           </div>
         </div>
@@ -87,7 +99,7 @@ const EmploymentLaw = () => {
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
-               {keyContacts.map((contact) => (
+              {keyContacts.map((contact) => (
                 <div className="lg:col-span-1 mb-8" key={contact.id}>
                   <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
                     <Image
@@ -138,7 +150,7 @@ const EmploymentLaw = () => {
               ))}
             </div>
             <div className="">
-            <Link
+              <Link
                 href="/Our-lawyer"
                 className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
               >
@@ -148,7 +160,7 @@ const EmploymentLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

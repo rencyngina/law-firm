@@ -26,11 +26,19 @@ const EstateAdministration = () => {
       twitterHandle: "john_twitter",
       linkedinHandle: "john-linkedin",
     },
+    {
+      id: 3,
+      name: "John Mbaluto",
+      position: "Partner",
+      email: "john@example.com",
+      imageSrc: "/images/John-Mbaluto.webp",
+      twitterHandle: "john_twitter",
+      linkedinHandle: "john-linkedin",
+    },
   ];
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -50,9 +58,9 @@ const EstateAdministration = () => {
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
             src="/images/property.jpg"
-            width={1000}
+            width={500}
             height={300}
-            className="w-82 h-42 mt-6"
+            className="w-full lg:w-82 h-42 mt-6 lg:hidden xl:hidden"
             alt=""
           />
           <div className="lg:mb-6 xl:mb-8">
@@ -60,7 +68,7 @@ const EstateAdministration = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Step into a realm where our Conveyancing & Real Estate practice
               group, seasoned in high-stakes legal theatrics, orchestrates a
               symphony of success for local and international clients. With a
@@ -69,7 +77,7 @@ const EstateAdministration = () => {
               conveyancing acrobatics
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               Marvel at our expertise in sculpting the skylines of commercial
               and residential development, choreographing leases and licenses
               with finesse. Witness the pulse-pounding drama of project
@@ -91,7 +99,7 @@ const EstateAdministration = () => {
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
-             {keyContacts.map((contact) => (
+              {keyContacts.map((contact) => (
                 <div className="lg:col-span-1 mb-8" key={contact.id}>
                   <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
                     <Image
@@ -151,14 +159,15 @@ const EstateAdministration = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg ">
                   In a recent legal spectacle, our Conveyancing & Real Estate
                   prowess took center stage as we orchestrated a breathtaking
                   acquisition of prime real estate for an international client.
                   Navigating a labyrinth of legal complexities, we seamlessly
                   executed the conveyancing ballet, ensuring a flawless
                   transition of property ownership.
-                  <br />
+                </li>
+                <li className="leading-normal text-md lg:text-lg xl:text-lg lg:mt-4 ">
                   The saga continued as we lent our expertise to a high-stakes
                   commercial development, sculpting a skyline that echoed with
                   success. Leases and licenses became a canvas for us to paint
@@ -170,14 +179,17 @@ const EstateAdministration = () => {
                   Law.
                 </li>
               </ul>
-              <Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300">
-              Get a Lawyer
-          </Link>
+              <Link
+                href="/Our-lawyer"
+                className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
+              >
+                Get a Lawyer
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

@@ -40,7 +40,6 @@ const CriminalLaw = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -68,7 +67,7 @@ const CriminalLaw = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Picture a scenario where legal defenses transcend the ordinary,
               weaving a narrative of resilience and strategic acumen. In the
               heart of our practice, we navigate the complexities of criminal
@@ -78,7 +77,7 @@ const CriminalLaw = () => {
               each defense into a thrilling legal saga.
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               But our commitment doesn't end with defense; we actively watch
               brief for clients, ensuring their interests are safeguarded in the
               outcome of criminal prosecutions. Mwenda Royford and Company
@@ -161,17 +160,17 @@ const CriminalLaw = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   Our firm stood as a formidable legal force, handling defenses
                   across the spectrum of criminal law, from fraud to traffic
                   violations and theft.
                 </li>
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   Imagine a scenario where legal battles are not just fought but
                   strategically navigated, each case a thrilling saga of
                   resilience and acumen.
                 </li>
-                <li className="leading-normal text-md lg:mt-4">
+                <li className="leading-normal text-md lg:mt-4 lg:text-lg xl:text-lg">
                   Our commitment goes beyond traditional defense; we actively
                   engage in watch briefs for clients, ensuring their interests
                   are championed in criminal prosecutions. Mwenda Royford and
@@ -193,7 +192,7 @@ const CriminalLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };
