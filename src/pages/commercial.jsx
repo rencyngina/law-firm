@@ -5,6 +5,7 @@ import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
 import { FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const Commercial = () => {
   const keyContacts = [
@@ -54,19 +55,12 @@ const Commercial = () => {
           <h1 className="text-5xl text-white">Commercial Law</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
-          <Image
-            src="/images/coporate.png"
-            width={500}
-            height={300}
-            className="w-82 h-42 mt-6"
-            alt=""
-          />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Dive into the heart of commerce with our Corporate & Commercial
               practice, where each transaction is a pulsating journey. Armed
               with a reservoir of sector-specific wisdom, we propel businesses
@@ -75,7 +69,7 @@ const Commercial = () => {
             </p>
             <br />
             {/*  Querry data using json from a file*/}
-            <p className="text-black leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-black leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               Our Corporate & Commercial practice seamlessly intertwines
               competition law, employment intricacies, financial finesse,
               regulatory astuteness, and taxation wizardry. Picture our recent
@@ -103,7 +97,6 @@ const Commercial = () => {
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
-              {/* Contact 1 */}
               {keyContacts.map((contact) => (
                 <div className="lg:col-span-1 mb-8" key={contact.id}>
                   <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
@@ -173,24 +166,34 @@ const Commercial = () => {
                   solutions to meet the unique needs of both local and foreign
                   corporate clients.
                   <br />
-                   Their expertise extends to advising on the
-                  intricate structuring of local and international companies,
-                  including for-profit and non-profit entities, showcasing their
+                  Their expertise extends to advising on the intricate
+                  structuring of local and international companies, including
+                  for-profit and non-profit entities, showcasing their
                   versatility in navigating complex business landscapes.
                 </li>
                 <li className="leading-normal text-md">
                   An exemplary experience lies in their adept formation and
                   registration of Trusts and Foundations, attesting to their
-                  commitment to comprehensive legal solutions. Mwenda Royford
-                  and Company Advocates also stand out in conducting due
-                  diligence for companies, providing invaluable insights into
-                  institutional, governance, and ownership structures. The
-                  firm's offering of company secretarial services for corporate
-                  clients further underscores their dedication to facilitating
-                  seamless business operations, making them unparalleled leaders
-                  in the realm of Commercial and Business Law.
+                  commitment to comprehensive legal solutions.
+                </li>
+                <br />
+                <li className="leading-normal text-md">
+                  Mwenda Royford and Company Advocates also stand out in
+                  conducting due diligence for companies, providing invaluable
+                  insights into institutional, governance, and ownership
+                  structures. The firm's offering of company secretarial
+                  services for corporate clients further underscores their
+                  dedication to facilitating seamless business operations,
+                  making them unparalleled leaders in the realm of Commercial
+                  and Business Law.
                 </li>
               </ul>
+              <Link
+                href="/Our-lawyer"
+                className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
+              >
+                Get a Lawyer
+              </Link>
             </div>
           </div>
         </div>

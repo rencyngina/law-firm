@@ -5,6 +5,7 @@ import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
 import { FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const BankingFinance = () => {
   const keyContacts = [
@@ -58,8 +59,8 @@ const BankingFinance = () => {
             src="/images/service_01.jpg"
             width={500}
             height={300}
-            className="w-82 h-42 mt-6"
-            alt="BankingFinance"
+            className="w-full lg:w-82 h-42 mt-6 lg:hidden xl:hidden"
+            alt=""
           />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
@@ -98,8 +99,6 @@ const BankingFinance = () => {
                 </h1>
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
-
-              {/* Contact 1 */}
               {keyContacts.map((contact) => (
                 <div className="lg:col-span-1 mb-8" key={contact.id}>
                   <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
@@ -179,6 +178,12 @@ const BankingFinance = () => {
                   redefine industry norms.
                 </li>
               </ul>
+              <Link
+                href="/Our-lawyer"
+                className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
+              >
+                Get a Lawyer
+              </Link>
             </div>
           </div>
         </div>

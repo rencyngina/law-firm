@@ -10,6 +10,19 @@ import { LuArrowDownCircle } from "react-icons/lu";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 
+ const NextArrow = (props) => (
+    <div {...props} className="slick-arrow slick-next">
+      Next
+    </div>
+  );
+
+  const PrevArrow = (props) => (
+    <div {...props} className="slick-arrow slick-prev">
+      Prev
+    </div>
+  );
+
+
 const Hero = () => {
   const imagesData = [
     {
@@ -45,7 +58,7 @@ const Hero = () => {
     },
   ];
 
-  const settings = {
+ const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -53,10 +66,12 @@ const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
-    <div className="relative w-full h-[76vh] lg:h-[84.5vh] xl:h-[87]">
+    <div className="w-full h-[76vh] lg:h-[84.5vh] xl:h-[87]">
       <Slider {...settings} className="w-full h-[76vh] lg:h-[85.8vh] xl:h-[87]">
         {imagesData.map((image, index) => (
           <div key={index} className="relative h-[76vh] lg:h-[85vh] xl:h-[88vh]">

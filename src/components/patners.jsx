@@ -1,6 +1,7 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,40 +24,42 @@ const Partners = () => {
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  };
+
   return (
-    <div className="w-full" id="partners">
-      <div className="container mx-auto bg-[#FFFFFF] shadow-xl mt-10 mb-10 lg:flex lg:items-center xl:justify-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
-        <div className="lg:w-1/2 relative overflow-hidden">
-          <Carousel
-            showArrows={true}
-            infiniteLoop={true}
-            showStatus={false}
-            showThumbs={false}
-            autoPlay={true}
-            interval={5000}
-            transitionTime={500}
-          >
+  <div className="bg-gray-100 py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
+      <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
+        <div className="lg:w-1/2 relative ">
+          <Slider {...settings} className="w-full lg:h-[90vh]">
             {partners.map((partner, index) => (
-              <div key={index}>
+              <div key={index} className="relative h-[60vh] lg:h-[70vh]">
                 <Image
+                  width={1420}
+                  height={980}
                   src={partner.image}
-                  width={500}
-                  height={400}
-                  className="w-full h-full object-cover rounded-lg"
                   alt={partner.name}
+                  className="w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <h3 className="text-xl font-bold">{partner.name}</h3>
+                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center text-white text-center">
+                  <div>
+                    <h3 className="text-3xl font-bold">{partner.name}</h3>
                     <p className="text-sm">{partner.sector}</p>
                   </div>
                 </div>
               </div>
             ))}
-          </Carousel>
+          </Slider>
         </div>
         <div className="lg:w-1/2 lg:ml-6 xl:ml-8">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mt-6 lg:mt-0 mb-4">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
             Our Partners
           </h1>
           <div className="w-20 h-1 bg-[#A65A2A] mb-6"></div>
@@ -69,19 +72,12 @@ const Partners = () => {
             ensuring compliance with local regulations. Beyond mere adherence,
             we craft innovative financial strategies.
             <br />
-            Our team incluedes partners, associates and support staff; further
-            on-call counsel are available for specific project.
+            Our team includes partners, associates, and support staff; further
+            on-call counsel is available for specific projects.
           </p>
-          <button
-            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
-            style={{
-              background: "rgb(208,178,22)",
-            }}
-          >
-            <Link href="/team" className="text-white">
+          <Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300">
               Get a Lawyer
-            </Link>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -89,3 +85,5 @@ const Partners = () => {
 };
 
 export default Partners;
+
+

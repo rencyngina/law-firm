@@ -26,13 +26,19 @@ const About = () => {
         </div>
         <div className="container mx-auto h-auto py-4">
           <div className="px-4 mx-auto">
+            <p className="text-2xl mt-10 lg:text-5xl xl:text-6xl text-red">
+              About us
+            </p>
             <p className="lg:text-justify text-black text-sm lg:text-lg lg:pt-8 pt-8 font-bold">
               Established in 2016, Mwenda Royford and Company Advocates stands
               at the forefront of legal innovation, sculpting a legacy of
-              excellence with unwavering commitment. While our journey began
-              more recently, <span className="text-[#D0B216]"> our vision is anchored in a passion for
-              transformative legal solutions</span> , setting us apart in the legal
-              landscape.
+              excellence with unwavering commitment.
+              <span className="text-[#D0B216]">
+                {" "}
+                Our vision is anchored in a passion for transformative legal
+                solutions,
+              </span>{" "}
+              setting us apart in the legal landscape.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
               Specializing in corporate and commercial law, we have redefined
@@ -40,53 +46,49 @@ const About = () => {
               strategic blend of innovation and expertise. Our repertoire spans
               a spectrum of legal domains, from Arbitration and Banking &
               Finance to Tax and Employment & Labour, ensuring a comprehensive
-              approach tailored to the unique needs of each client. Though a
-              younger player, our impact echoes the resonance of seasoned
-              professionals. We've seamlessly integrated into the global legal
-              arena, forming strategic alliances and partnerships with leading
-              firms worldwide underscoring our dedication to safeguarding
-              successful business endeavors across the continent.
+              approach tailored to the unique needs of each client. Our impact
+              echoes the resonance of seasoned professionals. We've seamlessly
+              integrated into the global legal arena, forming strategic
+              alliances and partnerships with leading firms worldwide
+              underscoring our dedication to safeguarding successful business
+              endeavors across the continent.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
               Our diverse client, both local and international, hails from a
               multitude of industries. We take pride in our partner-led
               approach, where local insights meet global perspectives, ensuring
               a bespoke legal strategy that transcends expectations. At Mwenda
-              Royford and Company Advocates, our journey may be recent, but our
+              Royford and Company Advocates, we don't just practice law our
               commitment to client success and the pursuit of legal excellence
               is boundless. Welcome to a legal experience where every case is an
               opportunity for triumph and innovation.
             </p>
-
-            <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">
-              About us
-            </h1>
-            <p className="text-2xl lg:text-5xl xl:text-6xl text-red">
-              About us
-            </p>
+            <br />
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-6 pt-6">
-              <span className="font-bold text-[#D0B216]">Royford & Co Advocates</span> is
-              where the art of law transforms into a thrilling symphony of
+              <span className="font-bold text-[#D0B216]">
+                Royford & Co Advocates
+              </span>{" "}
+              is where the art of law transforms into a thrilling symphony of
               unparalleled expertise and relentless dedication. Established in
               2016, our firm stands as a beacon of legal prowess, a powerhouse
               fueled by a cadre of exceptional legal minds.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
-              Imagine a legal realm where experience is not just a metric but a
-              legacy. Mwenda Royford & Co Advocates boasts a treasure trove of
-              legal virtuosos, each advocate a maestro in their own right. Our
-              team, a fusion of private practice virtuosos, public sector
-              stalwarts, and international legal luminaries, creates a
-              harmonious ensemble that sets us leagues apart from other
-              corporate commercial law firms in Kenya.
+              where experience is not just a metric but a legacy. Mwenda Royford
+              & Co Advocates boasts a treasure trove of legal virtuosos, each
+              advocate a maestro in their own right. Our team, a fusion of
+              private practice virtuosos, public sector stalwarts, and
+              international legal luminaries, creates a harmonious ensemble that
+              sets us leagues apart from other corporate commercial law firms in
+              Kenya.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
-              Step into the future of legal representation, where every case is
-              a gripping narrative penned by the skilled hands of Mwenda Royford
-              & Co Advocates. Our advocates don't just interpret the law; they
-              sculpt it, mold it into a saga of triumph and justice. From the
-              courtroom to the boardroom, we transcend the conventional, weaving
-              stories of legal prowess that resonate with victory.
+              where every case is a gripping narrative penned by the skilled
+              hands of Mwenda Royford & Co Advocates. Our advocates don't just
+              interpret the law; they sculpt it, mold it into a saga of triumph
+              and justice. From the courtroom to the boardroom, we transcend the
+              conventional, weaving stories of legal prowess that resonate with
+              victory.
             </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
               Mwenda Royford & Co Advocates: Elevating the practice of law to an
