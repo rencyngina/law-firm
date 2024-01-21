@@ -10,18 +10,6 @@ import { LuArrowDownCircle } from "react-icons/lu";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 
- const NextArrow = (props) => (
-    <div {...props} className="slick-arrow slick-next">
-      Next
-    </div>
-  );
-
-  const PrevArrow = (props) => (
-    <div {...props} className="slick-arrow slick-prev">
-      Prev
-    </div>
-  );
-
 
 const Hero = () => {
   const imagesData = [
@@ -66,8 +54,6 @@ const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
   };
 
   return (

@@ -4,8 +4,6 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
-import { BsTwitterX } from "react-icons/bs";
-
 
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
