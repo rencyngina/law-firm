@@ -35,7 +35,7 @@ const Partners = () => {
   };
 
   return (
-  <div className="bg-gray-100 py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
+  <div className="bg-gray-100 w-full py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
       <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
         <div className="lg:w-1/2 relative ">
           <Slider {...settings} className="w-full lg:h-[90vh]">
@@ -46,9 +46,9 @@ const Partners = () => {
                   height={980}
                   src={partner.image}
                   alt={partner.name}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center text-white text-center">
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center">
                   <div>
                     <h3 className="text-3xl font-bold">{partner.name}</h3>
                     <p className="text-sm">{partner.sector}</p>
