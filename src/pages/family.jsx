@@ -71,18 +71,25 @@ const Family = () => {
           <h1 className="text-5xl text-white">{bannerText}</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
+        <Image
+            src="/images/familylaw.jpg"
+            width={500}
+            height={300}
+            className="w-full lg:w-82 h-42 mt-6 lg:hidden xl:hidden"
+            alt=""
+          />
           <div className="lg:mb-6 xl:mb-8">
             <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Child and family law encompasses a wide range of legal issues
               related to familial relationships, children, and the
               responsibilities and rights of individuals within a family unit.
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               Journey with our firm through the heart-wrenching and triumphant
               landscapes of child and family law. As trailblazers, we navigate
               the intricate tapestry of Local and International adoptions,
@@ -102,7 +109,7 @@ const Family = () => {
           <div className="block lg:grid lg:grip-col-2 xl:grid-cols-2 lg:gap-8 mt-6">
             <div className="gap-4 mt-0 grid grid-cols-1 lg:grid-cols-3 lg:mb-40 xl:mt-50">
               <div className="lg:col-span-3">
-                <h1 className="text-2xl lg:text-3xl xl:text-4xl mb-4">
+                <h1 className="text-xl lg:text-3xl xl:text-4xl mb-4">
                   Key Contacts
                 </h1>
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
@@ -168,7 +175,7 @@ const Family = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   In a recent legal odyssey, our firm fearlessly embarked on a
                   riveting international adoption case, deftly unraveling
                   complexities to secure joyous family unions. As legal virtual
@@ -194,7 +201,6 @@ const Family = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
       <Head />
     </>
   );

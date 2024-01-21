@@ -68,7 +68,7 @@ const Dispute = () => {
           Overview
         </h1>
         <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-        <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+        <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
           Our dispute resolution transcends legal conventions. Our commitment
           to ADR, particularly in Arbitration and Mediation, unfolds as a
           riveting narrative of swift conflict resolution intertwined with the
@@ -78,7 +78,7 @@ const Dispute = () => {
           into opportunities for growth and understanding.
         </p>
         <br />
-        <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+        <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
           Our triumphs in this arena are emblematic of our prowess, showcasing
           the adept handling of disputes involving diverse stakeholders.
           Mwenda Royford and Company Advocates redefine ADR, presenting a
@@ -161,17 +161,17 @@ const Dispute = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md  lg:text-lg xl:text-lg">
                   Our legal expertise meets the art of conflict transformation.
                   Picture a scenario where the swift resolution of disputes is
                   not just a legal triumph but a thrilling narrative of
                   relationship restoration
                 </li>
-                <li className="leading-normal text-md lg:mb-4">
+                <li className="leading-normal text-md lg:mb-4  lg:text-lg xl:text-lg">
                   In one remarkable experience, our commitment to ADR unfolded
                   as a gripping saga. 
                   </li>
-                  <li className="leading-normal text-md">
+                  <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   We successfully navigated disputes
                   entwined with the complexities of families, registered
                   societies, community groups, and business persons. This wasn't
@@ -179,7 +179,7 @@ const Dispute = () => {
                   relationships, fostering understanding, and turning conflicts
                   into opportunities for growth.
                   </li>
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md  lg:text-lg xl:text-lg">
                   At Mwenda Royford and Company Advocates, ADR is not just a
                   service; it's a captivating story of conflict resolution that
                   goes beyond the legal realm. Trust us to craft resolutions

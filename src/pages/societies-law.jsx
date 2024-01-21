@@ -77,7 +77,7 @@ const SocietiesLaw = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">SocietiesLaw</h1>
+          <h1 className="text-5xl text-white">Societies Law</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -92,7 +92,7 @@ const SocietiesLaw = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Picture a scenario where legal expertise meets the cooperative
               movement, and strategic guidance transforms regulatory challenges
               into triumphs. Our firm proudly represents and guides various
@@ -105,7 +105,7 @@ const SocietiesLaw = () => {
               groundbreaking policy.
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               But our commitment doesn't stop there; we've navigated cooperative
               societies disputes through established tribunal mechanisms,
               ensuring a seamless resolution process. Mwenda Royford and Company
@@ -187,7 +187,7 @@ const SocietiesLaw = () => {
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
                 {experienceList.map((experience, index) => (
-                  <li key={index} className="leading-normal text-md lg:mt-2 lg:mb-2">
+                  <li key={index} className="leading-normal text-md lg:mt-2 lg:mb-2  lg:text-lg xl:text-lg">
                     {experience}
                   </li>
                 ))}

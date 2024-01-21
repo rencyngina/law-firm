@@ -67,12 +67,12 @@ const BankingFinance = () => {
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Our firm stands as a beacon of financial expertise, navigating the
               intricacies of significant transactions with precision and flair.
             </p>
             <br />
-            <p className="text-black leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-black leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               In our dynamic portfolio, we specialize in debt and equity issues,
               ensuring compliance with local regulations. Beyond mere adherence,
               we craft innovative financial strategies. One notable instance
@@ -159,7 +159,7 @@ const BankingFinance = () => {
                 Recently, we have been involved in:
               </p>
               <ul className="list-disc p-2 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   In a remarkable experience, our firm played a pivotal role in
                   significant financial transactions, guiding the structuring of
                   debt and equity issues with finesse. Compliance with the local
@@ -169,7 +169,7 @@ const BankingFinance = () => {
                   global rating agencies, offering a nuanced understanding that
                   transcends borders.
                 </li>
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   At Mwenda Royford and Company Advocates, Banking and Finance
                   isn't just a service; it's an immersive experience marked by
                   strategic insight, precision, and the thrill of navigating the

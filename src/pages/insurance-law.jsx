@@ -53,7 +53,7 @@ const InsuranceLaw = () => {
             backgroundAttachment: "fixed", // Modified this line for background attachment
           }}
         >
-          <h1 className="text-5xl text-white">InsuranceLaw</h1>
+          <h1 className="text-xl lg:text-5xl text-white">Insurance Law</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
           <Image
@@ -64,18 +64,18 @@ const InsuranceLaw = () => {
             alt=""
           />
           <div className="lg:mb-6 xl:mb-8">
-            <h1 className="text-3xl text-left lg:text-left mt-10 font-bold mb-6">
+            <h1 className="text-2xl lg:text-3xl text-left lg:text-left mt-10 font-bold mb-6">
               Overview
             </h1>
             <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
-            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-orange-500 text-md leading-normal lg:text-lg xl:text-lg lg:text-left">
               Our firm stands as a formidable force, both prosecuting and
               defending in the arena of Tort and Insurance claims, Debt
               Collection, and Suits for premiums. We don't just practice law; we
               orchestrate legal symphonies.
             </p>
             <br />
-            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
+            <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-lg lg:text-left">
               Imagine a scenario where legal prowess meets the thrill of
               intricate claims and premium suits, where each case is not just a
               legal battle but a captivating narrative of strategy and
@@ -168,7 +168,7 @@ const InsuranceLaw = () => {
                   sagas, each case a captivating narrative of strategic
                   prosecution and defense.
                 </li>
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   In a remarkable experience, our firm showcased unparalleled
                   expertise, navigating the intricacies of Tort and Insurance
                   claims, Debt Collection, and Suits for premiums. This wasn't
@@ -176,7 +176,7 @@ const InsuranceLaw = () => {
                   symphonies where every case became a thrilling challenge met
                   with precision and skill.
                 </li>
-                <li className="leading-normal text-md">
+                <li className="leading-normal text-md lg:text-lg xl:text-lg">
                   Our advisory services extended beyond the courtroom, offering
                   nuanced guidance on insurance claims and contracts. Mwenda
                   Royford and Company Advocates redefine Tort and Insurance Law,
