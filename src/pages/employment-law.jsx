@@ -1,7 +1,7 @@
 import React from "react";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
-import FooterLinks from "../components/Footer/FooterLinks";
+// import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
 import { FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
@@ -39,7 +39,6 @@ const EmploymentLaw = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -161,7 +160,7 @@ const EmploymentLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

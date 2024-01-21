@@ -39,7 +39,6 @@ const EstateAdministration = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -100,7 +99,7 @@ const EstateAdministration = () => {
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
-             {keyContacts.map((contact) => (
+              {keyContacts.map((contact) => (
                 <div className="lg:col-span-1 mb-8" key={contact.id}>
                   <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
                     <Image
@@ -167,8 +166,8 @@ const EstateAdministration = () => {
                   Navigating a labyrinth of legal complexities, we seamlessly
                   executed the conveyancing ballet, ensuring a flawless
                   transition of property ownership.
-                  </li>
-                  <li className="leading-normal text-md lg:text-lg xl:text-lg lg:mt-4 ">
+                </li>
+                <li className="leading-normal text-md lg:text-lg xl:text-lg lg:mt-4 ">
                   The saga continued as we lent our expertise to a high-stakes
                   commercial development, sculpting a skyline that echoed with
                   success. Leases and licenses became a canvas for us to paint
@@ -180,14 +179,17 @@ const EstateAdministration = () => {
                   Law.
                 </li>
               </ul>
-              <Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300">
-              Get a Lawyer
-          </Link>
+              <Link
+                href="/Our-lawyer"
+                className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
+              >
+                Get a Lawyer
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

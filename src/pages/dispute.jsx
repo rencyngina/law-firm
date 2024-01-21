@@ -198,7 +198,7 @@ const Dispute = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

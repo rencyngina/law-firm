@@ -40,7 +40,6 @@ const CriminalLaw = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -193,7 +192,7 @@ const CriminalLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Head />
     </>
   );
 };

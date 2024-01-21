@@ -40,7 +40,6 @@ const InsuranceLaw = () => {
 
   return (
     <>
-      <Head />
       <LandingNavBar />
       <div className="bg-white h-auto w-full" id="contact">
         <div
@@ -197,7 +196,7 @@ const InsuranceLaw = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+     <Head />
     </>
   );
 };
