@@ -3,8 +3,40 @@ import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import Image from "next/image";
+import { FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const EmploymentLaw = () => {
+  const keyContacts = [
+    {
+      id: 1,
+      name: "Pamella Ager",
+      position: "Partner",
+      email: "pamella@example.com",
+      imageSrc: "/images/JKTK.webp",
+      twitterHandle: "pamella_twitter",
+      linkedinHandle: "pamella-linkedin",
+    },
+    {
+      id: 2,
+      name: "John Mbaluto",
+      position: "Partner",
+      email: "john@example.com",
+      imageSrc: "/images/John-Mbaluto.webp",
+      twitterHandle: "john_twitter",
+      linkedinHandle: "john-linkedin",
+    },
+    {
+      id: 3,
+      name: "Jane Wangoi",
+      position: "Title",
+      email: "another@example.com",
+      imageSrc: "/images/NLC.webp",
+      twitterHandle: "another_twitter",
+      linkedinHandle: "another-linkedin",
+    },
+  ];
+
   return (
     <>
       <Head />
@@ -55,85 +87,63 @@ const EmploymentLaw = () => {
                 <div className="w-28 h-1 bg-[#A65A2A] mb-8"></div>
               </div>
 
-              {/* Contact 1 */}
-              <div className="bg-white p-4 rounded shadow-lg transition duration-300 hover:bg-gray-600">
-                <div className="relative h-40 overflow-hidden rounded-t">
-                  <Image
-                    src="/images/John-Mbaluto.webp"
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                    // className="rounded"
-                  />
+               {keyContacts.map((contact) => (
+                <div className="lg:col-span-1 mb-8" key={contact.id}>
+                  <div className="flex flex-col items-center border p-4 rounded-md transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <Image
+                      src={contact.imageSrc}
+                      width={500}
+                      height={300}
+                      className="w-82 h-42 mt-6 rounded-md"
+                      alt={contact.name}
+                    />
+                    <h1 className="text-lg lg:text-xl xl:text-xl mt-6 mb-2 font-semibold">
+                      {contact.name}
+                    </h1>
+                    <p className="text-sm lg:text-base xl:text-base mb-2 text-gray-500">
+                      {contact.position}
+                    </p>
+                    <p className="text-sm lg:text-base xl:text-base mb-2 text-gray-500">
+                      {contact.email}
+                    </p>
+                    <div className="flex gap-4 mt-4">
+                      {contact.twitterHandle && (
+                        <a
+                          href={`https://twitter.com/${contact.twitterHandle}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaTwitter size={20} />
+                        </a>
+                      )}
+                      {contact.linkedinHandle && (
+                        <a
+                          href={`https://linkedin.com/in/${contact.linkedinHandle}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaLinkedin size={20} />
+                        </a>
+                      )}
+                      <a
+                        href={`mailto:${contact.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaEnvelope size={20} />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="pt-4">
-                  <h3 className="text-lg font-semibold mb-2">Pamella Ager</h3>
-                  <ul className="text-sm">
-                    <li className="mb-2">
-                      <span className="font-semibold">Position:</span> Partner
-                    </li>
-                    <li className="mb-2">
-                      <span className="font-semibold">Email:</span>{" "}
-                      pamella@example.com
-                    </li>
-                    {/* Add more contact information here if needed */}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Contact 2 */}
-              <div className="bg-white p-4 rounded shadow-lg transition duration-300 hover:bg-gray-600">
-                <div className="relative h-40 overflow-hidden rounded-t">
-                  <Image
-                    src="/images/John-Mbaluto.webp"
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                    // className="rounded"
-                  />
-                </div>
-                <div className="pt-4">
-                  <h3 className="text-lg font-semibold mb-2">Pamella Ager</h3>
-                  <ul className="text-sm">
-                    <li className="mb-2">
-                      <span className="font-semibold">Position:</span> Partner
-                    </li>
-                    <li className="mb-2">
-                      <span className="font-semibold">Email:</span>{" "}
-                      pamella@example.com
-                    </li>
-                    {/* Add more contact information here if needed */}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Contact 3 */}
-              <div className="bg-white p-4 rounded shadow-lg transition duration-300 hover:bg-gray-600">
-                <div className="relative h-40 overflow-hidden rounded-t">
-                  <Image
-                    src="/images/John-Mbaluto.webp"
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                    // className="rounded"
-                  />
-                </div>
-                <div className="pt-4">
-                  <h3 className="text-lg font-semibold mb-2">Pamella Ager</h3>
-                  <ul className="text-sm">
-                    <li className="mb-2">
-                      <span className="font-semibold">Position:</span> Partner
-                    </li>
-                    <li className="mb-2">
-                      <span className="font-semibold">Email:</span>{" "}
-                      pamella@example.com
-                    </li>
-                    {/* Add more contact information here if needed */}
-                  </ul>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="">
+            <Link
+                href="/Our-lawyer"
+                className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300"
+              >
+                Get a Lawyer
+              </Link>
             </div>
           </div>
         </div>

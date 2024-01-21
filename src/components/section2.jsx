@@ -62,12 +62,12 @@ const Section2 = () => {
         },
       }}
     >
-      <div className="max-w-7xl lg:max-w-5xl xl:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
+      <div className="max-w-7xl lg:max-w-8xl xl:max-w-9xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
         <div className=" p-2">
           <h6 className="text-white mb-2 mt-2 text-lg lg:text-xl xl:text-xl font-bold">
             WE HAVE A SOLID BACKGROUND
           </h6>
-          <h1 className="text-white md:text-4xl text-lg font-bold">
+          <h1 className="text-white md:text-xl text-lg font-bold">
             Our solutions for your <br />
             <span className="text-[#D0B216] background-clip-text">Growth</span>
           </h1>
@@ -76,20 +76,22 @@ const Section2 = () => {
             <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016{" "}
             </span>
-            Mwenda Royford & Co
-            Advocates, we have transformed law into a thrilling symphony
-            of unparalleled expertise and relentless dedication.
-            our firm stands as a beacon of legal prowess, a powerhouse
-            fueled by a cadre of exceptional legal minds.
+            Mwenda Royford & Co Advocates, Redefines the practice of law,
+            turning it into a dynamic symphony of unparalleled expertise and
+            unwavering dedication. Our firm stands as a beacon of legal prowess,
+            propelled by an exceptional cadre of legal minds. We have
+            transformed the legal landscape, infusing it with innovation and a
+            relentless commitment to excellence. With us, law becomes not just a
+            profession but a thrilling journey where every note is played with
+            precision, and every case is handled with utmost dedication. Welcome
+            to a legal experience like no other.
           </p>
           <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
-            In legal realm where experience is not just a metric but a
-            legacy. Mwenda Royford & Co Advocates boasts a treasure trove of
-            legal virtuosos, each advocate a maestro in their own right. Our
-            team, a fusion of private practice virtuosos, public sector
-            stalwarts, and international legal luminaries, creates a harmonious
-            ensemble that sets us leagues apart from other corporate commercial
-            law firms in Kenya.
+            In the legal realm, experience is our legacy at Mwenda Royford & Co
+            Advocates. Our team, a fusion of private practice virtuosos, public
+            sector stalwarts, and international legal luminaries, sets us
+            leagues apart in corporate commercial law in Kenya. Each advocate is
+            a maestro, redefining excellence in a succinct ensemble.
           </p>
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
