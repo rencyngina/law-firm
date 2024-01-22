@@ -39,6 +39,7 @@ const Commercial = () => {
             Dive into the heart of commerce with our Corporate & Commercial practice, where each transaction is a pulsating journey. Armed with a reservoir of sector-specific wisdom, we propel businesses to unprecedented heights, merging strategic vision with profound legal acumen and an intimate grasp of business dynamics.
             </p>
             <br />
+            {/*  Querry data using json from a file*/}
             <p className="text-gray-500 leading-normal text-md lg:text-lg xl:text-xl lg:text-left">
             Behold the legal symphony: our Corporate & Commercial practice seamlessly intertwines competition law, employment intricacies, financial finesse, regulatory astuteness, and taxation wizardry. Picture our recent conquests—a breathtaking saga featuring intricate mergers, daring acquisitions, visionary joint ventures, and contracts that redefine industry landscapes.
             Our prowess is not just acknowledged; it's revered. Join us in the epicenter of corporate law, where each legal stroke is a strategic masterpiece, propelling businesses into realms of unparalleled growth. In the intricate dance of commerce, we are the choreographers, crafting success stories that resonate with the pulse of business brilliance.             

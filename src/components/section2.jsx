@@ -69,7 +69,7 @@ const Section2 = () => {
           </h6>
           <h1 className="text-white md:text-4xl text-lg font-bold">
             Our solutions for your <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
+            <span className="text-[#D0B216] background-clip-text">
               Growth
             </span>
           </h1>
@@ -77,6 +77,9 @@ const Section2 = () => {
           
             <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
             
+            Established in{" "}
+            <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
+              2016
             </span>
             Dive into the heart of legal excellence with Mwenda Royford & Co Advocates, where the art of law transforms into a thrilling symphony of unparalleled expertise and relentless dedication. Established in 2016, our firm stands as a beacon of legal prowess, a powerhouse fueled by a cadre of exceptional legal minds.
           </p>
@@ -86,7 +89,7 @@ const Section2 = () => {
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
-              background: 'rgb(208,178,22)'
+              background: "rgb(208,178,22)",
             }}
           >
             <Link href="/about" className="text-white">

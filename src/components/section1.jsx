@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 // bg-gradient-to-b from-gray-800 to-gray-900
@@ -6,27 +6,31 @@ const Section1 = () => {
   const firstSectionControls = useAnimation();
   const secondSectionControls = useAnimation();
   const thirdSectionControls = useAnimation();
+  const sectionRefs = useRef([]);
 
   const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
 
-    if (scrollY >= 100) {
-      firstSectionControls.start({ opacity: 1, y: 0 });
-    }
-
-    if (scrollY >= 400) {
-      secondSectionControls.start({ opacity: 2, y: 0 });
-    }
-
-    if (scrollY >= 800) {
-      thirdSectionControls.start({ opacity: 3, y: 0 });
-    }
-  }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
+    sectionRefs.current.forEach(({ ref, offset, controls }) => {
+      if (scrollY >= offset) {
+        controls.start({ opacity: 1, y: 0 });
+      }
+    });
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
+
+  useEffect(() => {
+    sectionRefs.current = [
+      { ref: firstSectionControls, offset: 100, controls: firstSectionControls },
+      { ref: secondSectionControls, offset: 400, controls: secondSectionControls },
+      { ref: thirdSectionControls, offset: 800, controls: thirdSectionControls },
+    ];
+  }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
+
 
   return (
     <div

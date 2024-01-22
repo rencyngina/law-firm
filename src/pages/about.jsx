@@ -2,6 +2,7 @@ import React from "react";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
+import Foot from "../components/foot";
 
 const About = () => {
   return (
@@ -64,7 +65,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <FooterLinks />
+      <Foot />
     </>
   );
 };
