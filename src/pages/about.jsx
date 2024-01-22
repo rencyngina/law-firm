@@ -20,7 +20,7 @@ const About = () => {
             // backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">
+          <h1 className="text-xl lg:text-5xl xl:text-6xl text-white">
             Who we are
           </h1>
         </div>
@@ -64,15 +64,6 @@ const About = () => {
               opportunity for triumph and innovation.
             </p>
             <br />
-            <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-6 pt-6">
-              <span className="font-bold text-[#D0B216]">
-                Royford & Co Advocates
-              </span>{" "}
-              is where the art of law transforms into a thrilling symphony of
-              unparalleled expertise and relentless dedication. Established in
-              2016, our firm stands as a beacon of legal prowess, a powerhouse
-              fueled by a cadre of exceptional legal minds.
-            </p>
             <p className="lg:text-justify text-black text-md lg:text-lg lg:pt-10 pt-8">
               where experience is not just a metric but a legacy. Mwenda Royford
               & Co Advocates boasts a treasure trove of legal virtuosos, each
