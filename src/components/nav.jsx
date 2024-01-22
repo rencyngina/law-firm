@@ -4,7 +4,6 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
-import { BsTwitterX } from "react-icons/bs";
 
 const LandingNavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -138,7 +137,7 @@ const LandingNavBar = () => {
         </div>
         <li>
           <Link
-            href="/team"
+            href="/Our-lawyer"
             className="text-base text-gray-700 hover:underline"
           >
             Our Lawyers
@@ -154,7 +153,7 @@ const LandingNavBar = () => {
         </li>
         <Link href="/contact">
           <button
-            className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
+            className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none  focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
             style={{
               background: "rgb(208,178,22)",
             }}
@@ -227,14 +226,6 @@ const LandingNavBar = () => {
                       className="block py-2  border-b px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                     >
                       Our Team
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/news"
-                      className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                    >
-                      News
                     </Link>
                   </li>
                 </ul>

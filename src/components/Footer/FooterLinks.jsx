@@ -104,28 +104,6 @@ function FooterLinks() {
                   </ul>
                 </div>
               </div>
-              <div className="col-span-2 sm:col-span-1">
-                <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
-                  Downloads
-                </p>
-                <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
-                      Marketing Calendar
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200">
-                      SEO Infographics
-                    </a>
-                  </li>
-                </ul>
-              </div>
               <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end items-center">
                 <li>
                   <a

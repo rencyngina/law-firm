@@ -31,7 +31,7 @@ const Partners = () => {
           {/* Item 4 */}
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image src="/images/John-Mbaluto.webp" width={500}
-              height={300} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+              height={300} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/ 2 left-1/2" alt="..." />
           </div>
           {/* Item 5 */}
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
