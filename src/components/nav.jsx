@@ -145,23 +145,13 @@ const LandingNavBar = () => {
         </li>
         <li>
           <Link
-            href="/publication"
-            className="text-base text-gray-700 hover:underline"
-          >
-            Publication
-          </Link>
-        </li>
-        <Link href="/contact">
-          <button
-            className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none  focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
-            style={{
-              background: "rgb(208,178,22)",
-            }}
+            href="/contact"
+            className="text-base text-gray-700 hover:underline flex"
           >
             Contact Us
             <GoArrowUpRight size={20} className="ml-2" />
-          </button>
-        </Link>
+          </Link>
+        </li>
         <Link href="/">
           <button
             className="px-4 py-2 text-base lg:text-lg xl:text-xl font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
@@ -268,18 +258,18 @@ const LandingNavBar = () => {
                       Sectors
                     </Link>
                   </li>
-                  <li>
+                  {/*<li>
                     <Link
                       href="/about-us"
                       className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
                     >
                       Brochures
                     </Link>
-                  </li>
+              </li>*/}
                 </ul>
               )}
             </li>
-            <li className="relative z-10 border-b w-full">
+          <li className="relative z-10 border-b w-full">
               <div
                 onClick={togglePublicationDropdown}
                 className="text-base text-black cursor-pointer mb-4"
@@ -306,7 +296,7 @@ const LandingNavBar = () => {
                   </li>
                 </ul>
               )}
-            </li>
+              </li>
             <li className="border-b w-full">
               <Link href="/contact">
                 <button
