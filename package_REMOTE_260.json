@@ -25,17 +25,7 @@
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.5.3",
     "react-router-dom": "^6.21.1",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react-scroll": "^1.9.0",
-    "styled-components": "^6.1.2",
-    "swiper": "^11.0.5"
-=======
     "react-scroll": "^1.9.0"
->>>>>>> 77e173dca07047f61dc76ee7692c3f17f06fb2f4
-=======
-    "react-scroll": "^1.9.0"
->>>>>>> 77e173dca07047f61dc76ee7692c3f17f06fb2f4
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
