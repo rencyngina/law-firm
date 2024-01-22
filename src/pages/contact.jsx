@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import styled, { keyframes } from "styled-components";
 
@@ -46,16 +46,69 @@ const HeroSection = styled.div`
   padding: 0 20px;
   animation: ${fadeIn} 10s infinite alternate;
 
+  @media (max-width: 768px) {
+    height: 40vh;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+  }
+
   h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 700;
     color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   p {
     font-size: 1.2rem;
     color: #eee;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  // Contact details
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+    }
+
+    // Social media icons
+    svg {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-right: 10px;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
   }
 `;
 
@@ -213,6 +266,14 @@ const Contact = () => {
       <HeroSection>
         <h1>Contact Us</h1>
         <p>We are always ready to serve you</p>
+        <div>
+          <FaPhoneAlt />
+          <FaEnvelope />
+          {/* Add your social media icons here */}
+          <FaFacebook />
+          <BsTwitterX />
+          <FaLinkedin />
+        </div>
       </HeroSection>
       <FormSection>
         <h1 style={{ fontSize: "2rem", marginBottom: "20px", color: "#333" }}>
