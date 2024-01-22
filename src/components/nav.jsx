@@ -228,14 +228,6 @@ const LandingNavBar = () => {
                       Our Team
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/news"
-                      className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                    >
-                      News
-                    </Link>
-                  </li>
                 </ul>
               )}
             </li>

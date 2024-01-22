@@ -20,7 +20,7 @@ const About = () => {
             // backgroundAttachment: "fixed",
           }}
         >
-          <h1 className="text-2xl lg:text-5xl xl:text-6xl text-white">
+          <h1 className="text-xl lg:text-5xl xl:text-6xl text-white">
             Who we are
           </h1>
         </div>
