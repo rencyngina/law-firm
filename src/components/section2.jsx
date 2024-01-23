@@ -72,7 +72,7 @@ const Section2 = () => {
             Our solutions for your <br />
             <span className="text-[#D0B216] background-clip-text">Growth</span>
           </h1>
-          <p className="text-white lg:text-lg xl:text-lg text-md lg:mt-0 xl:mt-6 mt-4">
+          <p className="text-white lg:text-lg xl:text-lg text-sm lg:mt-0 xl:mt-6 mt-4">
             Established in{" "}
             <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016{" "}
@@ -87,7 +87,7 @@ const Section2 = () => {
             precision, and every case is handled with utmost dedication. Welcome
             to a legal experience like no other.
           </p>
-          <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
+          <p className="text-white lg:text-lg xl:text-xl text-sm lg:mt-0 xl:mt-6 mt-4">
             In the legal realm, experience is our legacy at Mwenda Royford & Co
             Advocates. Our team, a fusion of private practice virtuosos, public
             sector stalwarts, and international legal luminaries, sets us
@@ -95,9 +95,9 @@ const Section2 = () => {
             a maestro, redefining excellence in a succinct ensemble.
           </p>
           <button
-            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
+            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
             style={{
-              background: "rgb(208,178,22)",
+              // background: "rgb(208,178,22)",
             }}
           >
             <Link href="/about" className="text-white">
@@ -125,7 +125,7 @@ const Section2 = () => {
               {workHours}
             </h3>
             <p className="text-white text-xs font-extrabold">
-              Year Of Establishment
+              Established
             </p>
           </div>
           <div

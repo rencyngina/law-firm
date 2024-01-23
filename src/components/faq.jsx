@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 
 const Faq = () => {
   useEffect(() => {
-    // JavaScript to toggle the answers and rotate the arrows
     document
       .querySelectorAll('[id^="question"]')
       .forEach(function (button, index) {
@@ -26,7 +25,7 @@ const Faq = () => {
     <section className="py-8 bg-gray-50 sm:py-16 lg:py-18">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl  leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl leading-tight text-black sm:text-4xl lg:text-5xl">
             Got some burning questions about our services?
           </h2>
         </div>
@@ -38,7 +37,7 @@ const Faq = () => {
               data-state="closed"
               className="flex items-center justify-between w-full px-10 py-5 sm:p-6"
             >
-              <span className="flex text-lg font-semibold text-black">
+              <span className="flex text-md lg:text-lg lg:font-semibold text-black">
                 How much do you charge for your legal services?
               </span>
               <svg
@@ -72,11 +71,11 @@ const Faq = () => {
           <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
             <button
               type="button"
-              id="question1"
+              id="question2"
               data-state="closed"
               className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
             >
-              <span className="flex text-lg font-semibold text-black">
+              <span className="flex text-md lg:text-lg lg:font-semibold text-black">
                 What documents should I bring to my initial consultation?
               </span>
               <svg
@@ -111,11 +110,11 @@ const Faq = () => {
           <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
             <button
               type="button"
-              id="question1"
+              id="question3"
               data-state="closed"
               className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
             >
-              <span className="flex text-lg font-semibold text-black">
+              <span className="flex text-md lg:text-lg lg:font-semibold text-black">
                 How can I schedule a consultation with one of your attorneys?
               </span>
               <svg
@@ -149,11 +148,11 @@ const Faq = () => {
           <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
             <button
               type="button"
-              id="question1"
+              id="question4"
               data-state="closed"
               className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
             >
-              <span className="flex text-lg font-semibold text-black">
+              <span className="flex text-md lg:text-lg lg:font-semibold text-black">
                 How do I stay updated on the progress of my case?
               </span>
               <svg
@@ -197,3 +196,4 @@ const Faq = () => {
 };
 
 export default Faq;
+
