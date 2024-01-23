@@ -53,9 +53,9 @@ const HeroSection = styled.div`
 `;
 
 const ContentSection = styled.div`
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   text-align: justify;
   animation: ${fadeIn} 1s ease-in-out;
 
@@ -64,6 +64,10 @@ const ContentSection = styled.div`
     margin-bottom: 20px;
     color: #333;
     line-height: 1.5;
+    
+    @media(max-width:768px){
+      font-size:16px;
+    }
   }
 
   h1 {
