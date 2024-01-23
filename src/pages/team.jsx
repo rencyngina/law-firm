@@ -51,9 +51,9 @@ const Team = () => {
     },
     {
       id: 4,
-      name: " !!Boaz Amoro Nyakeri",
-      image: '/images/John-Mbaluto.webp',
-      work: 'Senior advocate',
+      name: "Mystry Nalisi Mmbaka",
+      image: '/images/secritary1.jpg',
+      work: 'Secretary/Receptionist',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
