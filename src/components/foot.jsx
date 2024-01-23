@@ -19,7 +19,7 @@ const Foot = () => {
           <p className="mr-4 hidden sm:block">|</p>
           <Link href="mailto:wendaandroyfordadvocates@example.com" className="flex items-center mt-2 mb-3 sm:mb-0">
               <MdEmail className="mr-2" />
-              <p className="mr-4 hidden sm:block">wendaandroyfordadvocates@example.com</p>
+              <p className="mr-4 hidden sm:block">info@royfordlaw.com</p>
           </Link>
           <p className="mr-4 sm:block">© {currentYear}. All rights reserved</p>
         </div>

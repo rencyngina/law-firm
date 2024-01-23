@@ -1,161 +1,198 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect } from "react";
 
 const Faq = () => {
+  useEffect(() => {
+    // JavaScript to toggle the answers and rotate the arrows
+    document
+      .querySelectorAll('[id^="question"]')
+      .forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          var answer = document.getElementById("answer" + (index + 1));
+          var arrow = document.getElementById("arrow" + (index + 1));
+
+          if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+            arrow.style.transform = "rotate(0deg)";
+          } else {
+            answer.style.display = "none";
+            arrow.style.transform = "rotate(-180deg)";
+          }
+        });
+      });
+  }, []);
+
   return (
-    <div class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10 lg:mb-10">
-    <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-        Got some burning questions about our services?
-        </h1>
-        <p class="mt-6 text-xl text-gray-500">
-        Here are some of the most frequently asked questions about our
-        services. If you have any other questions, please feel free to
-        contact us.
-        </p>
-      <div class="mx-auto px-5">
-        <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> How does the billing work?</span>
-                <span class="transition group-open:rotate-180">
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                Springerdata offers a variety of billing options, including
-                monthly and annual subscription plans, as well as pay-as-you-go
-                pricing for certain services. Payment is typically made through
-                a credit card or other secure online payment method.
+    <section className="py-8 bg-gray-50 sm:py-16 lg:py-18">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl  leading-tight text-black sm:text-4xl lg:text-5xl">
+            Got some burning questions about our services?
+          </h2>
+        </div>
+        <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+          <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              id="question1"
+              data-state="closed"
+              className="flex items-center justify-between w-full px-10 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                How much do you charge for your legal services?
+              </span>
+              <svg
+                id="arrow1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer1"
+              style={{ display: "none" }}
+              className="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                Our legal fees vary based on the complexity of the case and the
+                services required. We offer an initial consultation to assess
+                your situation and provide a personalized quote
               </p>
-            </details>
+            </div>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> Can I get a refund for my subscription?</span>
-                <span class="transition group-open:rotate-180">
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                We offer a 30-day money-back guarantee for most of its
-                subscription plans. If you are not satisfied with your
-                subscription within the first 30 days, you can request a full
-                refund. Refunds for subscriptions that have been active for
-                longer than 30 days may be considered on a case-by-case basis.
+          <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              id="question1"
+              data-state="closed"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                What documents should I bring to my initial consultation?
+              </span>
+              <svg
+                id="arrow2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer2"
+              style={{ display: "none" }}
+              className="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                It's helpful to bring any relevant documents, such as contracts,
+                correspondence, or court documents. However, if you don't have
+                them, don't worry; we'll gather necessary information during the
+                consultation.
               </p>
-            </details>
+            </div>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> Is there a free trial?</span>
-                <span class="transition group-open:rotate-180">
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                We offer a free trial of our software for a limited time. During
-                the trial period, you will have access to a limited set of
-                features and functionality, but you will not be charged.
+          <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              id="question1"
+              data-state="closed"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                How can I schedule a consultation with one of your attorneys?
+              </span>
+              <svg
+                id="arrow3"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer3"
+              style={{ display: "none" }}
+              className="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                To schedule a consultation, you can send as a message through
+                our contact and will reach out. During the consultation, we will
+                discuss your legal concerns and provide insights into your case
               </p>
-            </details>
+            </div>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> How do I contact support?</span>
-                <span class="transition group-open:rotate-180">
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                If you need help with our platform or have any other questions,
-                you can contact the company's support team by submitting a
-                support request through the website or by emailing
-                support@ourwebsite.com.
+          <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              id="question1"
+              data-state="closed"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                How do I stay updated on the progress of my case?
+              </span>
+              <svg
+                id="arrow4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer4"
+              style={{ display: "none" }}
+              className="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                We prioritize transparent communication. You will receive
+                regular updates on the progress of your case, and our team is
+                available to address any questions or concerns you may have
               </p>
-            </details>
-          </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> Do you offer any discounts or promotions?</span>
-                <span class="transition group-open:rotate-180">
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                We may offer discounts or promotions from time to time. To stay
-                up-to-date on the latest deals and special offers, you can sign
-                up for the company's newsletter or follow it on social media.
-              </p>
-            </details>
+            </div>
           </div>
         </div>
+        <p className="text-center text-gray-600 textbase mt-9">
+          Still have questions?
+          <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">
+            Contact our support info@royfordlawlaw.com
+          </span>
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

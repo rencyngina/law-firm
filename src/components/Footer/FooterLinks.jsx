@@ -1,5 +1,4 @@
 // import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
@@ -12,10 +11,11 @@ function FooterLinks() {
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-teal-300">
               <Image
-                src="/images/LOGOS3-removebg.png"
+                src="/images/MWENDA ROYFORD LOGO-03 (1).png"
                 alt="Logo"
                 height={350}
-                width={400}
+                width={850}
+                // className="w-full h-80"
               />
             </div>
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
@@ -40,14 +40,6 @@ function FooterLinks() {
                       href="#"
                       className="transition hover:opacity-75 text-gray-200"
                     >
-                      ACK Garden Annex, 6th Floor, 1st Ngong Avenue
-                    </a>
-                  </li>
-                  <li className="flex items-center">
-                    <a
-                      href="#"
-                      className="transition hover:opacity-75 text-gray-200"
-                    >
                       5TH AVENUE OFFICE SUITES 4TH FLOOR SUITE 4 – 15 OFF NGONG
                       ROAD
                     </a>
@@ -62,10 +54,43 @@ function FooterLinks() {
                   </li>
                   <li className="flex items-center">
                     <p className="transition hover:opacity-75 text-gray-200">
-                      info@mwendaroyfordadvocates.co.ke
+                      info@royfordlaw.co.ke
                     </p>
                   </li>
                 </ul>
+              </div>
+              <div className="flex lg:block gap-10">
+                <div className="col-span-2 sm:col-span-1">
+                  <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
+                    Company
+                  </p>
+                  <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
+                    <li>
+                      <a
+                        href="#"
+                        className="transition hover:opacity-75 text-gray-200"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="transition hover:opacity-75 text-gray-200"
+                      >
+                        Our Team
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="transition hover:opacity-75 text-gray-200"
+                      >
+                        Join Our team
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="flex lg:block gap-10">
                 <div className="col-span-2 sm:col-span-1">

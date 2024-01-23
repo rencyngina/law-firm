@@ -127,11 +127,11 @@ const LandingNavBar = () => {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/images/LOGOS3-removebg.png"
+              src="/images/MWENDA ROYFORD LOGO-03 (1).png"
               alt="Logo"
               className="cursor-pointer"
-              height={90}
-              width={200}
+              height={40}
+              width={80}
             />
           </Link>
         </div>
