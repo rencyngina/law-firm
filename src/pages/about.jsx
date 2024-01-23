@@ -115,7 +115,6 @@ const About = () => {
         <h1>Who we are</h1>
       </HeroSection>
       <ContentSection>
-        <h1>About us</h1>
         <p>
           Established in 2016, Mwenda Royford and Company Advocates stands at
           the forefront of legal innovation, sculpting a legacy of excellence

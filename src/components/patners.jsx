@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
-import Faq from "./faq"
+import Faq from "./faq";
 
 const Partners = () => {
   const partners = [
@@ -32,7 +32,7 @@ const Partners = () => {
 
   return (
     <>
-    <div className="bg-gray-100 w-full py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
+      <div className="bg-gray-100 w-full py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
         <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
           <div className="lg:w-1/2 relative ">
             <Slider {...settings} className="w-full lg:h-[80vh]">
@@ -61,8 +61,8 @@ const Partners = () => {
             </h1>
             <div className="w-20 h-1 bg-[#A65A2A] mb-6"></div>
             <p className="text-yellow-500 text-lg lg:text-xl xl:text-2xl mb-4">
-              Our lawyers are enthusiastic, committed, flexible, and commercially
-              minded.
+              Our lawyers are enthusiastic, committed, flexible, and
+              commercially minded.
             </p>
             <p className="text-black text-md lg:text-lg xl:text-xl leading-normal mb-8">
               In our dynamic portfolio, we specialize in debt and equity issues,
@@ -72,16 +72,39 @@ const Partners = () => {
               Our team includes partners, associates, and support staff; further
               on-call counsel is available for specific projects.
             </p>
-            <Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 hover:bg-yellow-600 transition duration-300">
+            <div className="flex gap-4">
+              {/*<Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 text-center justify-center hover:bg-yellow-600 transition duration-300">
                 Get a Lawyer
-            </Link>
+              </Link>*/}
+              <button
+                className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
+                style={
+                  {
+                    // background: "rgb(208,178,22)",
+                  }
+                }
+              >
+                <Link href="/Our-lawyer" className="text-black">
+                  Get a Lawyer
+                </Link>
+              </button>
+              <a href="mailto:info@royfordlaw.co.ke">
+                <button
+                  className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
+                  style={{
+                    background: "rgb(208,178,22)",
+                  }}
+                >
+                  <span className="text-white">Contact Us</span>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-        </div>
-        <Faq />
+      </div>
+      <Faq />
     </>
   );
 };
 
 export default Partners;
-
