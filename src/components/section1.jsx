@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useCallback, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
@@ -30,7 +31,6 @@ const Section1 = () => {
       { ref: thirdSectionControls, offset: 800, controls: thirdSectionControls },
     ];
   }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
-
 
   return (
     <div
