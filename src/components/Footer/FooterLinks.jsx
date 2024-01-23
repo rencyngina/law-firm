@@ -14,7 +14,7 @@ function FooterLinks() {
               <Image
                 src="/images/LOGOS3-removebg.png"
                 alt="Logo"
-                height={300}
+                height={350}
                 width={400}
               />
             </div>
@@ -25,14 +25,10 @@ function FooterLinks() {
                     About
                   </h2>
                   <p className="lg:text-sm text-sm mt-4 text-white">
-                    Mwenda RoyFord & Company Advocates is a full-service
-                    market-leading African law firm established in 2016 with a
-                    strong focus on dispute resolution and corporate &
-                    commercial law. With a dedicated team of partners, senior
-                    associates, associates, and support staff, the firm has been
-                    consistently ranked by leading legal directories such as
-                    Chambers Global, IFLR1000 and Legal 500 as a top-tier firm
-                    in Kenya.
+                  Established in 2016, Mwenda Royford and Company Advocates 
+                  stands at the forefront of legal innovation, sculpting a legacy
+                   of excellence with unwavering commitment. Our vision is anchored in
+                    a passion for transformative legal solutions, setting us apart in the legal landscape.
                   </p>
                 </div>
               </div>

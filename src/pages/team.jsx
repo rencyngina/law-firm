@@ -8,58 +8,70 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import Link from "next/link";
+
 
 const Team = () => {
   const teamData = [
     {
       id: 1,
       name: "Nkonge Royford Mwenda",
-      image: "/images/JKTK.webp",
+      image: "/images/Mwenda2.jpg",
       work: "Senior advocate",
       email: "royford@example.com",
       facebook: "https://www.facebook.com/royford",
       twitter: "https://www.twitter.com/royford",
       instagram: "https://www.instagram.com/royford",
+      sector: "Nkongerm",
+      linkTo: "/Nkongerm",
     },
     {
       id: 2,
-      name: "Jackline Waceke Njenga",
-      image: '/images/JKTK.webp',
+      name: "Nicholas Wambua Robert",
+      image: '/images/Nicholus1.jpg',
       work: 'Senior advocate',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
+      sector: "Nicholas",
+      linkTo: "/Nicholas",
     },
     {
       id: 3,
-      name: "Lisper Njeri",
-      image: '/images/JKTK.webp',
+      name: "Annet Otago",
+      image: '/images/Anett1.jpg',
       work: 'Senior advocate',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
+      sector:"Lisper",
+      linkTo: "/Lisper",
     },
     {
       id: 4,
-      name: " Boaz Amoro Nyakeri",
+      name: " !!Boaz Amoro Nyakeri",
       image: '/images/John-Mbaluto.webp',
       work: 'Senior advocate',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
+      sector:"Boaz",
+      linkTo: "/Boaz",
     },
     {
       id: 5,
       name: "Ngava Joy Kaaria",
-      image: '/images/team/staff1.jpeg',
+      image: '/images/Moris1.jpg',
       work: 'Senior advocate',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
+      sector: "Ngava",
+      linkTo: "/Ngava",
     }
   ];
 
@@ -81,7 +93,7 @@ const Team = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            // backgroundAttachment: "fixed",
+            backgroundAttachment: "fixed",
           }}
         >
           <h1 className="text-2xl font-bold lg:text-2xl xl:text-5xl text-white">Our Team</h1>
@@ -109,22 +121,23 @@ const Team = () => {
             background: ''
           }}
               >
-                <div className="relative">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    layout="responsive"
-                    width={300}
-                    height={300}
-                    className="object-cover w-full h-48"
-                  />
-                  <div className="absolute bottom-0 left-0 p-4">
-                    <h2 className="text-xl font-semibold text-white">
-                      {member.name}
-                    </h2>
-                    <p className="text-gray-200">{member.work}</p>
-                  </div>
-                </div>
+              <div className="relative">
+              <div className="bg-gradient-to-b from-[rgba(21, 21, 21, 0.6)] to-[rgba(30, 29, 29, 0.6)] inset-0"></div>
+              <Image
+                src={member.image}
+                alt={member.name}
+                layout="responsive"
+                width={300}
+                height={300}
+                className="object-cover w-full h-48"
+              />
+              <div className="absolute bottom-0 left-0 p-4 w-full bg-black bg-opacity-50">
+                <h2 className="text-xl font-semibold text-white">
+                  {member.name}
+                </h2>
+                <p className="text-yellow-500">{member.work}</p>
+              </div>
+            </div>            
                 <div className="p-4">
                   <div className="flex items-center mb-2">
                     <MdEmail className="text-gray-500 mr-2" />

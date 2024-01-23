@@ -1,7 +1,7 @@
 /* Default styles for larger screens */
 .footer {
   margin-top: rem(120px);
-  height: 35vh;
+  height: 30vh;
   padding-top: calc(var(--mantine-spacing-xl) * 2);
   padding-bottom: calc(var(--mantine-spacing-xl) * 2);
   background-color: #232323;
