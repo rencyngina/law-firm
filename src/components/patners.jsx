@@ -9,19 +9,14 @@ import Faq from "./faq"
 const Partners = () => {
   const partners = [
     {
+      name: "Annet A. Otago",
+      sector: "Corporate and Commercial Law",
+      image: "/images/Anett1.jpg",
+    },
+    {
       name: "Nkonge Royford Mwenda",
-      sector: "Finance",
-      image: "/images/JKTK.webp",
-    },
-    {
-      name: "Boaz Amoro Nyakundi",
-      sector: "Technology",
-      image: "/images/John-Mbaluto.webp",
-    },
-    {
-      name: "Ngava Joy Kaaria",
-      sector: "Legal",
-      image: "/images/NLC.webp",
+      sector: "Sernior advocate",
+      image: "/images/Mwenda2.jpg",
     },
   ];
 
@@ -89,5 +84,4 @@ const Partners = () => {
 };
 
 export default Partners;
-
 

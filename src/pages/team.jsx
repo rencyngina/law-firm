@@ -17,7 +17,7 @@ const Team = () => {
       id: 1,
       name: "Nkonge Royford Mwenda",
       image: "/images/Mwenda2.jpg",
-      work: "Senior advocate",
+      work: "CEO",
       email: "royford@example.com",
       facebook: "https://www.facebook.com/royford",
       twitter: "https://www.twitter.com/royford",
@@ -29,7 +29,7 @@ const Team = () => {
       id: 2,
       name: "Nicholas Wambua Robert",
       image: '/images/Nicholus1.jpg',
-      work: 'Senior advocate',
+      work: 'Legal Clerk/Paralegal',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
@@ -41,7 +41,7 @@ const Team = () => {
       id: 3,
       name: "Annet Otago",
       image: '/images/Anett1.jpg',
-      work: 'Senior advocate',
+      work: 'A Lawyer',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
@@ -65,7 +65,7 @@ const Team = () => {
       id: 5,
       name: "Ngava Joy Kaaria",
       image: '/images/Moris1.jpg',
-      work: 'Senior advocate',
+      work: 'cybersecurity & IT specialist.',
       email: 'royford@example.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
@@ -107,10 +107,11 @@ const Team = () => {
             Our Team
           </h1>
           <p className="text-gray-600 mb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quos modi, fugiat dolorum vero ex voluptatum, voluptate, quibusdam
-            quia voluptas quae. Quisquam quos modi, fugiat dolorum vero ex
-            voluptatum, voluptate, quibusdam quia voluptas quae.
+          This hardworking and passionate group truly embodies dedication and
+           teamwork. Their enthusiasm creates a dynamic and collaborative environment
+            where each member, with their unique skills, contributes to shared goals.
+             Together, their collective efforts and unwavering commitment drive them 
+             towards achieving remarkable success.
             </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamData.map((member) => (
