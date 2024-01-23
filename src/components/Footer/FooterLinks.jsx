@@ -40,7 +40,7 @@ function FooterLinks() {
                       href="#"
                       className="transition hover:opacity-75 text-gray-200"
                     >
-                      ACK Garden Annex, 6th Floor, 1st Ngong Avenue
+                    We are located along 5th avenue office suite 4th floor suite 4 – 15 off gong road
                     </a>
                   </li>
                   <li className="flex items-center">

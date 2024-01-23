@@ -10,7 +10,7 @@
 }
 
 .logo {
-  max-width: rem(200px);
+  max-width: rem(150px);
 }
 
 .description {
@@ -93,13 +93,13 @@
   }
 
   .inner {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .groups {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 30rem;
 
     /* Additional media query for screens smaller than 768px */
     @media screen and (max-width: 768px) {
@@ -109,13 +109,13 @@
   }
 
   .wrapper {
-    width: rem(120px);
+    width: rem(110px);
   }
 
   .link {
     font-size: 0.9rem; /* Adjust text size for smaller screens using rem */
     padding-top: rem(0.3rem);
-    padding-bottom: rem(0.3rem);
+    padding-bottom: rem(0.2rem);
   }
 
   .title {
