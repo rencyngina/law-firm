@@ -31,7 +31,7 @@ Beyond her legal pursuits, Annet finds joy in recreational running, mountaineeri
       `,
       image: "/images/lawyers/lawyer1.jpeg",
       work: "Corporate and Commercial Law",
-      email: "annet.otago@example.com",
+      email: "annet@royfordlaw.com",
       phone: "+123456789",
       linkedin: "https://www.linkedin.com/in/annetotago",
       facebook: "https://www.facebook.com/annetotago",
