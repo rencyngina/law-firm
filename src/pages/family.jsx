@@ -15,32 +15,24 @@ const Family = () => {
   const keyContacts = [
     {
       id: 1,
-      name: "Pamella Ager",
-      position: "Partner",
-      email: "pamella@example.com",
-      imageSrc: "/images/JKTK.webp",
-      twitterHandle: "pamella_twitter",
-      linkedinHandle: "pamella-linkedin",
+      name: "Nkonge R. Mwenda",
+      position: "Managing Partner",
+      email: "mwenda@royfordlaw.com",
+      imageSrc: "/images/Mwenda2.jpg",
+      twitterHandle: "#",
+      linkedinHandle: "#",
     },
     {
       id: 2,
-      name: "John Mbaluto",
+      name: "Annet A. Otago",
       position: "Partner",
-      email: "john@example.com",
-      imageSrc: "/images/John-Mbaluto.webp",
-      twitterHandle: "john_twitter",
-      linkedinHandle: "john-linkedin",
-    },
-    {
-      id: 3,
-      name: "Annate",
-      position: "Associate",
-      email: "another@example.com",
+      email: "#",
       imageSrc: "/images/lawyers/lawyer1.jpeg",
-      twitterHandle: "another_twitter",
-      linkedinHandle: "another-linkedin",
+      twitterHandle: "#",
+      linkedinHandle: "#",
     },
   ];
+  
   const experience = [
     {
       id: 1,

@@ -112,14 +112,6 @@ const LandingNavBar = () => {
                   Sectors
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                >
-                  Booklets
-                </Link>
-              </li>
             </ul>
           )}
         </li>

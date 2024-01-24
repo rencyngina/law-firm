@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import LandingNavBar from "../components/nav";
-import Head from "../components/head";
+// import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
-import Image from "next/image";
-import familyContent from "../pages/content/familyContent.json";
-import { BiLogoGmail } from "react-icons/bi";
+// import Image from "next/image";
+// import familyContent from "../pages/content/familyContent.json";
+// import { BiLogoGmail } from "react-icons/bi";
 
 function PublicSector() {
   return (

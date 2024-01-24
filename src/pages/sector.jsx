@@ -10,34 +10,35 @@ const Sector = () => {
     {
       id: 1,
       sector: "Construction",
-      ImageSrc: "/images/sector/Construction-Sector-1.webp",
+      ImageSrc: "/images/sector/construction1.jpg",
       linkTo: "/construction",
     },
     {
       id: 2,
       sector: "Energy Sector",
-      ImageSrc: "/images/sector/Energy-Sector.webp",
+      ImageSrc: "/images/sector/energy1.jpg",
       linkTo: "/EnergySector",
     },
     {
       id: 3,
       sector: "Financials",
-      ImageSrc: "/images/sector/Financial-Services-Sector.webp",
+      ImageSrc: "/images/sector/financials1.jpg",
       linkTo: "/Financials",
     },
     {
       id: 4,
       sector: "Manufacturing and Industrials",
-      ImageSrc: "/images/sector/Manufacturing-Industrials-Sector.webp",
+      ImageSrc: "/images/sector/manufacture1.jpg",
       linkTo: "/Industrials",
     },
     {
       id: 5,
       sector: "International trade",
-      ImageSrc: "/images/service_01.jpg",
+      ImageSrc: "/images/sector/internationaltrade1.jpg",
       linkTo: "/Internationaltrade",
     },
   ];
+
   return (
     <>
       <Head />
@@ -46,7 +47,7 @@ const Sector = () => {
         <div
           className="h-52 w-full flex flex-col justify-center items-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/call.jpg)`,
+            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/sector/energy1.jpg)`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

@@ -25,10 +25,11 @@ function FooterLinks() {
                     About
                   </h2>
                   <p className="lg:text-sm text-sm mt-4 text-white">
-                  Established in 2016, Mwenda Royford and Company Advocates 
-                  stands at the forefront of legal innovation, sculpting a legacy
-                   of excellence with unwavering commitment. Our vision is anchored in
-                    a passion for transformative legal solutions, setting us apart in the legal landscape.
+                    Established in 2016, Mwenda Royford and Company Advocates
+                    stands at the forefront of legal innovation, sculpting a
+                    legacy of excellence with unwavering commitment. Our vision
+                    is anchored in a passion for transformative legal solutions,
+                    setting us apart in the legal landscape.
                   </p>
                 </div>
               </div>
@@ -92,10 +93,10 @@ function FooterLinks() {
                   </ul>
                 </div>
               </div>
-              <div className="flex lg:block gap-10">
+              <div className="flex lg:block gap-4">
                 <div className="col-span-2 sm:col-span-1">
                   <p className="font-bold  text-[#A65A2A] lg:text-xl sm:text-lg">
-                    Company
+                    Industry
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
                     <li>
@@ -103,7 +104,7 @@ function FooterLinks() {
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        About Us
+                        Agriculture
                       </a>
                     </li>
                     <li>
@@ -111,7 +112,7 @@ function FooterLinks() {
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        Our Team
+                        Business
                       </a>
                     </li>
                     <li>
@@ -119,7 +120,23 @@ function FooterLinks() {
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
-                        Join Our team
+                        Education
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="transition hover:opacity-75 text-gray-200"
+                      >
+                        Entertainment
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="transition hover:opacity-75 text-gray-200"
+                      >
+                        Real Estate
                       </a>
                     </li>
                   </ul>
@@ -128,7 +145,7 @@ function FooterLinks() {
               <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end items-center">
                 <li>
                   <a
-                    href="/"
+                    href="/https://www.facebook.com/profile.php?id=61555492831222&mibextid=ZbWKwL"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -150,7 +167,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/https://www.instagram.com/royfordlaw?utm_source=qr&igsh=dzU2enhuNWpwczln"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -183,7 +200,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/https://www.youtube.com/@Royfordlaw"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
