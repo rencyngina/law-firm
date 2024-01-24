@@ -73,16 +73,8 @@ const Partners = () => {
               on-call counsel is available for specific projects.
             </p>
             <div className="flex gap-4">
-              {/*<Link href="/Our-lawyer" className="inline-block font-extrabold text-white py-3 px-6 bg-yellow-500 text-center justify-center hover:bg-yellow-600 transition duration-300">
-                Get a Lawyer
-              </Link>*/}
               <button
-                className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
-                style={
-                  {
-                    // background: "rgb(208,178,22)",
-                  }
-                }
+                className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
               >
                 <Link href="/Our-lawyer" className="text-black">
                   Get a Lawyer
@@ -90,7 +82,7 @@ const Partners = () => {
               </button>
               <a href="mailto:info@royfordlaw.co.ke">
                 <button
-                  className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
+                  className="mt-4 font-bold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
                   style={{
                     background: "rgb(208,178,22)",
                   }}

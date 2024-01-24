@@ -214,7 +214,7 @@ const LandingNavBar = () => {
               )}
             </li>
             <li className="border-b w-full">
-              <Link href="/team" onClick={toggleMobileMenu} className="mb-4">
+              <Link href="/Our-lawyer" onClick={toggleMobileMenu} className="mb-4">
                 Our Lawyers
               </Link>
             </li>
@@ -250,45 +250,9 @@ const LandingNavBar = () => {
                       Sectors
                     </Link>
                   </li>
-                  {/*<li>
-                    <Link
-                      href="/about-us"
-                      className="block py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                    >
-                      Brochures
-                    </Link>
-              </li>*/}
                 </ul>
               )}
             </li>
-          <li className="relative z-10 border-b w-full">
-              <div
-                onClick={togglePublicationDropdown}
-                className="text-base text-black cursor-pointer mb-4"
-              >
-                Publication{" "}
-                <RiArrowDropDownLine
-                  className="inline"
-                  style={{
-                    fontSize: "1.8rem",
-                  }}
-                />
-              </div>
-              {publicationDropdownOpen && (
-                <ul className="absolute top-full left-0 bg-white shadow-md p-2 rounded-sm w-96 gap-8 h-62">
-                  {/* Dropdown content */}
-                  <li>
-                    <Link
-                      href="/practice-areas"
-                      id="practice-areas"
-                      className="block border-b py-2 px-4 text-gray-800 hover:text-orange-500 transition duration-300"
-                    >
-                      News
-                    </Link>
-                  </li>
-                </ul>
-              )}
-              </li>
             <li className="border-b w-full">
               <Link href="/contact">
                 <button
