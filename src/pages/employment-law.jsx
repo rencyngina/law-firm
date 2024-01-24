@@ -21,7 +21,7 @@ const EmploymentLaw = () => {
       id: 2,
       name: "Annet A. Otago",
       position: "Partner",
-      email: "annet.otago@example.com",
+      email: "annet@royfordlaw.com",
       imageSrc: "/images/lawyers/lawyer1.jpeg",
       twitterHandle: "#",
       linkedinHandle: "#",

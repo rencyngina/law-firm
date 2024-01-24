@@ -29,7 +29,7 @@ const Team = () => {
       name: "Annet Otago",
       image: "/images/Anett1.jpg",
       work: "A Lawyer",
-      email: "Annet@royfordlaw.com",
+      email: "annet@royfordlaw.com",
       facebook: "https://www.facebook.com/royford",
       twitter: "https://www.twitter.com/royford",
       instagram: "https://www.instagram.com/royford",

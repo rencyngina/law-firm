@@ -26,7 +26,7 @@ const Family = () => {
       id: 2,
       name: "Annet A. Otago",
       position: "Partner",
-      email: "#",
+      email: "annet@royfordlaw.com",
       imageSrc: "/images/lawyers/lawyer1.jpeg",
       twitterHandle: "#",
       linkedinHandle: "#",
