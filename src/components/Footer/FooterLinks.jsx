@@ -62,7 +62,7 @@ function FooterLinks() {
                   </li>
                   <li className="flex items-center">
                     <p className="transition hover:opacity-75 text-gray-200">
-                      info@mwendaroyfordadvocates.co.ke
+                     info@royfordlaw.com
                     </p>
                   </li>
                 </ul>
