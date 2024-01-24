@@ -15,7 +15,7 @@ const Hero = () => {
   const imagesData = [
     {
       image: Image1,
-      title: "MWENDA ROYFORD & COMPANY ADVOCATE",
+      title: "MWENDA ROYFORD & COMPANY ADVOCATES",
       description: "Where Excellence Meets Justice",
       buttonLabel: "Who we are",
       linkTo: "/about",
@@ -24,7 +24,7 @@ const Hero = () => {
       image: Image2,
       title: "Arbitration",
       description:
-        "We have represented clients in local and international arbitration tribunals including International Centre for Settlement of Investment Disputes (ICSID), the London Court of International Arbitration (LCIA) and the International Chamber of Commerce (ICC) in energy, financial services and construction sectors.",
+        "Elevate dispute resolution with our dynamic arbitration services, ensuring swift and impartial outcomes for all parties involved.",
       buttonLabel: "Our Services",
       linkTo: "/services",
     },
@@ -32,7 +32,7 @@ const Hero = () => {
       image: Image3,
       title: "Banking & Finance",
       description:
-        "Our Banking & Finance practice area is well regarded for its expertise in advising in both contentious and non-contentious matters",
+        "Our Banking & Finance practice area is distinguished for its prowess in providing expert guidance across both contentious and non-contentious matters.",
       buttonLabel: "Our Expertise",
       linkTo: "/practice-areas",
     },
@@ -40,11 +40,12 @@ const Hero = () => {
       image: Image4,
       title: "Assets Tracing & Recovery",
       description:
-        "Our Asset Tracing & Recoveries practice area is a recognized leader in advising both contentious and non-contentious complex tracing and recovery of assets and in restructuring & insolvencies.",
+        "Our Asset Tracing & Recoveries practice stands as a recognized leader, offering unparalleled expertise in advising on both contentious and non-contentious complexities related to asset tracing, recovery, and restructuring in insolvencies.",
       buttonLabel: "Our Services",
       linkTo: "/services",
     },
   ];
+
 
  const settings = {
     dots: true,
@@ -63,7 +64,7 @@ const Hero = () => {
           <div key={index} className="relative h-[76vh] lg:h-[85vh] xl:h-[88vh]">
             <Image src={image.image} alt={`Slide ${index}`} className="w-full h-[76vh] lg:h-[85vh] xl:h-[88vh] object-cover" />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
-              <h1 className="w-full sm:w-1/2 lg:w-1/2 text-4xl font-bold lg:text-5xl xl:text-6xl leading-relaxed lg:font-extrabold mb-2">
+              <h1 className="w-full sm:w-1/2 lg:w-1/1 text-4xl font-bold lg:text-4xl xl:text-5xl leading-relaxed lg:font-extrabold mb-2">
                 {image.title}
               </h1>
               <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
