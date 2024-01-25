@@ -1,8 +1,8 @@
-// LawyerCard.js
 import React, { useState } from "react";
 import { FaPhone, FaEnvelope, FaLinkedin, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const CardContainer = styled.div`
   background: #fff;
@@ -10,7 +10,7 @@ const CardContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   margin-bottom: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
 
   &:hover {
@@ -25,8 +25,9 @@ const CardContainer = styled.div`
 const ImageContainer = styled.div`
   width: 100%;
   max-width: 300px;
+  height: 300px;
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -34,23 +35,131 @@ const ImageContainer = styled.div`
     margin-bottom: 0;
     margin-right: 1rem;
   }
+
+  .image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+  }
 `;
 
 const BioContainer = styled.div`
   width: 100%;
+  margin-left: 1rem;
 
   @media (min-width: 768px) {
     width: 60%;
   }
 `;
 
+const BioPointsContainer = styled.div`
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #555;
+  }
+
+  .bullet {
+    margin-right: 8px;
+    color: #3498db;
+  }
+`;
+
+const ReadMoreButton = styled(motion.span)`
+  color: #3498db;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #2073c0;
+  }
+`;
+
+const RoundedContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+const SocialIcon = styled.a`
+  margin-right: 0.5rem;
+  color: #3498db;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #2073c0;
+  }
+`;
+
+const HoverableSocialIcon = styled(motion(SocialIcon))`
+  &:hover {
+    scale: 1.2;
+  }
+`;
+
 const LawyerCard = ({ lawyer }) => {
   const [readMore, setReadMore] = useState(false);
+
+  const renderBioPoints = () => (
+    <BioPointsContainer>
+      {Array.isArray(lawyer.bioPoints) ? (
+        lawyer.bioPoints.map((point, index) => (
+          <p key={index}>
+            <span className="bullet">&#8226;</span> {point}
+          </p>
+        ))
+      ) : (
+        <p>
+          <span className="bullet">&#8226;</span> {lawyer.bioPoints}
+        </p>
+      )}
+    </BioPointsContainer>
+  );
+
+  const renderTruncatedBio = () => {
+    const truncatedBio =
+      Array.isArray(lawyer.bioPoints)
+        ? lawyer.bioPoints.join(" ").substring(0, 300) + "..."
+        : String(lawyer.bioPoints).substring(0, 300) + "...";
+
+    return (
+      <div>
+        <p>{truncatedBio}</p>
+        <ReadMoreButton whileHover={{ scale: 1.05 }} onClick={() => setReadMore(true)}>
+          Read More
+        </ReadMoreButton>
+      </div>
+    );
+  };
+
+  const renderFullBio = () => (
+    <div>
+      <p>{lawyer.bio}</p>
+      {renderBioPoints()}
+      <ReadMoreButton whileHover={{ scale: 1.05 }} onClick={() => setReadMore(false)}>
+        Read Less
+      </ReadMoreButton>
+    </div>
+  );
 
   return (
     <CardContainer>
       <ImageContainer>
-        <div className="relative w-full h-79 overflow-hidden">
+        <div className="relative w-full h-auto overflow-hidden image-wrapper">
           <Image
             src={lawyer.image}
             alt={lawyer.name}
@@ -62,39 +171,26 @@ const LawyerCard = ({ lawyer }) => {
         </div>
       </ImageContainer>
       <BioContainer>
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">
-          {lawyer.name}
-        </h2>
+        <h2 className="text-2xl font-semibold mb-2 text-[#D0B216]">{lawyer.name}</h2>
         <p className="lg:text-lg text-sm text-gray-600 mb-4">{lawyer.work}</p>
-        <div className="flex items-center mb-4">
-          <FaPhone className="text-blue-500 mr-2" />
-          <p className="text-blue-500">{lawyer.phone}</p>
-        </div>
-        <div className="flex items-center mb-4">
-          <FaEnvelope className="text-blue-700 mr-2" />
-          <p className="text-blue-700">{lawyer.email}</p>
-        </div>
-        <div className="flex items-center mb-4">
-          <FaLinkedin className="text-blue-700 mr-2" />
-          <p className="text-blue-700">{lawyer.linkedin}</p>
-        </div>
-        <div className="flex items-center mb-4">
-          <FaFacebook className="text-blue-700 mr-2" />
-          <p className="text-blue-700">{lawyer.facebook}</p>
-        </div>
-        <p className="lg:text-lg text-sm text-gray-600 mb-4">
-          {readMore ? lawyer.bio : `${lawyer.bio.substring(0, 300)}...`}
-          <span
-            className="text-blue-500 cursor-pointer"
-            onClick={() => setReadMore(!readMore)}
-          >
-            {readMore ? " Read Less" : " Read More"}
-          </span>
-        </p>
+        <RoundedContainer>
+          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={`tel:${lawyer.phone}`}>
+            <FaPhone />
+          </HoverableSocialIcon>
+          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={`mailto:${lawyer.email}`}>
+            <FaEnvelope />
+          </HoverableSocialIcon>
+          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={lawyer.linkedin}>
+            <FaLinkedin />
+          </HoverableSocialIcon>
+          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={lawyer.facebook}>
+            <FaFacebook />
+          </HoverableSocialIcon>
+        </RoundedContainer>
+        {readMore ? renderFullBio() : renderTruncatedBio()}
       </BioContainer>
     </CardContainer>
   );
 };
 
 export default LawyerCard;
-

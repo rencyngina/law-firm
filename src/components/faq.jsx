@@ -22,7 +22,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-gray-50 sm:py-16 lg:py-18">
+    <section className="py-8 bg-gray-50 sm:py-16 lg:py-18 border-b">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl leading-tight text-black sm:text-4xl lg:text-5xl">
@@ -100,10 +100,9 @@ const Faq = () => {
               className="px-4 pb-5 sm:px-6 sm:pb-6"
             >
               <p>
-                It's helpful to bring any relevant documents, such as contracts,
-                correspondence, or court documents. However, if you don't have
-                them, don't worry; we'll gather necessary information during the
-                consultation.
+                Kindly carry with yourself any relevant documents that's related
+                to the matter at hand, including your personal documents
+                (Identity Card and Pin certificate).
               </p>
             </div>
           </div>
@@ -196,4 +195,3 @@ const Faq = () => {
 };
 
 export default Faq;
-

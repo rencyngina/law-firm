@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" href="/images/LOGOS3-removebg.png" />
+        <link rel="icon" href="/images/MWENDA LOGO.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Next.js TailwindCSS Starter Template" />
         <meta name="keywords" content="nextjs, tailwindcss, starter, template" />

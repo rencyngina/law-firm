@@ -26,9 +26,21 @@ const Section1 = () => {
 
   useEffect(() => {
     sectionRefs.current = [
-      { ref: firstSectionControls, offset: 100, controls: firstSectionControls },
-      { ref: secondSectionControls, offset: 400, controls: secondSectionControls },
-      { ref: thirdSectionControls, offset: 800, controls: thirdSectionControls },
+      {
+        ref: firstSectionControls,
+        offset: 100,
+        controls: firstSectionControls,
+      },
+      {
+        ref: secondSectionControls,
+        offset: 400,
+        controls: secondSectionControls,
+      },
+      {
+        ref: thirdSectionControls,
+        offset: 800,
+        controls: thirdSectionControls,
+      },
     ];
   }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
 
@@ -80,9 +92,10 @@ const Section1 = () => {
               Mission
             </h1>
             <p className="">
-            Our mission is to pioneer a legal revolution as architects 
-            of triumph to guide clients seamlessly to achieve objectives, in minimize reasks and, transform legal 
-            challenges into victory within Kenya and across Africa.                      
+              Our mission is to pioneer a legal revolution as architects of
+              triumph, guiding clients seamlessly to achieve objectives,
+              minimize risks, and transform legal challenges into victories
+              within Kenya and across Africa.
             </p>
           </motion.div>
           <motion.div
@@ -107,7 +120,11 @@ const Section1 = () => {
               Vision
             </h1>
             <p className="">
-            Our Vision is to forge robust partnerships and formidable powerhouse of international and regional legal strength, with premier law firms across Europe, Africa, and USA setting new standards and ensuring unparalleled excellence in every legal matter we undertake.
+              Our vision is to forge robust partnerships and become a formidable
+              powerhouse of international and regional legal strength by
+              collaborating with premier law firms across Europe, Africa, and
+              the USA. We aim to set new standards and ensure unparalleled
+              excellence in every legal matter we undertake.
             </p>
           </motion.div>
           <motion.div
@@ -132,11 +149,21 @@ const Section1 = () => {
               Values
             </h1>
             <ul className="list-disc text-sm p-4 lg:text-lg xl:text-lg mt-4 mb-2 lg:ml-4 xl:ml-6">
-              <li className="mb-2 lg:mb-1 xl:mb-1">Innovation Beyond Borders</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Unyielding Commitment to Justice</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Client Triumph is our Triumph</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Versatility in Legal Mastery</li>
-              <li className="mb-2 lg:mb-1 xl:mb-1">Global Vision, Local Insight</li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">
+                Innovation Beyond Borders
+              </li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">
+                Unyielding Commitment to Justice
+              </li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">
+                Client Triumph is our Triumph
+              </li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">
+                Versatility in Legal Mastery
+              </li>
+              <li className="mb-2 lg:mb-1 xl:mb-1">
+                Global Vision, Local Insight
+              </li>
               <li className="mb-2 lg:mb-1 xl:mb-1">Inspirational Leadership</li>
             </ul>
           </motion.div>
