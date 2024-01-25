@@ -13,7 +13,7 @@ const Section2 = () => {
   useEffect(() => {
     const targetNumbers = {
       workHours: 2016,
-      greatReviews: 9,
+      greatReviews: 8,
       projectsDone: 185,
       awardsWon: 5,
     };
@@ -86,13 +86,7 @@ const Section2 = () => {
             precision, and every case is handled with utmost dedication. Welcome
             to a legal experience like no other.
           </p>
-          <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
-            In the legal realm, experience is our legacy at Mwenda Royford & Co
-            Advocates. Our team, a fusion of private practice virtuosos, public
-            sector stalwarts, and international legal luminaries, sets us
-            leagues apart in corporate commercial law in Kenya. Each advocate is
-            a maestro, redefining excellence in a succinct ensemble.
-          </p>
+          
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{

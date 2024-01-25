@@ -10,12 +10,12 @@ const Partners = () => {
   const partners = [
     {
       name: "Annet A. Otago",
-      sector: "Finance",
+      sector: "Associate",
       image: "/images/Anett1.jpg",
     },
     {
       name: "Nkonge Royford Mwenda",
-      sector: "Technology",
+      sector: "Managing partner",
       image: "/images/Mwenda2.jpg",
     },
   ];
