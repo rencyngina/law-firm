@@ -50,7 +50,7 @@ const Section2 = () => {
 
   return (
     <div
-      className="w-full h-auto lg:h-auto xl:h-auto flex flex-col justify-center items-center relative overflow-hidden"
+      className="w-full h-auto lg:h-[75vh] xl:h-[78vh] flex flex-col justify-center items-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)),url(/images/14r.jpg)`,
         backgroundPosition: "center",
@@ -65,14 +65,14 @@ const Section2 = () => {
     >
       <div className="max-w-7xl lg:max-w-8xl xl:max-w-9xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
         <div className=" p-2">
-          <h6 className="text-white mb-2 mt-1 text-lg lg:text-xl xl:text-xl font-bold">
+          <h6 className="text-white mb-2 mt-2 text-lg lg:text-xl xl:text-xl font-bold">
             WE HAVE A SOLID BACKGROUND
           </h6>
           <h1 className="text-white md:text-xl text-lg font-bold">
             Our solutions for your <br />
             <span className="text-[#D0B216] background-clip-text">Growth</span>
           </h1>
-          <p className="text-white lg:text-lg xl:text-lg text-sm lg:mt-0 xl:mt-6 mt-4">
+          <p className="text-white lg:text-lg xl:text-xl text-md lg:mt-0 xl:mt-6 mt-4">
             Established in{" "}
             <span className="font-bold bg-clip-text text-transparent bg-[#D0B216]">
               2016{" "}
@@ -89,9 +89,9 @@ const Section2 = () => {
           </p>
           
           <button
-            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
+            className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
-              // background: "rgb(208,178,22)",
+              background: "rgb(208,178,22)",
             }}
           >
             <Link href="/about" className="text-white">
@@ -119,7 +119,7 @@ const Section2 = () => {
               {workHours}
             </h3>
             <p className="text-white text-xs font-extrabold">
-              Established
+              Year Of Establishment
             </p>
           </div>
           <div
