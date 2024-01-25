@@ -81,10 +81,8 @@ const Section1 = () => {
             </h1>
             <p className="">
             Our mission is to pioneer a legal revolution as architects 
-            of triumph to guide clients seamlessly, transforming legal 
-            challenges into victory within Kenya and across Africa in a 
-            thrilling journey to coherently achieve objectives, navigating legal
-             complexities, and minimize risks with visionary efficiency shaped by our commitment to excellence.            
+            of triumph to guide clients seamlessly to achieve objectives, in minimize reasks and, transform legal 
+            challenges into victory within Kenya and across Africa.            
             </p>
           </motion.div>
           <motion.div

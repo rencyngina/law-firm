@@ -22,7 +22,7 @@ function FooterLinks() {
               <div className="col-span-2">
                 <div>
                   <h2 className="lg:text-xl sm:text-xl font-bold text-white">
-                    About
+                    About Us
                   </h2>
                   <p className="lg:text-sm text-sm mt-4 text-white">
                   Established in 2016, Mwenda Royford and Company Advocates 

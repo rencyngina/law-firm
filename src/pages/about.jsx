@@ -115,7 +115,7 @@ const About = () => {
         <h1>Who we are</h1>
       </HeroSection>
       <ContentSection>
-        <h1>About us</h1>
+        
         <p>
           Mwenda Royford and Company Advocates stands at
           the forefront of legal innovation, sculpting a legacy of excellence
@@ -140,7 +140,7 @@ const About = () => {
           where local insights meet global perspectives, ensuring a bespoke
           legal strategy that transcends expectations. At Mwenda Royford and
           Company Advocates, we don't just practice law our commitment to client
-          success and the pursuit of legal where
+          success and the pursuit of legal excellence is boundless, where
           experience is not just a metric but a legacy.
         </p>
         <p>
@@ -148,8 +148,8 @@ const About = () => {
         Advocates boasts a treasure trove of legal virtuosos, each advocate a
         maestro in their own right
           where every case is a gripping narrative penned by the skilled hands
-          of Mwenda Royford & Co Advocates. Our advocates don't just interpret
-          the law they sculpt it, mold it into a saga of triumph and justice.
+          of our advocates who don't just interpret
+          the law they sculpt it into a saga of triumph and justice.
           From the courtroom to the boardroom, we transcend the conventional,
           weaving stories of legal prowess that resonate with victory.Join us on a
           journey where every legal challenge becomes an epic adventure, and
@@ -158,7 +158,7 @@ const About = () => {
         <p>
         Welcome to
           the future of legal brilliance; welcome to Mwenda Royford & Co
-          Advocates.
+          Advocates!
         </p>
       </ContentSection>
       <Foot />
