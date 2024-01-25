@@ -12,18 +12,18 @@ const SocietiesLaw = () => {
     {
       id: 1,
       name: "Nkonge R. Mwenda",
-      position: "Managing Partner",
-      email: "mwenda@royfordlaw.com",
-      imageSrc: "/images/Mwenda2.jpg",
+      position: "Managing partner",
+      email: "royford@royfordlaw.com",
+      imageSrc: "/images/mwends3.jpg",
       twitterHandle: "#",
       linkedinHandle: "#",
     },
     {
       id: 2,
       name: "Annet A. Otago",
-      position: "Partner",
-      email: "annet@royfordlaw.com",
-      imageSrc: "/images/lawyers/lawyer1.jpeg",
+      position: "Associate",
+      email: "otago@royfordlaw.com",
+      imageSrc: "/images/Anett1.jpg",
       twitterHandle: "#",
       linkedinHandle: "#",
     },
@@ -61,7 +61,7 @@ const SocietiesLaw = () => {
         <div
           className="h-52 w-full flex flex-col justify-center items-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/call.jpg)`,
+            backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/coprate1.jpg)`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

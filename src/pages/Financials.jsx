@@ -15,11 +15,11 @@ function Financials() {
       <div
         className="h-52 w-full flex flex-col justify-center items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/coporate.png)`,
+          backgroundImage: `linear-gradient(rgba(21, 21, 21, 0.6), rgba(30, 29, 29, 0.6)), url(/images/sector/financials1.jpg)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          // backgroundAttachment: "fixed", // Modified this line for background attachment
+          backgroundAttachment: "fixed", // Modified this line for background attachment
         }}
       >
         <h1 className="text-5xl text-white">Financials</h1>
