@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import LandingNavBar from "../components/nav";
