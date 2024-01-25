@@ -58,6 +58,7 @@ const ContentSection = styled.div`
   padding: 10px;
   text-align: justify;
   animation: ${fadeIn} 1s ease-in-out;
+  margin-top: 30px;
 
   p {
     font-size: 1.2rem;
@@ -115,7 +116,6 @@ const About = () => {
         <h1>Who we are</h1>
       </HeroSection>
       <ContentSection>
-        
         <p>
           Mwenda Royford and Company Advocates stands at
           the forefront of legal innovation, sculpting a legacy of excellence

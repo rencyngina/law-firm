@@ -49,7 +49,7 @@ function FooterLinks() {
                       href="#"
                       className="transition hover:opacity-75 text-gray-200"
                     >
-                      +254-709-250-000
+                      +254 701 331176
                     </a>
                   </li>
                   <li className="flex items-center">
