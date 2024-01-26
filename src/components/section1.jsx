@@ -98,6 +98,7 @@ const Section1 = () => {
               within Kenya and across Africa.
             </p>
           </motion.div>
+          
           <motion.div
             initial={{ y: -10, opacity: 0 }}
             animate={secondSectionControls}
