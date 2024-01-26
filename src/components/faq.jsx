@@ -138,7 +138,7 @@ const Faq = () => {
               className="px-4 pb-5 sm:px-6 sm:pb-6"
             >
               <p>
-                To schedule a consultation, you can send as a message through
+                To schedule a consultation, you can send us a message through
                 our contact and will reach out. During the consultation, we will
                 discuss your legal concerns and provide insights into your case
               </p>
