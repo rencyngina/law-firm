@@ -16,7 +16,7 @@ const Partners = () => {
     {
       name: "Nkonge Royford Mwenda",
       sector: "Managing partner",
-      image: "/images/Mwenda2.jpg",
+      image: "/images/mwends3.jpg",
     },
   ];
 
