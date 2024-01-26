@@ -45,7 +45,7 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
         "Currently pursuing a Master of Laws (LL.M) with a specialization in Corporate and Financial Law at the University of Nairobi.",
         "Research focus on the Impact of Insider Trading Regulations on Financial Market Integrity and Investor Confidence.",
         "Legal acumen extends to corporate and commercial litigation, securities law, banking, intellectual property, public procurement, and more.",
-        "Diverse background in both the private sector and as an associate at Wanyaga & Njaramba Advocates.",
+        "Diverse background in both the private sector and as an associate.",
         "Upholds values of integrity, professionalism, and quality in delivering legal services.",
         "Envisions the future of law intertwined with technology, navigating the complexities of litigation.",
         "Finds joy in recreational running, mountaineering, experimenting with food recipes, and writing contemporary fiction.",

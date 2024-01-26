@@ -138,7 +138,7 @@ const Faq = () => {
               className="px-4 pb-5 sm:px-6 sm:pb-6"
             >
               <p>
-                To schedule a consultation, you can send as a message through
+                To schedule a consultation, you can send us a message through
                 our contact and will reach out. During the consultation, we will
                 discuss your legal concerns and provide insights into your case
               </p>
@@ -186,7 +186,7 @@ const Faq = () => {
         <p className="text-center text-gray-600 textbase mt-9">
           Still have questions?
           <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">
-            Contact our support info@royfordlawlaw.com
+            Contact our support info@royfordlaw.com
           </span>
         </p>
       </div>
