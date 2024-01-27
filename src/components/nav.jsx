@@ -256,9 +256,9 @@ const LandingNavBar = () => {
             <li className="border-b w-full">
               <Link href="/contact">
                 <button
-                  className="px-4 py-2 text-base font-semibold text-white bg-gradient-to-b from-gray-800 to-gray-900  focus:outline-none shadow-md focus:shadow-lg focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center mb-4"
+                  className="px-4 py-2 text-base font-semibold text-black   focus:outline-none focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center mb-4"
                   style={{
-                    background: "rgb(208,178,22)",
+                    // background: "rgb(208,178,22)",
                   }}
                 >
                   Contact Us

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compress-images": "next dev && curl http://localhost:3000/api/compress-images"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -33,6 +34,7 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^10.0.3",
+    "sharp": "^0.33.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8"
   },

@@ -12,6 +12,7 @@ const CardContainer = styled.div`
   margin-bottom: 1.5rem;
   border-radius: 12px;
   overflow: hidden;
+  border: 1px solid #eee;
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -48,6 +49,7 @@ const BioContainer = styled.div`
 
   @media (min-width: 768px) {
     width: 60%;
+
   }
 `;
 
@@ -85,17 +87,27 @@ const RoundedContainer = styled.div`
   margin-bottom: 1.5rem;
   gap: 1rem;
   padding: 1rem;
-  border-radius: 12px;
-  background-color: #f8f9fa;
+  border-radius: 2px;
   transition: box-shadow 0.3s ease;
+  // background-color: #D0B216;
 
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  @media (min-width: 768px) {
+    width: 40%;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+    justify-content: center;
   }
 `;
 
+const SocialIconsContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`;
+
 const SocialIcon = styled.a`
-  margin-right: 0.5rem;
   color: #3498db;
   font-size: 1.5rem;
   transition: color 0.3s ease;
