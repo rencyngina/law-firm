@@ -39,18 +39,18 @@ const Head = () => {
              5th avenue office suites 4th floor suite 4 – 15 off ngong road
             </p>
           </div>
-          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+          <a href="/" className="flex items-center mt-2 mb-3 sm:mb-0">
             <BsTwitterX className="mr-2" />
             <p className="mr-4 hidden sm:block">Twitter</p>
-          </div>
-          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+          </a>
+          <a href="/" className="flex items-center mt-2 mb-3 sm:mb-0">
             <FaLinkedin className="mr-2" />
             <p className="mr-4 hidden sm:block">LinkedIn</p>
-          </div>
-          <div className="flex items-center mt-2 mb-3 sm:mb-0">
+          </a>
+          <a href="/https://www.youtube.com/@Royfordlaw" className="flex items-center mt-2 mb-3 sm:mb-0">
             <FaYoutube className="mr-2" />
             <p className="hidden sm:block">YouTube</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>

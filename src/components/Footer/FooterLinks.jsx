@@ -52,11 +52,11 @@ function FooterLinks() {
                       +254 701 331176
                     </a>
                   </li>
-                  <li className="flex items-center">
+                  <a className="flex items-center" href="mailto:info@royfordlaw.com">
                     <p className="transition hover:opacity-75 text-gray-200">
-                      info@royfordlaw.co.ke
+                      info@royfordlaw.com
                     </p>
-                  </li>
+                  </a>
                 </ul>
               </div>
               <div className="flex lg:block gap-10">
@@ -151,7 +151,7 @@ function FooterLinks() {
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 lg:h-10 lg:w-10"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -173,7 +173,7 @@ function FooterLinks() {
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 lg:h-10 lg:w-10"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -193,8 +193,8 @@ function FooterLinks() {
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
                   >
-                    <span className="sr-only">Twitter</span>
-                    <BsTwitterX />
+                    <span className="sr-only ">Twitter</span>
+                    <BsTwitterX className="h-6 w-6 lg:h-9 lg:w-9"/>
                   </a>
                 </li>
                 <li>
@@ -202,10 +202,10 @@ function FooterLinks() {
                     href="/https://www.youtube.com/@Royfordlaw"
                     rel="noreferrer"
                     target="_blank"
-                    className="transition hover:opacity-75 text-gray-200"
+                    className="transition hover:opacity-75 text-gray-200 lg:h-12 lg:w-12"
                   >
                     <span className="sr-only">YouTube</span>
-                    <FaYoutube size={20} />
+                    <FaYoutube size={20} className="h-6 w-6 lg:h-10 lg:w-10"/>
                   </a>
                 </li>
               </ul>

@@ -59,7 +59,7 @@ const Hero = () => {
 
   return (
     <div className="w-full h-[76vh] lg:h-[84.5vh] xl:h-[87]">
-      <Slider {...settings} className="w-full h-[76vh] lg:h-[85.8vh] xl:h-[87]">
+      <Slider {...settings} className="w-full h-[80vh] lg:h-[85.8vh] xl:h-[87]">
         {imagesData.map((image, index) => (
           <div key={index} className="relative h-[76vh] lg:h-[85vh] xl:h-[88vh]">
             <Image src={image.image} alt={`Slide ${index}`} className="w-full h-[76vh] lg:h-[85vh] xl:h-[88vh] object-cover" />
