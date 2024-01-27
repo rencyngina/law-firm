@@ -199,7 +199,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/https://www.youtube.com/@Royfordlaw"
+                    href="https://youtube.com/@Royfordlaw?si=RWqau-X_t0j_EK_-"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200 lg:h-12 lg:w-12"
