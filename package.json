@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "compress-images": "next dev && curl http://localhost:3000/api/compress-images"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
