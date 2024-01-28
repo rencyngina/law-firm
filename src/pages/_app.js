@@ -17,11 +17,10 @@ function MyApp({ Component, pageProps }) {
         />
 
         {/* Keywords Meta Tag */}
-        <meta name="keywords" content="Royfordlaw, legal excellence, advocates, legal services, law, royfordlaw.com, royfordlaw" />
+        <meta name="keywords" content="Royfordlaw, legal excellence, advocates, legal services, law, royfordlaw.com, royfordlaw, mwenda royford, law firm" />
 
         {/* Favicon Link */}
         <link rel="icon" href="/favicon.ico" />
-
         {/* Author Meta Tag */}
         <meta name="author" content="Erick Adikah" />
 

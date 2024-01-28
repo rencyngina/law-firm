@@ -19,7 +19,7 @@ Mwenda Royford and company advocates is a law firm based in Nairobi Kenya. The f
 ## About the Project
 
 This project is a website for the law firm. The website is a static website built using Next.js 14 and Tailwind CSS. 
-the aim of the project is to create a website that is fast, responsive and easy to maintain. The website is hosted on Vercel and can be accessed on [mwendaroyford.co.ke](https://mwendaroyford.co.ke)
+the aim of the project is to create a website that is fast, responsive and easy to maintain. The website is hosted on Vercel and can be accessed on [royfordlaw.com](https://royfordlaw.com)
 
 it will be  a gateway for the firm to reach out to potential clients and also to showcase the firm's work and achievements. The website will also be a platform for the firm to share legal information and articles with the public.
 
