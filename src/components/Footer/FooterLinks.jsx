@@ -4,6 +4,7 @@ import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
 
 function FooterLinks() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-gradient-to-b from-gray-800 to-gray-900">
@@ -21,9 +22,9 @@ function FooterLinks() {
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
               <div className="col-span-2">
               <div>
-              <h2 className="lg:text-xl sm:text-xl font-bold text-white">
+              <p className="lg:text-xl sm:text-xl font-bold text-white">
                 About Us
-              </h2>
+              </p>
               <p className="lg:text-sm text-sm mt-4 text-white">
               Established in 2016, Mwenda Royford and Company Advocates 
               stands at the forefront of legal innovation, sculpting a legacy
@@ -214,7 +215,7 @@ function FooterLinks() {
           <div className="border-t border-gray-100 pt-8 dark:border-gray-800 mt-4">
             <div className="sm:flex sm:justify-between">
               <p className="text-xs text-gray-400">
-                © 2023. Mwenda RoyFord & Company Advocates. All rights reserved.
+                © {currentYear}. Mwenda RoyFord & Company Advocates. All rights reserved.
               </p>
               <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                 <li>
