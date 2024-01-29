@@ -21,7 +21,7 @@ const Head = () => {
             <p className="mr-4 hidden sm:block">+254 701331176</p>
           </Link>
           <Link
-            href="mailto:legal@araro.co.ke"
+            href="mailto:info@royfordlaw.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center mt-2 mb-3 sm:mb-0"
