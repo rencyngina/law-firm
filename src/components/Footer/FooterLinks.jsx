@@ -145,7 +145,7 @@ function FooterLinks() {
               <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end items-center">
                 <li>
                   <a
-                    href="/https://www.facebook.com/profile.php?id=61555492831222&mibextid=ZbWKwL"
+                    href="https://www.facebook.com/profile.php?id=61555492831222&mibextid=JRoKGi"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -167,7 +167,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/https://www.instagram.com/royfordlaw?utm_source=qr&igsh=dzU2enhuNWpwczln"
+                    href="https://www.instagram.com/royfordlaw?utm_source=qr&igsh=dzU2enhuNWpwczln"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
