@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/images/MWENDA LOGO.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
         <body>
           <Main />
