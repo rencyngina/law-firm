@@ -2,6 +2,7 @@
 import React, { useEffect, useCallback, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import Head from 'next/head';
 // bg-gradient-to-b from-gray-800 to-gray-900
 const Section1 = () => {
   const firstSectionControls = useAnimation();
@@ -45,7 +46,12 @@ const Section1 = () => {
   }, [firstSectionControls, secondSectionControls, thirdSectionControls]);
 
   return (
-    <div
+    <>
+    <Head>
+        <title>Why Choose Us? - Mwenda RoyFord & Company Advocates</title>
+        <meta name="description" content="Discover why Mwenda RoyFord & Company Advocates is your trusted legal partner. Explore our mission, vision, and values." />
+      </Head>
+    <section
       className="bg-gradient-to-b from-gray-800 to-gray-900 py-12 md:py-24 lg:py-26 xl:py-38"
       id="section1"
     >
@@ -169,7 +175,8 @@ const Section1 = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
+    </>
   );
 };
 

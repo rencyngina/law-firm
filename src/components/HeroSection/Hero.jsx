@@ -9,7 +9,7 @@ import Image4 from "../../../public/images/assets.jpg";
 import { LuArrowDownCircle } from "react-icons/lu";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
-
+import Head from 'next/head';
 
 const Hero = () => {
   const imagesData = [
@@ -46,8 +46,7 @@ const Hero = () => {
     },
   ];
 
-
- const settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -58,36 +57,42 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[76vh] lg:h-[84.5vh] xl:h-[87]">
-      <Slider {...settings} className="w-full h-[80vh] lg:h-[85.8vh] xl:h-[87]">
-        {imagesData.map((image, index) => (
-          <div key={index} className="relative h-[76vh] lg:h-[85vh] xl:h-[88vh]">
-            <Image src={image.image} alt={`Slide ${index}`} className="w-full h-[76vh] lg:h-[85vh] xl:h-[88vh] object-cover" />
-            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
-              <h1 className="w-full sm:w-1/2 lg:w-1/1 text-4xl font-bold lg:text-4xl xl:text-5xl leading-relaxed lg:font-extrabold mb-2">
-                {image.title}
-              </h1>
-              <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
-                {image.description}
-              </p>
+    <>
+      <Head>
+        <title>Mwenda RoyFord & Company Advocates</title>
+        <meta name="description" content="Unlock legal excellence with Royfordlaw. Highly skilled professionals from Kenya's prestigious Law School, University of Nairobi, ready to guide you. Trust in our expertise for unparalleled legal services." />
+      </Head>
+      <div className="w-full h-[76vh] lg:h-[84.5vh] xl:h-[87]">
+        <Slider {...settings} className="w-full h-[80vh] lg:h-[85.8vh] xl:h-[87]">
+          {imagesData.map((image, index) => (
+            <div key={index} className="relative h-[76vh] lg:h-[85vh] xl:h-[88vh]">
+              <Image src={image.image} alt={`Slide ${index}`} className="w-full h-[76vh] lg:h-[85vh] xl:h-[88vh] object-cover" />
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 sm:p-8">
+                <h1 className="w-full sm:w-1/2 lg:w-1/1 text-4xl font-bold lg:text-4xl xl:text-5xl leading-relaxed lg:font-extrabold mb-2">
+                  {image.title}
+                </h1>
+                <p className="text-white w-full sm:w-1/2 lg:w-1/2 text-sm lg:text-xl leading-relaxed">
+                  {image.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-      <ScrollLink
-        to="section1"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        className="absolute bottom-0 left-0 flex gap-4 justify-center items-center p-4 lg:p-16"
-      >
-        <LuArrowDownCircle className="text-2xl lg:text-3xl text-white animate-bounce" />
-        <h1 className="text-white text-sm lg:text-xl leading-relaxed">See More</h1>
-      </ScrollLink>
-    </div>
+          ))}
+        </Slider>
+        <ScrollLink
+          to="section1"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="absolute bottom-0 left-0 flex gap-4 justify-center items-center p-4 lg:p-16"
+        >
+          <LuArrowDownCircle className="text-2xl lg:text-3xl text-white animate-bounce" />
+          <h1 className="text-white text-sm lg:text-xl leading-relaxed">See More</h1>
+        </ScrollLink>
+      </div>
+    </>
   );
 };
 
-
 export default Hero;
+
