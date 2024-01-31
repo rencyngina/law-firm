@@ -48,7 +48,7 @@ const Section1 = () => {
   return (
     <>
     <Head>
-        <title>Why Choose Us? - Mwenda RoyFord & Company Advocates</title>
+        <title>Mwenda RoyFord & Company Advocates</title>
         <meta name="description" content="Discover why Mwenda RoyFord & Company Advocates is your trusted legal partner. Explore our mission, vision, and values." />
       </Head>
     <section
