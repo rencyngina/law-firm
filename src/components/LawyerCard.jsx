@@ -49,7 +49,6 @@ const BioContainer = styled.div`
 
   @media (min-width: 768px) {
     width: 60%;
-
   }
 `;
 
@@ -143,15 +142,17 @@ const LawyerCard = ({ lawyer }) => {
   );
 
   const renderTruncatedBio = () => {
-    const truncatedBio =
-      Array.isArray(lawyer.bioPoints)
-        ? lawyer.bioPoints.join(" ").substring(0, 300) + "..."
-        : String(lawyer.bioPoints).substring(0, 300) + "...";
+    const truncatedBio = Array.isArray(lawyer.bioPoints)
+      ? lawyer.bioPoints.join(" ").substring(0, 300) + "..."
+      : String(lawyer.bioPoints).substring(0, 300) + "...";
 
     return (
       <div>
         <p>{truncatedBio}</p>
-        <ReadMoreButton whileHover={{ scale: 1.05 }} onClick={() => setReadMore(true)}>
+        <ReadMoreButton
+          whileHover={{ scale: 1.05 }}
+          onClick={() => setReadMore(true)}
+        >
           Read More
         </ReadMoreButton>
       </div>
@@ -162,7 +163,10 @@ const LawyerCard = ({ lawyer }) => {
     <div>
       <p>{lawyer.bio}</p>
       {renderBioPoints()}
-      <ReadMoreButton whileHover={{ scale: 1.05 }} onClick={() => setReadMore(false)}>
+      <ReadMoreButton
+        whileHover={{ scale: 1.05 }}
+        onClick={() => setReadMore(false)}
+      >
         Read Less
       </ReadMoreButton>
     </div>
@@ -183,22 +187,35 @@ const LawyerCard = ({ lawyer }) => {
         </div>
       </ImageContainer>
       <BioContainer>
-        <h2 className="text-2xl font-semibold mb-2 text-[#D0B216]">{lawyer.name}</h2>
+        <h2 className="text-2xl font-semibold mb-2 text-[#D0B216]">
+          {lawyer.name}
+        </h2>
         <p className="lg:text-lg text-sm text-gray-600 mb-4">{lawyer.work}</p>
-        <RoundedContainer>
-          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={`tel:${lawyer.phone}`}>
-            <FaPhone />
-          </HoverableSocialIcon>
-          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={`mailto:${lawyer.email}`}>
-            <FaEnvelope />
-          </HoverableSocialIcon>
-          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={lawyer.linkedin}>
-            <FaLinkedin />
-          </HoverableSocialIcon>
-          <HoverableSocialIcon whileHover={{ scale: 1.2 }} href={lawyer.facebook}>
-            <FaFacebook />
-          </HoverableSocialIcon>
-        </RoundedContainer>
+        <div class="card">
+          <a href="#" class="socialContainer bg-custom-gray  containerOne hover:bg-instagram">
+            <FaFacebook style={{
+              color: 'white',
+            }} />
+          </a>
+
+          <a href="#" class="socialContainer bg-custom-gray containerTwo hover:bg-twitter">
+            <FaLinkedin style={{
+              color: 'white',
+            }} />
+          </a>
+
+          <a href="#" class="socialContainer bg-custom-gray containerThree hover:bg-linkedin">
+            <FaEnvelope style={{
+              color: 'white',
+            }}/>
+          </a>
+
+          <a href="#" class="socialContainer bg-custom-gray containerFour hover:bg-whatsapp">
+            <FaPhone  style={{
+              color: 'white',
+            }}/>
+          </a>
+        </div>
         {readMore ? renderFullBio() : renderTruncatedBio()}
       </BioContainer>
     </CardContainer>
