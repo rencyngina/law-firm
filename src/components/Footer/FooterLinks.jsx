@@ -2,6 +2,8 @@
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+
 
 function FooterLinks() {
   return (
@@ -145,7 +147,7 @@ function FooterLinks() {
               <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end items-center">
                 <li>
                   <a
-                    href="/https://www.facebook.com/profile.php?id=61555492831222&mibextid=ZbWKwL"
+                    href="https://www.facebook.com/profile.php?id=61555492831222&mibextid=ZbWKwL"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -167,7 +169,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/https://www.instagram.com/royfordlaw?utm_source=qr&igsh=dzU2enhuNWpwczln"
+                    href="https://www.instagram.com/royfordlaw?utm_source=qr&igsh=dzU2enhuNWpwczln"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -189,7 +191,7 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://twitter.com/Royfordlaw"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
@@ -200,13 +202,24 @@ function FooterLinks() {
                 </li>
                 <li>
                   <a
-                    href="/https://www.youtube.com/@Royfordlaw"
+                    href="https://youtube.com/@Royfordlaw?si=RWqau-X_t0j_EK_-"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
                   >
                     <span className="sr-only">YouTube</span>
                     <FaYoutube size={20} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mwenda-royford-company-advocates-062a5a2b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="transition hover:opacity-75 text-gray-200"
+                  >
+                    <span className="sr-only">YouTube</span>
+                    <FaLinkedin size={20} />
                   </a>
                 </li>
               </ul>
