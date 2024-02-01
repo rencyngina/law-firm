@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 function FooterLinks() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-gradient-to-b from-gray-800 to-gray-900">
@@ -22,18 +23,17 @@ function FooterLinks() {
             </div>
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
               <div className="col-span-2">
-                <div>
-                  <h2 className="lg:text-xl sm:text-xl font-bold text-white">
-                    About
-                  </h2>
-                  <p className="lg:text-sm text-sm mt-4 text-white">
-                    Established in 2016, Mwenda Royford and Company Advocates
-                    stands at the forefront of legal innovation, sculpting a
-                    legacy of excellence with unwavering commitment. Our vision
-                    is anchored in a passion for transformative legal solutions,
-                    setting us apart in the legal landscape.
-                  </p>
-                </div>
+              <div>
+              <p className="lg:text-xl sm:text-xl font-bold text-white">
+                About Us
+              </p>
+              <p className="lg:text-sm text-sm mt-4 text-white">
+              Established in 2016, Mwenda Royford and Company Advocates 
+              stands at the forefront of legal innovation, sculpting a legacy
+               of excellence with unwavering commitment. Our vision is anchored in
+                a passion for transformative legal solutions, setting us apart in the legal landscape.
+              </p>
+            </div>
               </div>
               <div className="col-span-2 lg:col-span-1">
                 <p className="text-xl font-bold text-[#A65A2A]">Our Location</p>
@@ -52,14 +52,14 @@ function FooterLinks() {
                       href="#"
                       className="transition hover:opacity-75 text-gray-200"
                     >
-                      +254-709-250-000
+                      +254 701 331176
                     </a>
                   </li>
-                  <li className="flex items-center">
+                  <a className="flex items-center" href="mailto:info@royfordlaw.com">
                     <p className="transition hover:opacity-75 text-gray-200">
-                      info@royfordlaw.co.ke
+                      info@royfordlaw.com
                     </p>
-                  </li>
+                  </a>
                 </ul>
               </div>
               <div className="flex lg:block gap-10">
@@ -154,7 +154,7 @@ function FooterLinks() {
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 lg:h-10 lg:w-10"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -176,7 +176,7 @@ function FooterLinks() {
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
-                      className="h-6 w-6"
+                      className="h-6 w-6 lg:h-10 lg:w-10"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -196,8 +196,8 @@ function FooterLinks() {
                     target="_blank"
                     className="transition hover:opacity-75 text-gray-200"
                   >
-                    <span className="sr-only">Twitter</span>
-                    <BsTwitterX />
+                    <span className="sr-only ">Twitter</span>
+                    <BsTwitterX className="h-6 w-6 lg:h-9 lg:w-9"/>
                   </a>
                 </li>
                 <li>
@@ -205,10 +205,10 @@ function FooterLinks() {
                     href="https://youtube.com/@Royfordlaw?si=RWqau-X_t0j_EK_-"
                     rel="noreferrer"
                     target="_blank"
-                    className="transition hover:opacity-75 text-gray-200"
+                    className="transition hover:opacity-75 text-gray-200 lg:h-12 lg:w-12"
                   >
                     <span className="sr-only">YouTube</span>
-                    <FaYoutube size={20} />
+                    <FaYoutube size={20} className="h-6 w-6 lg:h-10 lg:w-10"/>
                   </a>
                 </li>
                 <li>
@@ -228,7 +228,7 @@ function FooterLinks() {
           <div className="border-t border-gray-100 pt-8 dark:border-gray-800 mt-4">
             <div className="sm:flex sm:justify-between">
               <p className="text-xs text-gray-400">
-                © 2023. Mwenda RoyFord & Company Advocates. All rights reserved.
+                © {currentYear}. Mwenda RoyFord & Company Advocates. All rights reserved.
               </p>
               <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                 <li>

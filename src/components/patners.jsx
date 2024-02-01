@@ -10,13 +10,13 @@ const Partners = () => {
   const partners = [
     {
       name: "Annet A. Otago",
-      sector: "Corporate and Commercial Law",
+      sector: "Associate",
       image: "/images/Anett1.jpg",
     },
     {
       name: "Nkonge Royford Mwenda",
-      sector: "Sernior advocate",
-      image: "/images/Mwenda2.jpg",
+      sector: "Managing partner",
+      image: "/images/mwends3.jpg",
     },
   ];
 
@@ -32,7 +32,7 @@ const Partners = () => {
 
   return (
     <>
-      <div className="bg-gray-100 w-full py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden">
+      <div className="bg-gray-100 w-full py-10 h-auto lg:h-[85vh] xl:h-[89vh] overflow-y-hidden border-b">
         <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-10 p-4 xl:p-12 lg:p-8">
           <div className="lg:w-1/2 relative ">
             <Slider {...settings} className="w-full lg:h-[80vh]">
@@ -80,7 +80,7 @@ const Partners = () => {
                   Get a Lawyer
                 </Link>
               </button>
-              <a href="mailto:info@royfordlaw.co.ke">
+              <a href="mailto:info@royfordlaw.com">
                 <button
                   className="mt-4 font-bold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
                   style={{

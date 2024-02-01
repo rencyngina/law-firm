@@ -8,6 +8,12 @@ export default async function messageRequest(req, res) {
 
   if (req.method === 'POST') {
     try {
+      // Validate request body
+      if (!name || !email || !phone || !subject || !message) {
+        toast.error('Invalid request: Missing required fields');
+        return res.status(400).json({ message: 'Invalid request: Missing required fields' });
+      }
+
       const client = new ServerClient(process.env.POSTMARK_SERVER_TOKEN);
       const messageBody = `
         You have a new request for a call from ${name}.
@@ -24,13 +30,15 @@ export default async function messageRequest(req, res) {
         TextBody: messageBody,
       });
 
+      console.log('Postmark API Response:', response);
+
       if (response.Message) {
         toast.success('Message sent');
         return res.status(200).json({ message: 'Message sent' });
       } else {
-        toast.error('Message not sent');
+        toast.error('Message not sent: Response does not contain a Message property');
         console.error('Error: Response does not contain a Message property', response);
-        return res.status(400).json({ message: 'Message not sent' });
+        return res.status(400).json({ message: 'Message not sent: Response does not contain a Message property' });
       }
     } catch (error) {
       console.error('Error:', error);

@@ -16,23 +16,23 @@ const Family = () => {
     {
       id: 1,
       name: "Nkonge R. Mwenda",
-      position: "Managing Partner",
-      email: "mwenda@royfordlaw.com",
-      imageSrc: "/images/Mwenda2.jpg",
+      position: "Managing partner",
+      email: "royford@royfordlaw.com",
+      imageSrc: "/images/mwends3.jpg",
       twitterHandle: "#",
       linkedinHandle: "#",
     },
     {
       id: 2,
       name: "Annet A. Otago",
-      position: "Partner",
-      email: "annet@royfordlaw.com",
-      imageSrc: "/images/lawyers/lawyer1.jpeg",
+      position: "Associate",
+      email: "otago@royfordlaw.com",
+      imageSrc: "/images/Anett1.jpg",
       twitterHandle: "#",
       linkedinHandle: "#",
     },
   ];
-  
+
   const experience = [
     {
       id: 1,
@@ -60,7 +60,7 @@ const Family = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <h1 className="text-5xl text-white">{bannerText}</h1>
+          <h1 className="text-xl lg:text-5xl text-white">{bannerText}</h1>
         </div>
         <div className="container mx-auto flex flex-col lg:flex-row lg:items-center xl:justify-center lg:justify-center lg:gap-8 xl:gap-10 p-2 xl:p-24 lg:p-16 border-b">
         <Image
