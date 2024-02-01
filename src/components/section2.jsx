@@ -84,13 +84,12 @@ const Section2 = () => {
             precision, and every case is handled with utmost dedication. Welcome
             to a legal experience like no other.
           </p>
-          <button className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500">
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
               background: "rgb(208,178,22)",
             }}
-          
+          >
             <Link href="/about" className="text-white">
               Read More
             </Link>

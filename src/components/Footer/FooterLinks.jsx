@@ -219,7 +219,7 @@ function FooterLinks() {
                     className="transition hover:opacity-75 text-gray-200"
                   >
                     <span className="sr-only">YouTube</span>
-                    <FaLinkedin size={20} />
+                    <FaLinkedin size={20} className="h-6 w-6 lg:h-10 lg:w-10" />
                   </a>
                 </li>
               </ul>
