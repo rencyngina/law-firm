@@ -192,25 +192,25 @@ const LawyerCard = ({ lawyer }) => {
         </h2>
         <p className="lg:text-lg text-sm text-gray-600 mb-4">{lawyer.work}</p>
         <div class="card">
-          <a href="#" class="socialContainer bg-custom-gray  containerOne hover:bg-instagram">
+          <a href={lawyer.linkedin} class="socialContainer bg-custom-gray  containerOne hover:bg-instagram">
             <FaFacebook style={{
               color: 'white',
             }} />
           </a>
 
-          <a href="#" class="socialContainer bg-custom-gray containerTwo hover:bg-twitter">
+          <a href={lawyer.linkedin} class="socialContainer bg-custom-gray containerTwo hover:bg-twitter">
             <FaLinkedin style={{
               color: 'white',
             }} />
           </a>
 
-          <a href="#" class="socialContainer bg-custom-gray containerThree hover:bg-linkedin">
+          <a href={`mailto:${lawyer.email}`} class="socialContainer bg-custom-gray containerThree hover:bg-linkedin">
             <FaEnvelope style={{
               color: 'white',
             }}/>
           </a>
 
-          <a href="#" class="socialContainer bg-custom-gray containerFour hover:bg-whatsapp">
+          <a href={`tel:${lawyer.phone}`} class="socialContainer bg-custom-gray containerFour hover:bg-whatsapp">
             <FaPhone  style={{
               color: 'white',
             }}/>
