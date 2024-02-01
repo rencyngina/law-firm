@@ -19,9 +19,15 @@ const Foot = () => {
       <div className="flex items-center mt-2 mb-3 sm:mb-0">
         <p className="mr-4 sm:mr-8 text-xs lg:text-sm">© {currentYear}. All rights reserved</p>
         <p className="mr-4 hidden sm:block">|</p>
-        <a href="https://my-portfolio-sand-ten-81.vercel.app/" nel className="mr-4 sm:mr-8 text-xs lg:text-sm">Developed by Erick Adikah</a>
+        <a href="https://my-portfolio-sand-ten-81.vercel.app/"
+        rel="noreferrer"
+        target="_blank"
+        className="mr-4 sm:mr-8 text-xs lg:text-sm">Developed by Erick Adikah</a>
         <p className="mr-4 hidden sm:block">|</p>
-        <a href="mailto:rencyngina@gmail.com" className="text-xs lg:text-sm">Designed by Rency Ngina</a>
+        <a href="mailto:rencyngina@gmail.com"
+        rel="noreferrer"
+        target="_blank"
+        className="text-xs lg:text-sm">Designed by Rency Ngina</a>
       </div>
     </div>
   </div>
