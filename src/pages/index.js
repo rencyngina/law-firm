@@ -7,6 +7,7 @@ import Head from "../components/head";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
 import Patners from "../components/patners";
+import Foot from "../components/foot";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Section2 />
       <Patners />
       <FooterLinks />
+      <Foot />
     </main>
   );
 }

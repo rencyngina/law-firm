@@ -4,6 +4,7 @@ import Head from '../components/head';
 import FooterLinks from '../components/Footer/FooterLinks';
 import Image from 'next/image';
 import Link from 'next/link';
+import Foot from '../components/foot';
 
 const Practice = () => {
   const practiceAreas = [
@@ -61,6 +62,7 @@ const Practice = () => {
         </div>
       </div>
       <FooterLinks />
+      <Foot />
     </>
   );
 };

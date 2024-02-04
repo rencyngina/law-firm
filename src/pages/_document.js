@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/images/MWENDA LOGO.png" />
+          <link rel="icon" href="/images/MWENDA ROYFORD LOGO-03 (1).png" />
         </Head>
         <body>
           <Main />
@@ -17,4 +17,3 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-

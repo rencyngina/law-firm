@@ -58,9 +58,6 @@ const Section2 = () => {
         backgroundRepeat: "no-repeat",
         overflowY: "hidden",
         backgroundAttachment: "fixed",
-        "@media (max-width: 1024px)": {
-          backgroundAttachment: "fixed",
-        },
       }}
     >
       <div className="max-w-7xl lg:max-w-8xl xl:max-w-9xl mx-auto lg:grid lg:grid-cols-2 lg:gap-4 items-center">
@@ -87,7 +84,6 @@ const Section2 = () => {
             precision, and every case is handled with utmost dedication. Welcome
             to a legal experience like no other.
           </p>
-          
           <button
             className="mt-4 font-extrabold text-white py-3 px-6 hover:bg-yellow-500 transition duration-300"
             style={{
@@ -118,6 +114,7 @@ const Section2 = () => {
             <h3 className="text-[rgb(208,178,22)] font-bold text-2xl lg:text-6xl">
               {workHours}
             </h3>
+            <p className="text-white text-xs font-extrabold">Established</p>
             <p className="text-white text-xs font-extrabold">
               Year Of Establishment
             </p>

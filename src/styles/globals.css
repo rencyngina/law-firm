@@ -62,3 +62,75 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Custom styles */
+/* Custom styles */
+.card {
+  @apply w-full md:w-[400px] h-[90px] mb-10 bg-gray-200 flex items-center justify-center p-8 gap-5  rounded-lg;
+}
+
+.socialContainer {
+  @apply w-14 h-14 rounded-lg  flex items-center justify-center overflow-hidden transition-transform duration-300;
+}
+
+.bg-custom-gray {
+  background-color: rgb(44, 44, 44);
+}
+
+.containerOne:hover {
+  @apply bg-pink-600;
+}
+
+.containerTwo:hover {
+  @apply bg-blue-500;
+}
+
+.containerThree:hover {
+  @apply bg-blue-800;
+}
+
+.containerFour:hover {
+  @apply bg-green-500;
+}
+
+.socialContainer:active {
+  @apply transform scale-90;
+}
+
+.socialSvg {
+  @apply w-7 text-white;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Additional utility classes */
+.hover\:bg-instagram:hover {
+  @apply bg-pink-600;
+}
+
+.hover\:bg-twitter:hover {
+  @apply bg-blue-500;
+}
+
+.hover\:bg-linkedin:hover {
+  @apply bg-blue-800;
+}
+
+.hover\:bg-whatsapp:hover {
+  @apply bg-green-500;
+}
+

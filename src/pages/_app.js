@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="Royfordlaw, legal excellence, advocates, legal services, law, royfordlaw.com, royfordlaw, mwenda royford, law firm" />
 
         {/* Favicon Link */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
         {/* Author Meta Tag */}
         <meta name="author" content="Erick Adikah" />
 
@@ -40,10 +40,10 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="/images/favicon.ico" />
         <meta name="twitter:title" content="Mwenda RoyFord & Company Advocates - Legal Excellence" />
         <meta name="twitter:description" content="Unlock legal excellence with Royfordlaw. Highly skilled professionals from Kenya's prestigious Law School, University of Nairobi, ready to guide you. Trust in our expertise for unparalleled legal services." />
-        <meta name="twitter:image" content="/your-image-url.jpg" />
+        <meta name="twitter:image" content="/images/favicon.ico" />
         <meta name="twitter:site" content="@royford_law" />
       </Head>
       
