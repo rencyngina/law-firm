@@ -144,7 +144,11 @@ const LandingNavBar = () => {
             <GoArrowUpRight size={20} className="ml-2" />
           </Link>
         </li>
-        <Link href="/">
+        <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://hostmasterskenya.com:2096/"
+        >
           <button
             className="px-4 py-2 text-base lg:text-lg xl:text-xl font-semibold text-white border-r:bg-gradient-to-b from-gray-800 to-gray-900 hover:bg-yellow-600 focus:outline-none rounded-sm focus:bg-yellow-600 transform hover:scale-105 transition-transform flex items-center"
             style={{
@@ -153,7 +157,7 @@ const LandingNavBar = () => {
           >
             LogIn
           </button>
-        </Link>
+        </a>
       </ul>
 
       {/* Mobile Navigation */}
