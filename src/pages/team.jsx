@@ -74,6 +74,42 @@ const Team = () => {
       sector:"Boaz",
       linkTo: "/Boaz",
     },
+    {
+      id: 6,
+      name: "Fredrick Agwel",
+      image: '/images/lawyers/Fredrick.webp',
+      work: 'Associate',
+      email: '',
+      facebook: 'https://www.facebook.com/royford',
+      twitter: 'https://www.twitter.com/royford',
+      instagram: 'https://www.instagram.com/royford',
+      sector: "Boaz",
+      linkTo: "/Boaz",
+    },
+    {
+      id: 7,
+      name: "Nguku daisy wacuka",
+      image: '/images/lawyers/Daisy.webp',
+      work: 'Associate',
+      email: '',
+      facebook: 'https://www.facebook.com/royford',
+      twitter: 'https://www.twitter.com/royford',
+      instagram: 'https://www.instagram.com/royford',
+      sector: "Boaz",
+      linkTo: "/Boaz",
+    },
+    // {
+    //   id: 8,
+    //   name: "Erick Munene",
+    //   image: '',
+    //   work: 'Associate',
+    //   email: '',
+    //   facebook: 'https://www.facebook.com/royford',
+    //   twitter: 'https://www.twitter.com/royford',
+    //   instagram: 'https://www.instagram.com/royford',
+    //   sector: "Boaz",
+    //   linkTo: "/Boaz",
+    // }
   ];
 
   return (
@@ -114,7 +150,7 @@ const Team = () => {
              Together, their collective efforts and unwavering commitment drive them 
              towards achieving remarkable success.
             </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamData.map((member) => (
               <div
                 key={member.id}

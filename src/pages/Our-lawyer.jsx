@@ -62,7 +62,7 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
     },
     {
       id: 3,
-      name: "Fredrick Agwel ",
+      name: "Fredrick Agwel",
       bio: `Mr. Fredrick Agwel is a Principal Associate at Royford Mwenda & Company Advocates. he is a Master of Laws (LLM)Candidate at the University of Nairobi, he holds a Bachelor of Laws (LL.B.) from the University of Nairobi and a Postgraduate Diploma in Law from Kenya School of Law. He is a member of the Law Society of Kenya, Mr. Agwel is a legal and policy expert with a focus on Environment and Natural Resources , Constitutional Litigation, Oil and gas and Climate Change Law.`,
       bioPoints: [
         "Seasoned legal professional with expertise in corporate and commercial law, conveyancing, and litigation.",
