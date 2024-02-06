@@ -91,7 +91,7 @@ const Team = () => {
       name: "Nguku daisy wacuka",
       image: '/images/lawyers/Daisy.webp',
       work: 'Associate',
-      email: '',
+      email: 'wacuka1992@gmail.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
       instagram: 'https://www.instagram.com/royford',
