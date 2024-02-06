@@ -18,6 +18,16 @@ const Partners = () => {
       sector: "Managing partner",
       image: "/images/mwends3.jpg",
     },
+    {
+      name: "Fredrick Agwel",
+      sector: "Associate",
+      image: "/images/lawyers/Fredrick.webp",
+    },
+    {
+      name: "Nguku daisy wacuka",
+      sector: "Associate",
+      image: "/images/lawyers/Daisy.webp",
+    }
   ];
 
   const settings = {
@@ -89,6 +99,18 @@ const Partners = () => {
                 >
                   <span className="text-white">Contact Us</span>
                 </button>
+              </a>
+              <a href="https://drive.google.com/file/d/1SV98H2xk0Qkpqteb0oNGbubBn8j6Q46T/view?usp=sharing" 
+              target="_blank"
+              rel="noreferrer noopener"
+              >
+              <button
+                className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
+              >
+                <p className="text-black">
+                  Brochure
+                </p>
+              </button>
               </a>
             </div>
           </div>

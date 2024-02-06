@@ -10,7 +10,7 @@ const CardContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   margin-bottom: 1.5rem;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   border: 1px solid #eee;
 
@@ -28,7 +28,7 @@ const ImageContainer = styled.div`
   max-width: 300px;
   height: 300px;
   margin-bottom: 1rem;
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -108,7 +108,7 @@ const SocialIconsContainer = styled.div`
 
 const SocialIcon = styled.a`
   color: #3498db;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
 
   &:hover {
@@ -190,7 +190,9 @@ const LawyerCard = ({ lawyer }) => {
         <h2 className="text-2xl font-semibold mb-2 text-[#D0B216]">
           {lawyer.name}
         </h2>
-        <p className="lg:text-lg text-sm text-gray-600 mb-4">{lawyer.work}</p>
+        <p className="lg:text-lg text-sm text-gray-600 mb-4 font-bold">
+          {lawyer.work}
+        </p>
         <div class="card">
           <a href={lawyer.linkedin} class="socialContainer bg-custom-gray  containerOne hover:bg-instagram">
             <FaFacebook style={{
