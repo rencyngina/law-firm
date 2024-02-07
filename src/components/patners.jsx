@@ -27,7 +27,7 @@ const Partners = () => {
       name: "Nguku daisy wacuka",
       sector: "Associate",
       image: "/images/lawyers/Daisy.webp",
-    }
+    },
   ];
 
   const settings = {
@@ -83,9 +83,7 @@ const Partners = () => {
               on-call counsel is available for specific projects.
             </p>
             <div className="flex gap-4">
-              <button
-                className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
-              >
+              <button className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500">
                 <Link href="/Our-lawyer" className="text-black">
                   Get a Lawyer
                 </Link>
@@ -100,17 +98,15 @@ const Partners = () => {
                   <span className="text-white">Contact Us</span>
                 </button>
               </a>
-              <a href="https://drive.google.com/file/d/1SV98H2xk0Qkpqteb0oNGbubBn8j6Q46T/view?usp=sharing" 
-              target="_blank"
-              rel="noreferrer noopener"
+              <a
+                href="https://drive.google.com/file/d/1SV98H2xk0Qkpqteb0oNGbubBn8j6Q46T/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hidden md:inline-block"
               >
-              <button
-                className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500"
-              >
-                <p className="text-black">
-                  Brochure
-                </p>
-              </button>
+                <button className="mt-4 text-white py-3 px-6 hover:bg-yellow-500 transition duration-300 border-2 border-yellow-500">
+                  <p className="text-black">Brochure</p>
+                </button>
               </a>
             </div>
           </div>
