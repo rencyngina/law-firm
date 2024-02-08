@@ -70,7 +70,7 @@ function FooterLinks() {
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
                     <li>
                       <a
-                        href="#"
+                        href="/about"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         About Us
@@ -78,7 +78,7 @@ function FooterLinks() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="team"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Our Team
@@ -111,7 +111,7 @@ function FooterLinks() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Business
@@ -119,7 +119,7 @@ function FooterLinks() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Education
@@ -127,7 +127,7 @@ function FooterLinks() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Entertainment
@@ -135,7 +135,7 @@ function FooterLinks() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Real Estate

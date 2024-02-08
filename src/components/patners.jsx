@@ -28,6 +28,11 @@ const Partners = () => {
       sector: "Associate",
       image: "/images/lawyers/Daisy.webp",
     },
+    {
+      name: "Jackline W Njenga",
+      sector: "Associate",
+      image: "/images/lawyers/Jackline.webp",
+    }
   ];
 
   const settings = {

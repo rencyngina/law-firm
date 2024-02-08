@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
 
         {/* Theme Color Meta Tag */}
-        <meta name="theme-color" content="#F68420" />
+        <meta name="theme-color" content="#1B2432" />
         <meta name="royfordlaw" content="royfordlaw" />
         <meta name="web application" content="rofordlaw.com" />
 

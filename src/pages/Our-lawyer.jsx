@@ -114,6 +114,27 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
       linkedin: "#",
       facebook: "#",
     },
+    {
+      id: 6,
+      name: "Jackline W Njenga",
+      bio: `Jackline Waceke Njenga serves as an Associate at Mwenda and Royford Company Advocates. With experience in litigation and legal drafting, Jackline's dedication to excellence is evident in her meticulous approach to every task. Recognized for her academic achievements, she brings professionalism and integrity to her role, demonstrating a commitment to upholding justice. Beyond her legal work, Jackline actively engages in continuous learning and extracurricular activities, poised to make a meaningful impact in the legal community`,
+      bioPoints: [
+        "Legal luminary and visionary leader behind Mwenda Royford and Company Advocates.",
+        "Admitted to the Kenya Bar in 2016.",
+        "Expertise in Civil and Commercial Law, Litigation, Environmental Law, Election Petitions, Arbitration, and more.",
+        "LL.B from ANU.",
+        "Bachelor of Law from the Africa Nazarene University(ANU).",
+        "Diploma from the Kenya School of Law.",
+        "Academic prowess seamlessly blends with practical acumen.",
+        "Shapes legal landscapes with finesse.",
+        "Makes Mwenda Royford a beacon of innovation and success.",
+      ],
+      image: "/images/lawyers/Jackline.webp",
+      work: "Associate",
+      email: "jnjenga1@gmail.com",
+      phone: "+254 729 316690",
+      linkedin: "",
+    }
   ];
 
   return (
