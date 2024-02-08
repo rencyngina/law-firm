@@ -3,6 +3,7 @@ import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 
 function FooterLinks() {
@@ -69,12 +70,12 @@ function FooterLinks() {
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
                     <li>
-                      <a
+                      <Link
                         href="/about"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
@@ -85,12 +86,12 @@ function FooterLinks() {
                       </a>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Join Our team
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -102,44 +103,44 @@ function FooterLinks() {
                   </p>
                   <ul className=" lg:text-sm sm:text-sm mt-6 space-y-4 text-sm">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Agriculture
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Business
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Education
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Entertainment
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/practice-areas"
                         className="transition hover:opacity-75 text-gray-200"
                       >
                         Real Estate
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
