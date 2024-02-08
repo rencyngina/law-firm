@@ -3,7 +3,8 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import LandingNavBar from "../components/nav";
 import Head from "../components/head";
-import Foot from "../components/foot";
+// import Foot from "../components/foot";
+import FooterLinks from "../components/Footer/FooterLinks";
 
 const fadeIn = keyframes`
   from {
@@ -161,7 +162,7 @@ const About = () => {
           Advocates!
         </p>
       </ContentSection>
-      <Foot />
+      <FooterLinks />
     </AboutWrapper>
   );
 };

@@ -4,7 +4,7 @@ import LandingNavBar from "../components/nav";
 import Head from "../components/head";
 import FooterLinks from "../components/Footer/FooterLinks";
 import LawyerCard from "../components/LawyerCard";
-import Foot from "../components/foot";
+// import Foot from "../components/foot";
 
 const Lawyer = () => {
   const teamData = [
@@ -175,7 +175,6 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
         </p>
       </div>
       <FooterLinks />
-      <Foot />
     </>
   );
 };
