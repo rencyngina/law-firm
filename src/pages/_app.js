@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../styles/globals.css';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function MyApp({ Component, pageProps }) {
   // Metadata object containing all the metadata for the webpage
@@ -89,6 +90,7 @@ function MyApp({ Component, pageProps }) {
       
       {/* Main Component */}
       <Component {...pageProps} />
+      <SpeedInsights />
     </>
   );
 }
