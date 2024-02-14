@@ -32,9 +32,21 @@ function MyApp({ Component, pageProps }) {
       title: "Mwenda RoyFord & Company Advocates - Legal Excellence",
       description: "Unlock legal excellence with Royfordlaw. Highly skilled professionals from Kenya's prestigious Law School, University of Nairobi, ready to guide you. Trust in our expertise for unparalleled legal services.",
       image: "/images/favicon.ico",
-      site: "@royford_law"
+      site: "@royford_law",
+      url: "https://twitter.com/Royfordlaw",
+    },
+    linkedIn: {
+      card: "summary_large_image",
+      title: "Mwenda RoyFord & Company Advocates - Legal Excellence",
+      description: "Unlock legal excellence with Royfordlaw. Highly skilled professionals from Kenya's prestigious Law School, University of Nairobi, ready to guide you. Trust in our expertise for unparalleled legal services.",
+      image: "/images/favicon.ico",
+      site: "@royford_law",
+      url: "https://www.linkedin.com/in/mwenda-royford-company-advocates-062a5a2b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app_share",
+      type: "website"
     }
+
   };
+  
 
   return (
     <>
@@ -86,6 +98,14 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
         <meta name="twitter:site" content={metadata.twitter.site} />
+
+        {/* LinkedIn Meta Tags */}
+        <meta property="og:title" content={metadata.linkedIn.title} />
+        <meta property="og:description" content={metadata.linkedIn.description} />
+        <meta property="og:image" content={metadata.linkedIn.image} />
+        <meta property="og:url" content={metadata.linkedIn.url} />
+        <meta property="og:type" content={metadata.linkedIn.type} />
+        <meta property="og:site" content={metadata.linkedIn.site} />
       </Head>
       
       {/* Main Component */}
