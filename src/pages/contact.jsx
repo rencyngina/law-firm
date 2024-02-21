@@ -339,7 +339,7 @@ const Contact = () => {
           We are located along 5th avenue office suite 4th floor suite 4 – 15 off gong road
         </p>
         <GoogleMap
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3988.791699620398!2d36.78176001089665!3d-1.2997965986823754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s5TH%20AVENUE%20OFFICE%20SUITES%204TH%20FLOOR%20SUITE%204%20%E2%80%93%2015%20OFF%20NGONG%20ROAD!5e0!3m2!1sen!2ske!4v1703769902782!5m2!1sen!2ske"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.797567939964!2d36.805703274965744!3d-1.2960761986916145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1161e99dfdd9%3A0xce0d1a82eda550f7!2sMwenda%20Royford%20%26%20Company%20Advocates!5e0!3m2!1sen!2ske!4v1708508730504!5m2!1sen!2ske"
           width="100%"
           height="400"
           style={{ border: 0, borderRadius: "10px", boxShadow: "0 0 20px rgba(0, 0, 0, 0.1)" }}
