@@ -80,7 +80,7 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
     },
     {
       id: 4,
-      name: "Nguku daisy wacuka",
+      name: "Nguku Daisy Wacuka",
       bio: `Nguku Daisy Wacuka is an Associate at Royford Mwenda & Company Advocates. She holds a Bachelor of Laws (LL.B) from the University of Nairobi and a Diploma from the Kenya School of Law. She is a member of the Law Society of Kenya. She has a passion for corporate and commercial law. She honed her skills at Mwenda Royford and Company Advocates. She specializes in corporate governance, mergers and acquisitions, and intellectual property law. She is a seasoned legal professional with expertise in corporate and commercial law, conveyancing, and litigation. She is a legal and policy expert with a focus on Environment and Natural Resources, Constitutional Litigation, Oil and gas and Climate Change Law. Daisy is a Master of Laws (LLM) Candidate at the University of Nairobi. She is a member of the Law Society of Kenya. She is a legal and policy expert with a focus on Environment and Natural Resources, Constitutional Litigation, Oil and gas and Climate Change Law.`,
       bioPoints: [
         "Seasoned legal professional with expertise in corporate and commercial law, conveyancing, and litigation.",
@@ -134,7 +134,30 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
       email: "jnjenga1@gmail.com",
       phone: "+254 729 316690",
       linkedin: "",
-    }
+    },
+    {
+      id: 7,
+      name: " Tracy Kadessa",
+      bio: `Tracy Kadessa serves as an Associate at Mwenda and Royford Company Advocates. With experience in litigation and legal drafting, Tracy's dedication to excellence is evident in her meticulous approach to every task. Recognized for her academic achievements, she brings professionalism and integrity to her role, demonstrating a commitment to upholding justice. Beyond her legal work, Jackline actively engages in continuous learning and extracurricular activities, poised to make a meaningful impact in the legal community`,
+      bioPoints: [
+        "Legal luminary and visionary leader behind Mwenda Royford and Company Advocates.",
+        "Admitted to the Kenya Bar in 2016.",
+        "Expertise in Civil and Commercial Law, Intellectual Property Law, Environmental Law, International Law, Maritime Law, and more.",
+        "LL.M from IMO-IMLI.",
+        "LL.B from University of Nairobi.",
+        "Master in International Maritime Law from IMO International Maritime Law Institute, Malta.",
+        "Bachelor of Law from the University of Nairobi.",
+        "Diploma from the Kenya School of Law.",
+        "Academic prowess seamlessly blends with practical acumen.",
+        "Shapes legal landscapes with finesse.",
+        "Makes Mwenda Royford a beacon of innovation and success.",
+      ],
+      image: "/images/lawyers/Jackline.webp",
+      work: "Associate",
+      email: "kadessa@royfordlaw.com",
+      phone: "+254 715 371107",
+      linkedin: "",
+    }  
   ];
 
   return (
