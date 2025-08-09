@@ -108,7 +108,7 @@ const Team = () => {
     {
       id: 7,
       name: "Tracy Kadessa",
-      image: '/images/lawyers/Daisy.webp',
+      image: '/images/lawyers/Kadessa.jpg',
       work: 'Associate',
       email: 'wacuka1992@gmail.com',
       facebook: 'https://www.facebook.com/royford',
