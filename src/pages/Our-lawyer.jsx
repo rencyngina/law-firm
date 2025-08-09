@@ -152,7 +152,7 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
         "Shapes legal landscapes with finesse.",
         "Makes Mwenda Royford a beacon of innovation and success.",
       ],
-      image: "/images/lawyers/Jackline.webp",
+      image: "/images/lawyers/Kadessa.jpg",
       work: "Associate",
       email: "kadessa@royfordlaw.com",
       phone: "+254 715 371107",
