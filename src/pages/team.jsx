@@ -41,7 +41,7 @@ const Team = () => {
       id: 3,
       name: "Morris Mureti",
       image: '/images/Moris1.jpg',
-      work: 'cybersecurity & IT specialist.',
+      work: 'Cybersecurity & IT specialist.',
       email: 'morris@royfordlaw.com',
       facebook: 'https://www.facebook.com/royford',
       twitter: 'https://www.twitter.com/royford',
@@ -88,7 +88,7 @@ const Team = () => {
     },
     {
       id: 7,
-      name: "Nguku daisy wacuka",
+      name: "Nguku Daisy Wacuka",
       image: '/images/lawyers/Daisy.webp',
       work: 'Associate',
       email: 'wacuka1992@gmail.com',
