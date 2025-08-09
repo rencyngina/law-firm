@@ -97,13 +97,26 @@ const Team = () => {
       instagram: 'https://www.instagram.com/royford',
       sector: "Boaz",
       linkTo: "/Boaz",
-    },{
+    },
+    {
       id: 8,
       name: "Jackline W Njenga",
       image: '/images/lawyers/Jackline.webp',
       work: 'Associate',
       email: 'jnjenga1@gmail.com'
-    }
+    },
+    {
+      id: 7,
+      name: "Tracy Kadessa",
+      image: '/images/lawyers/Daisy.webp',
+      work: 'Associate',
+      email: 'wacuka1992@gmail.com',
+      facebook: 'https://www.facebook.com/royford',
+      twitter: 'https://www.twitter.com/royford',
+      instagram: 'https://www.instagram.com/royford',
+      sector: "Boaz",
+      linkTo: "/Boaz",
+    },
     // {
     //   id: 8,
     //   name: "Erick Munene",
