@@ -192,7 +192,7 @@ Annet excels in corporate and commercial litigation, securities law, banking, in
           Want to reach Out? {""}
           <a href="mailto:info@royfordlawlaw.com">
             <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">
-              Contact our support info@royfordlawlaw.com
+              Contact our support info@royfordlaw.com
             </span>
           </a>
         </p>
