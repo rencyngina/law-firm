@@ -14,8 +14,8 @@ const Section2 = () => {
   useEffect(() => {
     const targetNumbers = {
       workHours: 2016,
-      greatReviews: 8,
-      projectsDone: 185,
+      greatReviews: 9,
+      projectsDone: 236,
       awardsWon: 5,
     };
     const stepDuration = 10;
