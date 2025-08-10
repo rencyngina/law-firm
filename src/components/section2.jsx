@@ -16,7 +16,7 @@ const Section2 = () => {
       workHours: 2016,
       greatReviews: 9,
       projectsDone: 236,
-      awardsWon: 5,
+      awardsWon: 7,
     };
     const stepDuration = 10;
     const steps = Math.ceil(targetNumbers.workHours / stepDuration);
